@@ -1,0 +1,24 @@
+// Colors
+$main-color: #fff;
+$white-light-color: #E9E4E4;
+$gold-color: #C6A47C;
+
+// Fonts
+$font-family: 'Manrope';
+
+// Font-weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+
+ // Containers
+:root { 
+  --content-width: 1330px;
+  --content-fluid-width: 1790px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+}
