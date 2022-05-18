@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Расписание</title>
+</head>
+
+<body>	
+	<div class="wrapper">
+		<!-- Header -->
+<header class="header" id="header">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-3">
+        <a class="logo" href="index.html">
+          <img src="img/header/logo.svg" alt="logo">
+        </a>
+      </div>
+      <div class="col-lg-4">
+        <div class="header__contacts d-flex">
+          <div class="header__city d-flex align-items-center">
+            <a href="#">Иркутск</a>
+            <button><img src="img/arrow/arrow-down.svg" alt="arrow"></button>
+          </div>
+          <a class="header__tel" href="tel:+73952525425">+7 (3952) 525-425</a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="about.html">О клубе</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="services.html">Услуги</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="team.html">Команда</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="timetable.html">Расписание</a>
+            </li>
+            <li class="header__nav-item d-flex align-items-center last">
+              <a href="more.html">Ещё</a>
+              <button><img src="img/arrow/arrow-down-bold.svg" alt="arrow"></button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+		<main class="main first">
+			<!-- intro-timetable -->
+<div class="intro-timetable">
+	<div class="intro-timetable__bg">
+		<div class="intro-timetable__bg-img">
+			<div class="container">		
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="intro-timetable__offer d-flex flex-column justify-content-end">
+							<h1>
+								Расписание
+							</h1>
+						</div>
+					</div>			
+				</div>
+			</div><!-- /container -->
+		</div>
+
+	</div><!-- /intro-timetable__bg -->
+</div>
+
+			<!-- timetable -->
+<div class="timetable" id="timetable">
+	<!-- Breadcrumps -->
+<section class="breadcrumps d-none d-lg-block" id="breadcrumps">
+  <div class="container">
+    <div class="breadcrumps__wrapper">
+      <a href="index.html">Главная</a>
+      <a href="#">Расписание</a>      
+    </div>
+  </div>
+</section>
+
+	<div class="timetable__heading-wrapper">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-5">
+					<div class="timetable__heading d-flex align-items-center">
+						<div class="timetable__today">
+							Сегодня
+						</div>
+						<a href="#" class="timetable__tomorrow">Завтра</a>
+						<input class="timetable__calendar" type="date">
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<ul class="menu list-reset">
+						<li class="menu__item">
+							<button class="menu__btn">
+								Направления
+								<img src="img/arrow/arrow-down-timetable.svg" alt="icon">
+							</button>
+							<div class="dropdown">
+								<ul class="dropdown__list list-reset">
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Подпункт 1</a>
+									</li>
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Подпункт 2</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu__item">
+							<button class="menu__btn">
+								Занятия
+								<img src="img/arrow/arrow-down-timetable.svg" alt="icon">
+							</button>
+							<div class="dropdown">
+								<ul class="dropdown__list list-reset">
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Подпункт 1</a>
+									</li>
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Подпункт 2</a>
+									</li>
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Подпункт 3</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu__item">
+							<button class="menu__btn">
+								Инструкторы
+								<img src="img/arrow/arrow-down-timetable.svg" alt="icon">
+							</button>
+							<div class="dropdown">
+								<ul class="dropdown__list list-reset">
+									<li class="dropdown__item">
+										<a href="#" class="dropdown__link">Подпункт 1</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tabs">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<ul class="tabs__list">
+						<li class="tabs__item"><button class="tabs__btn tabs__btn--active" data-tabs-path="main">Утро</button></li>
+						<li class="tabs__item"><button class="tabs__btn" data-tabs-path="archive">День</button></li>
+						<li class="tabs__item"><button class="tabs__btn" data-tabs-path="settings">Вечер</button></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="tabs__content tabs__content--active" data-tabs-target="main">
+						<div class="content">
+							<div class="content__heading">
+								<div class="row">
+									<div class="col">
+										<div class="content__time">07:00-07:55</div>
+									</div>
+									<div class="col">
+										<div class="content__time">08:00-08:55</div>
+									</div>
+									<div class="col">
+										<div class="content__time">09:00-09:55</div>
+									</div>
+									<div class="col">
+										<div class="content__time">10:00-10:55</div>
+									</div>
+									<div class="col">
+										<div class="content__time">11:00-11:55</div>
+									</div>
+								</div>
+							</div><!-- /content__heading -->
+							<div class="content__cards">
+								<div class="row">
+									<div class="col">
+										
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Функциональная тренировка
+    </div>
+    <div class="content__card-subtitle">Зал Функционального Тренинга</div>
+    <div class="content__card-name"> Ковальчук Ирина</div>
+    <div class="content__card-length"> 60 мин</div>
+  </div><!-- /content__card -->
+</button>										
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Функциональная тренировка
+    </div>
+    <div class="content__card-subtitle">Зал Функционального Тренинга</div>
+    <div class="content__card-name"> Ковальчук Ирина</div>
+    <div class="content__card-length"> 60 мин</div>
+  </div><!-- /content__card -->
+</button>
+
+									</div>
+									<div class="col">
+
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Функциональная тренировка
+    </div>
+    <div class="content__card-subtitle">Зал Функционального Тренинга</div>
+    <div class="content__card-name"> Ковальчук Ирина</div>
+    <div class="content__card-length"> 60 мин</div>
+  </div><!-- /content__card -->
+</button>										
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>								
+
+									</div>
+									<div class="col">
+
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Функциональная тренировка
+    </div>
+    <div class="content__card-subtitle">Зал Функционального Тренинга</div>
+    <div class="content__card-name"> Ковальчук Ирина</div>
+    <div class="content__card-length"> 60 мин</div>
+  </div><!-- /content__card -->
+</button>										
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Функциональная тренировка
+    </div>
+    <div class="content__card-subtitle">Зал Функционального Тренинга</div>
+    <div class="content__card-name"> Ковальчук Ирина</div>
+    <div class="content__card-length"> 60 мин</div>
+  </div><!-- /content__card -->
+</button>	
+
+									</div>							
+									<div class="col">
+
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Функциональная тренировка
+    </div>
+    <div class="content__card-subtitle">Зал Функционального Тренинга</div>
+    <div class="content__card-name"> Ковальчук Ирина</div>
+    <div class="content__card-length"> 60 мин</div>
+  </div><!-- /content__card -->
+</button>								
+
+									</div>
+									<div class="col">
+
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Функциональная тренировка
+    </div>
+    <div class="content__card-subtitle">Зал Функционального Тренинга</div>
+    <div class="content__card-name"> Ковальчук Ирина</div>
+    <div class="content__card-length"> 60 мин</div>
+  </div><!-- /content__card -->
+</button>	
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>							
+
+									</div>
+								</div>
+							</div><!-- /content__cards -->
+						</div>
+					</div>
+					<div class="tabs__content" data-tabs-target="archive">
+						<div class="content">
+							<div class="content__heading">
+								<div class="row">
+									<div class="col">
+										<div class="content__time">12:00-12:55</div>
+									</div>
+									<div class="col">
+										<div class="content__time">13:00-13:55</div>
+									</div>
+									<div class="col">
+										<div class="content__time">14:00-14:55</div>
+									</div>
+									<div class="col">
+										<div class="content__time">15:00-15:55</div>
+									</div>
+									<div class="col">
+										<div class="content__time">16:00-16:55</div>
+									</div>
+								</div>
+							</div><!-- /content__heading -->
+							<div class="content__cards">
+								<div class="row">
+									<div class="col">
+										
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Функциональная тренировка
+    </div>
+    <div class="content__card-subtitle">Зал Функционального Тренинга</div>
+    <div class="content__card-name"> Ковальчук Ирина</div>
+    <div class="content__card-length"> 60 мин</div>
+  </div><!-- /content__card -->
+</button>										
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>		
+
+									</div>
+									<div class="col">
+
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Функциональная тренировка
+    </div>
+    <div class="content__card-subtitle">Зал Функционального Тренинга</div>
+    <div class="content__card-name"> Ковальчук Ирина</div>
+    <div class="content__card-length"> 60 мин</div>
+  </div><!-- /content__card -->
+</button>										
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>	
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>							
+
+									</div>
+									<div class="col">
+
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Функциональная тренировка
+    </div>
+    <div class="content__card-subtitle">Зал Функционального Тренинга</div>
+    <div class="content__card-name"> Ковальчук Ирина</div>
+    <div class="content__card-length"> 60 мин</div>
+  </div><!-- /content__card -->
+</button>										
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>			
+
+									</div>							
+									<div class="col">
+
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Функциональная тренировка
+    </div>
+    <div class="content__card-subtitle">Зал Функционального Тренинга</div>
+    <div class="content__card-name"> Ковальчук Ирина</div>
+    <div class="content__card-length"> 60 мин</div>
+  </div><!-- /content__card -->
+</button>			
+										
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Функциональная тренировка
+    </div>
+    <div class="content__card-subtitle">Зал Функционального Тренинга</div>
+    <div class="content__card-name"> Ковальчук Ирина</div>
+    <div class="content__card-length"> 60 мин</div>
+  </div><!-- /content__card -->
+</button>										
+
+									</div>
+									<div class="col">
+
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>						
+
+									</div>
+								</div>
+							</div><!-- /content__cards -->
+						</div>
+					</div>
+					<div class="tabs__content" data-tabs-target="settings">
+						<div class="content">
+							<div class="content__heading">
+								<div class="row">
+									<div class="col">
+										<div class="content__time">17:00-17:55</div>
+									</div>
+									<div class="col">
+										<div class="content__time">18:00-18:55</div>
+									</div>
+									<div class="col">
+										<div class="content__time">19:00-19:55</div>
+									</div>
+									<div class="col">
+										<div class="content__time">20:00-20:55</div>
+									</div>
+									<div class="col">
+										<div class="content__time">21:00-21:55</div>
+									</div>
+								</div>
+							</div><!-- /content__heading -->
+							<div class="content__cards">
+								<div class="row">
+									<div class="col">
+										
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Функциональная тренировка
+    </div>
+    <div class="content__card-subtitle">Зал Функционального Тренинга</div>
+    <div class="content__card-name"> Ковальчук Ирина</div>
+    <div class="content__card-length"> 60 мин</div>
+  </div><!-- /content__card -->
+</button>										
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>												
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Функциональная тренировка
+    </div>
+    <div class="content__card-subtitle">Зал Функционального Тренинга</div>
+    <div class="content__card-name"> Ковальчук Ирина</div>
+    <div class="content__card-length"> 60 мин</div>
+  </div><!-- /content__card -->
+</button>						
+
+									</div>
+									<div class="col">
+
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Функциональная тренировка
+    </div>
+    <div class="content__card-subtitle">Зал Функционального Тренинга</div>
+    <div class="content__card-name"> Ковальчук Ирина</div>
+    <div class="content__card-length"> 60 мин</div>
+  </div><!-- /content__card -->
+</button>										
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>													
+
+									</div>
+									<div class="col">
+
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Функциональная тренировка
+    </div>
+    <div class="content__card-subtitle">Зал Функционального Тренинга</div>
+    <div class="content__card-name"> Ковальчук Ирина</div>
+    <div class="content__card-length"> 60 мин</div>
+  </div><!-- /content__card -->
+</button>										
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>			
+
+									</div>							
+									<div class="col">
+
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Функциональная тренировка
+    </div>
+    <div class="content__card-subtitle">Зал Функционального Тренинга</div>
+    <div class="content__card-name"> Ковальчук Ирина</div>
+    <div class="content__card-length"> 60 мин</div>
+  </div><!-- /content__card -->
+</button>	
+														
+									</div>
+									<div class="col">
+
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>	
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Самостоятельная тренировка в тренажерном зале
+    </div>
+    <div class="content__card-subtitle">Тренажерный зал</div>
+    <div class="content__card-name"> Бабаев Сергей</div>
+    <div class="content__card-length"> 45 мин</div>
+  </div><!-- /content__card -->
+</button>
+										<!-- content__card -->
+<button class="btn-reset content__card-btn" data-graph-path="content-card">
+  <div class="content__card">
+    <div class="content__card-title">
+      Функциональная тренировка
+    </div>
+    <div class="content__card-subtitle">Зал Функционального Тренинга</div>
+    <div class="content__card-name"> Ковальчук Ирина</div>
+    <div class="content__card-length"> 60 мин</div>
+  </div><!-- /content__card -->
+</button>						
+
+									</div>
+								</div>
+							</div><!-- /content__cards -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+	
+			<!-- contacts-main -->
+<section class="contacts-main" id="contacts-main">
+	<div class="contacts-main__title-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2 class="contacts-main__title">
+						Контакты
+					</h2>				
+				</div>			
+			</div>
+		</div><!-- /container -->
+	</div>
+	<div class="contacts">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="contacts__content">
+						<div class="contacts__adress">
+							Иркутск, микрорайон Радужный, 4
+						</div>
+						<a class="contacts__phone" href="tel:+73952525425">+7 (3952) 52-54-25</a>
+						<div class="contacts__questions">
+							<h3>Остались вопросы?</h3>
+							<p>напишите нам, и наш администратор ответит Вам в течение суток.</p>
+						</div>
+						<form action="#" class="contacts-form">
+							<div class="form-control w-100">
+								<input id="contacts-form__name" type="text" placeholder="Ваше имя">							
+							</div>
+							<div class="input-wrapper">
+								<div class="form-control">
+									<input id="contacts-form__tel" type="text" placeholder="Ваш телефон">							
+								</div>
+								<div class="form-control">
+									<input id="contacts-form__mail" type="email" placeholder="Email">							
+								</div>
+							</div>						
+							<div class="form-control w-100">
+								<textarea id="contacts-form__textarea" placeholder="Задайте свой вопрос"></textarea>							
+							</div>
+							<div class="contacts-form__bottom d-flex justify-content-between align-items-center">
+								<button class="contacts-form__btn btn" type="submit">
+									<img src="img/arrow/arrow-check.svg" alt="btn-icon">
+									Отправить
+								</button>
+								<div class="agreement">
+									Нажимая «Отправить» я даю согласие на <span>хранение и обработку персональных данных.</span> 
+								</div>
+							</div>
+						</form><!-- /contacts-form -->
+					</div><!-- /contacts__content -->
+				</div>
+				<div class="col-lg-6">				
+						<div class="contacts__img">
+							<img src="img/contacts/man.png" alt="contacts-image">
+							<div class="contacts__logo">
+								<img src="img/contacts/logo-black.svg" alt="logo">
+							</div>
+						</div>
+					
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /contacts -->	
+</section>
+
+			<!-- map -->
+<section class="map" id="map">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
+				<div class="map__image">
+					<img src="img/map/map.png" alt="map-image">
+				</div>			
+			</div>
+		</div>		
+	</div>
+</section>
+
+		</main>
+		<!-- footer -->
+<footer class="footer" id="footer">
+	<div class="footer__top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<a href="index.html">
+						<img src="img/header/logo.svg" alt="logo">
+					</a>
+				</div>
+				<div class="col-lg-3">
+					<div class="footer__adress">
+						Иркутск,<br>
+            Микрорайон Радужный, 4
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<a class="footer__tel" href="tel:+73952525425">+7 (3952) 52-54-25</a>
+				</div>
+				<div class="col-lg-3 justify-content-end">
+					<div class="socials">
+						<ul class="socials__list justify-content-end">
+							<li class="socials__item">
+								<a href="#">
+									<img src="img/socials/ok.svg" alt="socials-icon">
+								</a>
+							</li>
+							<li class="socials__item">
+								<a href="#">
+									<img src="img/socials/vk.svg" alt="socials-icon">
+								</a>
+							</li>
+							<li class="socials__item">
+								<a href="#">
+									<img src="img/socials/teleg.svg" alt="socials-icon">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /footer__top -->
+	<div class="footer__bottom">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-3">
+					<div class="copyright">
+						© Все права защищены, 2022
+					</div>
+				</div>	
+				<div class="col-lg-6">
+					<div class="politics">
+						<ul class="politics__list d-flex justify-content-center">
+							<li class="politics__item">
+								<a href="#">Правила</a>
+							</li>
+							<li class="politics__item">
+								<a href="#">Политика конфиденциальности</a>
+							</li>
+							<li class="politics__item">
+								<a href="#">Правовая информация</a>
+							</li>
+						</ul>
+					</div>
+				</div>	
+				<div class="col-lg-3">
+					<div class="develop d-flex justify-content-end">
+						<img src="img/footer/footer-icon.svg" alt="develop-icon">
+						<div class="develop__website">
+							Разработка сайта - <a href="вангер.рф">Вангер.рф</a>
+						</div>
+					</div>
+				</div>		
+			</div>
+		</div><!-- /container -->
+	</div><!-- /footer__bottom -->
+	<div class="footer__rect"><img src="img/footer/footer-rect.svg" alt="footer-abstract-image"></div>
+</footer>
+
+		<!-- socials-change -->
+<div class="socials-change">
+  <button class="socials-change__card-guest">
+    <img src="img/socials/card-guest.svg" alt="btn-icon">
+  </button>
+  <button class="socials-change__btn-change">
+    <img src="img/intro/card-change-icon.svg" alt="btn-icon">
+  </button>
+  <ul class="socials-change__list">
+    <li class="socials-change__item">
+      <a href="#">
+        <img src="img/socials/ok.svg" alt="socials-icon">
+      </a>
+    </li>
+    <li class="socials-change__item">
+      <a href="#">
+        <img src="img/socials/vk.svg" alt="socials-icon">
+      </a>
+    </li>
+    <li class="socials-change__item">
+      <a href="#">
+        <img src="img/socials/teleg.svg" alt="socials-icon">
+      </a>
+    </li>
+  </ul>
+</div>
+		<!-- modal -->
+
+<div class="graph-modal modal-content-card">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="content-card">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="graph-modal__content-wrapper">
+        <div class="graph-modal__left">
+          <h3 class="graph-modal__title">Свободное плавание в бассейне ДЕТИ</h3>
+          <div class="graph-modal__age">
+            <span class="graph-modal__age-name">Возраст: </span>
+            <span class="graph-modal__age-text">дети 5+</span>
+          </div>
+          <div class="graph-modal__img">
+            <img src="img/modal/modal-img.png" alt="modal-image">
+          </div>
+          <p class="graph-modal__text">
+            Свободное самостоятельное плавание в бассейне для детей в присутствии родителей. Родители могут
+            забронировать место на своё имя. Необходима предварительная запись.
+          </p>
+          <div class="graph-modal__annotation">
+            <span class="graph-modal__annotation-title">Плавательный бассейн</span>
+            <span class="graph-modal__annotation-name">Бабаев Сергей</span>
+          </div>
+        </div>
+        <div class="graph-modal__right">
+          <div class="graph-modal__time">
+            <div class="graph-modal__hour">07:00</div>
+            <div class="graph-modal__minute">45 мин</div>
+            <div class="graph-modal__day">сегодня, завтра, в субботу</div>
+          </div>
+        </div>
+      </div>
+      <div class="graph-modal__btns">
+        <button class="graph-modal__btn-guest btn">
+          Записаться на гостевой визит
+          <img src="img/intro/guest-icon.svg" alt="btn-icon">
+        </button>
+        <a href="#" class="graph-modal__btn-append btn">Приложение</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="content-card">
+      <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content">
+        <h2 class="graph-modal__title">Остались вопросы? Свяжитесь с нами</h2>
+        <form class="graph-modal__form form-call">
+          <div class="form-call__wrapper">
+            <div class="input-wrapper form-floating">              
+              <input class="form-control" id="form-call-name" type="text" placeholder="Ваше имя*">
+              <label for="form-call-name">Ваше имя</label>
+            </div>
+            <div class="input-wrapper form-floating">              
+              <input class="form-control" id="form-call-tel" type="tel" placeholder="Телефон или Email*">
+              <label for="form-call-tel">Телефон или Email</label>
+            </div>
+            <div class="input-wrapper form-floating">              
+              <textarea class="form-control" name="form-call-textarea" id="form-call-text" cols="30" rows="5" placeholder="Опишите Вашу проблему"></textarea>
+              <label for="form-call-text">Опишите Вашу проблему</label>
+            </div>       
+          </div>         
+          <div class="form-call__bottom">          
+            <button class="graph-modal__form-btn btn">
+              Отправить
+            </button>
+          </div>        
+        </form>
+      </div>
+    </div>  -->
+
+
+</div>
+
+	</div>
+
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
+
+
+
+

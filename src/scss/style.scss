@@ -1,5 +1,5 @@
 // стили для модального окна
-// @import "../../node_modules/graph-modal/dist/graph-modal.min";
+@import "../../node_modules/graph-modal/dist/graph-modal.min";
 // стили для табов
 // @import "../../node_modules/graph-tabs/dist/graph-tabs.min";
 
@@ -7,10 +7,11 @@
 // @import "../../node_modules/aos/dist/aos";
 
 // стили для свайпера
-// @import "../../node_modules/swiper/swiper-bundle.min";
+@import "../../node_modules/swiper/swiper-bundle.min";
 
 // @import "../../node_modules/simplebar/dist/simplebar.min";
 // Базовые подключения
+@import 'bootstrap.min';
 @import 'vars';
 @import 'mixins';
 @import 'fonts';
@@ -18,7 +19,25 @@
 @import 'specifications';
 
 // Подключения компонентов страницы
-// @import "./components/header";
+@import "./components/btn";
+@import "./components/socials";
+@import "./components/breadcrumps";
+@import "./components/header";
+@import "./components/intro";
+@import "./components/about";
+@import "./components/cards";
+@import "./components/services";
+@import "./components/booking";
+@import "./components/soon";
+@import "./components/team";
+@import "./components/news";
+@import "./components/gallery";
+@import "./components/contacts";
+@import "./components/map";
+@import "./components/footer";
+@import "./components/instructor";
+@import "./components/timetable";
+@import "./components/modal";
 
 
 

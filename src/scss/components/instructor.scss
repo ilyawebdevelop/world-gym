@@ -1,0 +1,143 @@
+// instructor
+.instructor {
+	padding-top: 0;
+	background-color: #252528;
+	.team-main__slide-top {
+		height: 428px;
+	}
+	.team-main__slide-bottom {
+		padding-left: 60px;
+		h3 {
+			font-size: 36px;
+			line-height: 48px;
+			text-transform: uppercase;
+			color: #F5333F;
+			max-width: 180px;
+		}
+		.price {
+			margin-top: 35px;
+			&__title {
+				font-weight: $semibold;
+				font-size: 18px;
+				line-height: 26px;
+				color: #F5333F;
+			}
+			&__cost {
+				font-size: 24px;
+				line-height: 40px;
+				color: #EBEBEE;
+				span {
+					font-size: 18px;
+					line-height: 26px;
+					color: #828286;
+				}
+			}
+		}
+	}
+}
+.instructor__another {
+	margin-top: 40px;
+	&-title {
+		font-weight: $bold;
+		font-family: $font-family-second;
+		font-size: 20px;
+		line-height: 30px;
+		text-transform: uppercase;
+		color: #F5333F;
+		margin-bottom: 15px;
+	}
+	.team-main__slide {
+		margin-bottom: 25px;
+	}
+	.team-main__slide-bottom {
+		padding-left: 0;
+		h3 {
+			font-size: 16px;
+			line-height: 24px;
+			color: #EBEBEE;
+		}
+	}
+	.team-main__slide-top {
+		min-height: 235px;
+		height: 235px;
+	}
+	.team-main__slide-subtitle {
+		color: #EBEBEE;
+	}	
+}
+.instructor-about {
+	padding-left: 60px;
+	margin-bottom: 40px;
+	&__title {
+		font-weight: $semibold;
+		font-size: 18px;
+		line-height: 26px;
+		color: #F5333F;
+		max-width: 180px;
+	}
+	&__list {
+		width: 480px;
+	}
+	&__item {
+		padding-left: 40px;
+		font-weight: $semibold;
+		font-size: 18px;
+		line-height: 26px;
+		color: #EBEBEE;
+		position: relative;
+		margin-bottom: 20px;
+		
+		&::before {
+			content: '';
+			position: absolute;
+			width: 24px;
+			height: 24px;
+			left: 0;
+			top: 0;
+			background: url('@img/arrow/arrow-check-red.svg') no-repeat center center / cover;
+		}
+	}
+}
+.instructor-form {
+	padding: 30px;
+	background: #1A1B1D;
+	width: 699px;
+	margin-left: auto;
+	&__title {
+		margin-bottom: 25px;
+	}
+	input {
+		font-weight: $regular;
+		font-size: 18px;
+		line-height: 24px;
+		letter-spacing: 0.01em;
+		color: rgba(#EBEBEE, .65);
+		&::placeholder {
+			font-weight: $regular;
+			font-size: 18px;
+			line-height: 24px;
+			letter-spacing: 0.01em;
+			color: rgba(#EBEBEE, .65);
+		}
+	}
+	.form-control {
+		background-color: transparent;
+		border: none;
+		border-radius: 0;
+		padding-left: 0;
+		border-bottom: 1px solid #EBEBEE;
+		padding-bottom: 14px;
+	}
+	.input-wrapper {
+		margin-top: 15px;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 25px;
+		.form-control {
+			width: 305px;			
+		}
+	}
+	.agreement  {
+		max-width: 440px;
+	}
+}

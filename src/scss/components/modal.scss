@@ -1,0 +1,132 @@
+// modal
+// modal
+.graph-modal {
+  &__left {
+    max-width: 378px;
+  }
+  &__right {
+    padding-left: 20px;
+  }
+  &__content {
+    &-wrapper {
+      display: flex;
+    }    
+  }
+  &__title {
+    color: $dark-color;
+    max-width: 300px;
+    margin-bottom: 12px;
+  }
+  &__age {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    &-name {
+      color: #828286;
+    }
+    &-text {
+      color: $dark-color;
+    }
+  }
+  &__img {
+    width: 378px;
+    height: 200px;
+    margin-bottom: 20px;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 26px; 
+    color: $dark-color;
+    margin-bottom: 20px;
+  }
+  &__annotation {
+    &-title {
+      display: block;
+      font-weight: $semibold;
+      font-size: 13px;
+      line-height: 15px;
+      letter-spacing: 0.05em;   
+      color: $red-color;
+    }
+    &-name {
+      font-size: 12px;
+      line-height: 14px;  
+      letter-spacing: 0.05em; 
+      color: #1A1B1D;
+    }
+  }
+  &__btns {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }	
+  &__time {
+    padding-left: 32px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      background: url('@img/modal/time.svg') no-repeat center center / cover;
+    }
+  }
+  &__hour {
+    ont-family: $font-family-third; 
+    font-weight: $medium;
+    font-size: 20px;
+    line-height: 24px;
+    color: $red-color;
+    margin-bottom: 2px;
+  }
+  &__minute {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #F5333F;
+    margin-bottom: 10px;
+  }
+  &__day {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #1A1B1D;
+  }
+	.graph-modal__close {
+		position: absolute;
+    right: 18px;
+    top: 18px;
+	}
+	.input-second {
+		margin-bottom: 20px;
+	}
+}
+.modal-content-card {
+  .graph-modal__container {
+		width: 630px;
+		background: #EBEBEE;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+		padding: 30px;
+		border-radius: 30px;	
+    border-radius: 0;
+		@media (max-width: 991px){
+			width: 330px;
+			padding: 40px 20px 20px;
+		}
+	}
+}
+
+
+
+
+
+
+

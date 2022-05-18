@@ -1,1 +1,1 @@
-// import './components/modal.js';
+import './components/modal.js';

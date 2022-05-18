@@ -1,0 +1,134 @@
+// contacts
+.contacts-main {
+  background: #DDDDE1 url('@img/contacts/contacts-bg-abstract.svg') no-repeat right bottom / 85% 100%;
+  padding-bottom: 0;
+  &__title {
+    margin-bottom: 30px;
+  }
+}
+.contacts {  
+  padding-bottom: 60px;
+  position: relative;
+  &__logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__img {   
+    max-width: 100%;
+    overflow: hidden;
+    bottom: 0;
+    position: absolute;
+    width: 568px;
+    height: 635px; 
+    .contacts__logo {
+      position: absolute;
+      right: 0;
+      top: 30px;
+    }
+  }
+  &__adress {   
+    font-size: 24px;
+    line-height: 40px;
+    color: $dark-color;
+    margin-bottom: 5px;
+  }
+  &__phone {
+    font-family: $font-family-second;  
+    font-weight: $bold;
+    font-size: 30px;
+    line-height: 40px; 
+    color: $red-color;
+    margin-bottom: 60px;
+		&:hover {
+			color: $red-color;
+		}
+  }
+  &__questions {
+    margin-bottom: 25px;
+    h3 {
+      color: $dark-color;
+      margin-bottom: 8px;
+    }
+    p { 
+      font-size: 15px;
+      line-height: 22px;
+      color: $dark-color;
+    }
+  }
+}
+.contacts-form {
+  .form-control {
+    margin-bottom: 17px;
+    padding-bottom: 12px;
+    padding-left: 0;
+    border-radius: 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    input {
+      &::placeholder {
+        font-weight: $regular;
+        font-size: 18px;
+        line-height: 24px;      
+        letter-spacing: 0.01em;       
+        color: rgba($dark-color, .65);      
+      }
+    }
+    textarea {
+      width: 100%;
+      height: 72px;
+      &::placeholder {
+        font-weight: $regular;
+        font-size: 18px;
+        line-height: 24px;      
+        letter-spacing: 0.01em;       
+        color: rgba($dark-color, .65);      
+      }
+    }
+  }
+  .input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    .form-control {
+      width: 270px;
+    }
+  }
+  .w-100 {
+    width: 100%;    
+  }
+ 
+  .agreement {
+    color: $dark-color;
+    max-width: 379px;
+  }
+}
+
+.contacts-sm {
+	padding-top: 60px;
+	padding-bottom: 90px;
+	background: #DDDDE1 url('@img/contacts/contacts-sm-abstract.svg') no-repeat center center / cover;
+	&__title {
+		margin-bottom: 30px;
+	}
+	&__adress {
+		font-weight: $regular;
+		font-size: 24px;
+		line-height: 40px;
+		color: $dark-color;
+		margin-bottom: 5px;
+	}
+	&__link {
+		font-family: $font-family-second;
+		font-weight: $bold;
+		font-size: 30px;
+		line-height: 40px; 
+		color: $red-color;
+		&:hover {
+			color: $red-color;
+		}
+	}
+}
+
+
+

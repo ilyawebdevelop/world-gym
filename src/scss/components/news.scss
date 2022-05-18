@@ -1,0 +1,96 @@
+// news
+.news-main {
+  padding-bottom: 90px;
+  background: $dark-color;
+  &__title {
+    color: $main-color;
+    span {
+      text-transform: lowercase;
+      color: $main-color;
+    }
+  }
+}
+.news-card {
+  &__top {
+    padding: 25px 43px;
+    height: 265px;
+    margin-bottom: 20px;
+    &-title {
+      font-size: 18px;
+      font-weight: $bold;
+      line-height: 22px;
+      text-transform: uppercase;
+      max-width: 230px;
+      span {
+        display: block;
+        font-family: $font-family-second;
+        font-weight: $bold;
+        font-size: 64px;
+        line-height: 78px;
+        text-transform: uppercase;
+        color: #F5333F;
+      }
+      &.name {
+        span {
+          font-size: 46px;
+          line-height: 56px;
+        }       
+      }
+    }   
+  } 
+  &__bottom {
+    padding: 0 60px 0 45px;
+    &-title {
+      margin-top: 24px;
+      margin-bottom: 16px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 22px;
+      margin-bottom: 24px;
+    }
+    a {
+      font-weight: $medium;
+      font-size: 14px;
+      line-height: 20px;
+      color: $red-color;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  &__date {
+    font-family: $font-family-second;    
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+.news {
+  padding-top: 0;
+  background-color: #252528;
+  .news-card {
+    margin-bottom: 45px;
+  }
+  .pagination {    
+    bottom: 0;   
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    .swiper-pagination-bullet {
+      width: 6px;
+      height: 6px;
+      background: #4B4748;
+      transition: all .2s linear;
+      &:not(:last-child) {
+        margin-right: 48px;
+      }    
+    }
+    .swiper-pagination-bullet-active {
+      background: #C41230;
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+

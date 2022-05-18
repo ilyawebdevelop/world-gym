@@ -78,6 +78,13 @@ a {
     opacity: 0.85;
   }
 }
+
+.btn {
+  transition: opacity .2s linear, box-shadow .2s linear;
+  &:hover {
+    color: inherit;
+  }
+}
 button {
   transition: opacity 0.2s linear;
   &:hover {

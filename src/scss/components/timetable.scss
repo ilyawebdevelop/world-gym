@@ -1,0 +1,223 @@
+// timetable
+.timetable {
+	background-color: #252528;
+	padding-bottom: 60px;
+	&__heading {
+		input {
+			&::-webkit-calendar-picker-indicator {
+				background: url('@img/timetable/calendar.svg') no-repeat center center / cover;
+				cursor: pointer;
+				width: 48px;
+				height: 48px;
+			}
+		}	
+	}
+	&__today {
+		font-family: $font-family-second;
+		font-weight: $bold;
+		font-size: 40px;
+		line-height: 48px;
+		letter-spacing: 0.02em;
+		color: $main-color;
+		margin-right: 30px;
+	}
+	&__tomorrow {
+		font-family: $font-family-second;
+		font-weight: $bold;
+		font-size: 26px;
+		line-height: 48px;
+		letter-spacing: 0.02em;
+		color: #828286;
+		margin-right: 30px;
+		transition: opacity .2s linear, color .2s linear;
+	}
+	&__calendar {
+		width: 48px;
+		height: 48px;
+		transition: opacity .2s linear;
+		&:hover {
+			opacity: .8;
+		}
+	}
+}
+
+// Выпадающее меню
+.list-reset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+	&__item {
+		position: relative;
+		&:not(:last-child) {
+			margin-right: 8px;
+		}
+	}
+	&__btn {
+		font-family: $font-family-second;
+		font-weight: $bold;
+		font-size: 16px;
+		line-height: 20px;
+		letter-spacing: 0.05em;
+		display: flex;
+		align-items: center;
+		color: $main-color;
+		border: none;
+		padding: 14px;
+		background-color: $dark-color;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+		border-radius: 4px;		
+		cursor: pointer;
+		transition: box-shadow 0.2s linear;
+		&--active {
+			
+		}
+		&:hover {
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.75);
+		}
+		img {
+			margin-left: 9px;
+		}
+	}
+}
+
+.dropdown {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 100%;
+	width: 200px;
+	background-color: #333;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+	&--active {
+		opacity: 1;
+		visibility: visible;
+	}
+	&__link {
+		display: block;
+		width: 100%;
+		padding: 10px 10px;
+		color: #fff;
+	}
+}
+
+// TABS
+.tabs {
+	position: relative;
+	margin-top: 30px;
+	&__list {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		align-items: center;
+	}
+	&__item {
+		&:not(:last-child) {
+			margin-right: 8px;
+		}
+	}
+	&__btn {
+		font-family: $font-family-third;
+		padding: 12px 25px;
+		border: none;
+		background-color: $dark-color;
+		color: #828286;
+		cursor: pointer;
+		border-radius: 4px 4px 0px 0px;
+		font-weight: $bold;
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.05em;
+		transition: background-color 0.2s ease-in-out, color 0.2s linear;
+		&:hover {
+			color: $main-color;
+			opacity: 1;
+		}
+		&--active {
+			background-color: #C41230;
+			color: $main-color;
+			transition: background-color 0.2s ease-in-out, color 0.3s ease-in-out;
+			pointer-events: none;	
+		}
+	}
+	&__content {
+		display: none;
+		&--active {
+			display: block;
+		}
+	}
+}
+.content {
+	&__heading {
+	color: $dark-color;
+	background-color: $red-color;
+	padding: 15px 0px;
+	margin-bottom: 20px;
+	}
+	&__time {
+		font-family: $font-family-third;
+		font-weight: $bold;
+		font-size: 16px;
+		line-height: 20px;
+		letter-spacing: 0.05em;
+		color: $main-color;
+		padding: 0 25px;
+	}
+	&__card {
+		background: #EBEBEE;
+    min-height: 205px;
+    margin-bottom: 20px;
+    padding: 20px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    &-time {
+      font-family: $font-family-second;
+      font-weight: $bold;
+      font-size: 14px;
+      line-height: 20px;  
+      color: $red-color;
+    }
+    &-title {
+      font-family: $font-family-second;
+      font-weight: $bold;
+      color: $dark-color;
+      line-height: 24px;
+      margin-top: 16px;
+      margin-bottom: 20px;
+			font-size: 16px;
+    }
+    &-subtitle {
+      font-size: 13px;
+      line-height: 20px;     
+      color: $dark-color;
+    }
+    &-name {
+      margin-top: 6px;
+      margin-bottom: 16px;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.05em;
+      color: #828286;
+    }
+    &-length {
+      font-family: $font-family-second;    
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.05em;
+      color: #F5333F;
+    }
+		&-btn {
+			text-align: start;
+		}
+  }
+
+}
+
+

@@ -1,0 +1,79 @@
+// booking
+.booking-main {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: #1A1B1D;
+  &__bg {
+    background: url("@img/booking/soon-bg-abstracts.svg") no-repeat center right / 57%;
+  }
+  &__offer {
+    padding-top: 73px;
+    padding-bottom: 16px;
+  }
+  &__title {
+    color: $main-color;
+    max-width: 380px;
+    margin-bottom: 30px;
+  }
+  &__image {
+    height: 100%;
+  } 
+}
+.booking-form {
+  &__top {
+    margin-bottom: 30px;
+  }
+  .form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $main-color;
+    border-radius: 0;
+    width: 270px;
+    padding: 12px 10px 12px 0;
+    &.date {
+      position: relative;
+      input {
+        &::-webkit-calendar-picker-indicator {
+          background: url('@img/booking/calendar.svg') no-repeat center center / cover;
+        }
+      }   
+      span {
+        position: absolute;
+        right: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgba($main-color, .65);  
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: 0.05em;
+      }  
+    }
+  }
+  input {
+    color: rgba($main-color, .65);
+    background-color: transparent;
+    width: 270px;
+    &::placeholder {
+      font-weight: $regular;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.01em;
+      color: rgba($main-color, .65);
+    }
+  }
+  .input-wrapper {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.agreement { 
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.05em;
+  max-width: 345px;
+  span {
+    color: $red-color;
+    font-weight: $semibold;
+  }
+}

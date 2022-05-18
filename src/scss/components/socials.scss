@@ -1,0 +1,38 @@
+// socials
+.socials {
+  &__list {
+    display: flex;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 12px;
+    } 
+  }
+}
+.socials-fixed {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+}
+.socials-change {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  position: fixed;
+  z-index: 2;
+  top: 206px;
+  transform: translateY(-50%);
+  right: 0; 
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+}

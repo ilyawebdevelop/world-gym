@@ -1,0 +1,179 @@
+// btn
+.btn {
+  @include flex-all-center;  
+  font-family: 'Century Gothic'; 
+  background-color: $red-color;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px; 
+  padding: 11px 12px 14px 12px;
+  font-weight: $bold;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $main-color;
+  &:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.55);
+  }
+}
+.intro__btn-change {
+  margin-left: auto;
+  width: 247px;
+  img {
+    margin-left: 10px;
+  }
+}
+.intro__btn-guest {
+  position: absolute;
+  z-index: 1;
+  width: 250px;
+  padding: 15px 15px;
+  bottom: 0;
+  right: 0;
+  background-color: $dark-color;
+  bottom: 30px;
+  img {
+    margin-left: 10px;
+  }
+}
+.about-main__btn {
+  width: 245px;  
+  font-size: 16px;
+  margin-bottom: 45px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  img {
+    margin-right: 10px;
+  }
+}
+.cards-main__btn {
+  width: 230px;
+  img {
+    margin-left: 10px;
+  }
+}
+.services-main__btn {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  margin-left: auto;
+  background-color: $dark-color;
+  width: 171px;
+  img {
+    margin-right: 10px;
+  }
+}
+.submit {
+  padding: 13px 22px 13px 16px;
+  display: flex;
+  width: 182px;
+  background-color: $red-color;
+  color: $main-color;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;  
+  img {
+    margin-right: 8px;
+  }
+}
+.soon__btn {  
+  padding-right: 16px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  margin-left: auto;
+  background-color: $dark-color;
+  width: 304px;
+  img {
+    margin-right: 10px;
+  }
+}
+.team-main__btn {
+  margin-left: auto;
+  width: 187px;
+  font-size: 16px;
+  line-height: 20px;   
+  letter-spacing: 0.05em;
+  img {   
+    margin-right: 10px;   
+  }
+}
+.news-main__btn {
+  margin-left: auto;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  width: 260px;
+  img {
+    margin-right: 10px;
+  }
+}
+.gallery__btn {
+  width: 282px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  img {
+    margin-right: 10px;
+  }
+}
+.contacts-form__btn {
+  background-color: $red-color;
+  width: 168px;
+  img {
+    margin-right: 10px;
+  }
+}
+.socials-change__card-guest {
+    display: block;
+    margin-bottom: 20px;
+}
+.socials-change__btn-change {
+  width: 60px;
+  height: 48px;
+  background-color: $red-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.team__btn {
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.05em;
+	color: $main-color;
+	img {
+		margin-right: 10px;	
+	}
+}
+.team-tab__item-btn {
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+	border-radius: 4px;	
+	padding: 14px 16px;
+	background-color: $dark-color;	
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.05em;
+	color: $main-color;
+	transition: box-shadow .2s linear;
+	&:hover {
+		opacity: 1;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.75);
+	}
+}
+.graph-modal__btn {
+  &-guest {
+    width: 378px;
+    background-color: $dark-color;
+    img {
+      margin-left: 10px;
+    }
+  }
+  &-append {
+    padding: 11px 24px;
+  }
+  
+}
