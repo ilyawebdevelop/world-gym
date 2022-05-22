@@ -8,6 +8,8 @@
 
 // стили для свайпера
 @import "../../node_modules/swiper/swiper-bundle.min";
+//Стили для lightGallery
+@import "../../node_modules/lightgallery.js/src/css/lightgallery";
 
 // @import "../../node_modules/simplebar/dist/simplebar.min";
 // Базовые подключения
@@ -20,6 +22,7 @@
 
 // Подключения компонентов страницы
 @import "./components/btn";
+@import "./components/select";
 @import "./components/socials";
 @import "./components/breadcrumps";
 @import "./components/header";

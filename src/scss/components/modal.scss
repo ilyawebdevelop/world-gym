@@ -109,8 +109,8 @@
 		margin-bottom: 20px;
 	}
 }
-.modal-content-card {
-  .graph-modal__container {
+.content-card {
+  &.graph-modal__container {
 		width: 630px;
 		background: #EBEBEE;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
@@ -123,6 +123,184 @@
 		}
 	}
 }
+
+
+
+.modal-booking, .modal-payment {
+  background: #1A1B1D;
+  border-radius: 8px;
+  padding: 30px 30px 45px;
+  width: 900px;
+  &__right {
+    padding-right: 75px;
+  }
+  &__img {
+    width: 270px;
+  }
+  &__descr {
+    line-height: 26px;
+    color: #EBEBEE;
+    margin-bottom: 45px;
+  }
+  .graph-modal__title {
+    margin-bottom: 50px;
+    color: $main-color;
+    color: #EBEBEE;
+  } 
+  .graph-modal__close {
+    background: url('@img/modal/modal-close.svg') no-repeat center center / cover;
+    right: 35px;
+    top: 35px;
+  }
+  .graph-modal__step {
+    font-family: $font-family-second;   
+    font-weight: $bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: $main-color;
+    margin-bottom: 15px;
+  } 
+}
+.modal-payment {
+  &__list {
+    margin-bottom: 30px;   
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
+  }
+  &__item {
+    min-height: 168px;
+    padding: 15px;
+    border: 1px solid #828286;
+    border-radius: 10px;
+    grid-column: 4 span;
+    transition: border-color .5s linear;
+    &-title {
+      font-family: $font-family-second;
+      font-weight: $bold;
+      font-size: 20px;
+      line-height: 30px; 
+      text-transform: uppercase;
+      margin-bottom: 13px;
+      color: $main-color;
+    }
+    &-descr {
+      margin-bottom: 13px;
+      min-height: 52px;
+      line-height: 26px;
+      color: #EBEBEE;
+    }
+    &-price {
+      font-family: $font-family-second;      
+      font-weight: $bold;
+      font-size: 20px;
+      line-height: 30px;
+      color: #F5333F;
+    }
+    &.active {
+      border: 2px solid #F5333F;
+      padding: 14px;
+    }
+  }
+  .graph-modal__title {
+    margin-bottom: 20px;
+    max-width: 360px;
+    color: #EBEBEE;
+  }
+  .graph-modal__subtitle {
+    font-family: $font-family-second;
+    font-weight: $bold;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-color;
+    margin-bottom: 10px;
+  }
+  .modal-booking__descr {
+    margin-bottom: 35px;
+  }
+  .graph-modal__close {
+    right: 35px;
+    top: 35px;
+  }
+}
+.modal-prepayment {
+  &__form {   
+    margin-bottom: 30px;
+    .input-wrapper {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    input {
+      padding: 13px 0;
+      grid-column: 4 span;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.01em;      
+      color: rgba(#EBEBEE, .65);
+      border-bottom: 1px solid #EBEBEE;
+      &::placeholder {
+        color: rgba(#EBEBEE, .65);
+      }
+    }
+    .agreement {
+      font-size: 11px;
+      line-height: 13px;
+      letter-spacing: 0.05em;
+      color: #EBEBEE;
+      max-width: 100%;
+    }
+  } 
+}
+.modal-booking_main {
+  .graph-modal__title {
+    margin-bottom: 15px;
+  }
+  .__select__title {
+    font-weight: $regular;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    color: $main-color;    
+  } 
+  .modal-booking__bottom {
+    margin-top: 30px;
+  }
+  .agreement {
+    max-width: 100%;
+    font-size: 11px;
+    line-height: 13px; 
+    letter-spacing: 0.05em;
+    color: #EBEBEE;
+  }
+}
+.modal-booking_main-form { 
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px 15px;
+  input {
+    padding: 13px 0;
+    grid-column: 4 span;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;      
+    color: rgba(#EBEBEE, .65);
+    border-bottom: 1px solid #EBEBEE;
+
+    &::placeholder {
+      color: rgba(#EBEBEE, .65);
+    }
+  }
+  .__select-second {
+    grid-column: 4 span;
+    width: 100%;
+  }
+}
+
 
 
 

@@ -3,10 +3,15 @@
   background: linear-gradient(180deg, #27272D 0%, #202024 100%);
   &__title {
     color: $main-color;
+    &_second {
+      color: $main-color;
+      margin-bottom: 60px;
+    }
   }
   &__card {
     margin-bottom: 60px;
     &-title {
+      color: #F5333F;
       margin-top: 25px;
       margin-bottom: 12px;
     }
@@ -14,8 +19,9 @@
       font-weight: 400;
       font-size: 15px;
       line-height: 24px;
-      width: 330px;
+      width: 100%;
       margin: 0 auto;
+      color: #EBEBEE;
     }
     img {
       margin: auto;

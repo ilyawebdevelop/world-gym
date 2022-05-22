@@ -34,3 +34,154 @@
     }
   }
 }
+.cards {
+  background: #EBEBEE;
+  padding-top: 0;
+  &__wrapper {
+    padding: 60px 0;
+    border-bottom: 1px solid #DCDCDE;
+  }
+  &__content {    
+    &-title {
+      margin-bottom: 40px;
+      color: $dark-color;
+    }
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 40px 30px;
+    }
+    &-img {
+      margin-bottom: 20px;
+    }
+    &-item {
+      grid-column: 3 span;
+      img {
+        margin: 0 auto;
+      }
+      &.off {
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        opacity: .3;
+      }
+    }
+    &-name {
+      font-family: $font-family-third;   
+      font-weight: $semibold;
+      font-size: 13px;
+      line-height: 22px;  
+      text-align: center;  
+      color: $dark-color;
+    }
+    &-descr {
+      font-family: $font-family-third;   
+      font-weight: $regular;
+      font-size: 13px;
+      line-height: 22px;    
+      text-align: center; 
+      color: $dark-color;
+    }
+  }
+}
+.card {  
+  height: 240px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 30px 21px 30px 30px;
+  flex-direction: row;
+  &-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__title {
+    font-family: $font-family-second;
+    font-weight: $bold;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-color;
+    margin-bottom: 14px;
+  }
+  &__subtitle {
+    font-weight: $semibold;
+    font-size: 14px;
+    line-height: 20px;
+    color: $main-color;
+  }
+  &__price {
+    font-weight: $semibold;
+    font-size: 22px;
+    line-height: 20px;
+    color: $main-color;
+    margin-top: 6px;  
+  }
+  &.black {
+    background: $dark-color url('@img/cards/card-bg-grad.png');
+  }
+  &.red {
+    background: $red-color;
+    .card__btn {
+      color: $dark-color;
+      background-color: $main-color;
+    }
+  }
+}
+.card-time {
+  margin-top: 30px;
+  &__line {
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 20px;
+    display: flex;
+    font-family: $font-family-second;
+    font-weight: $bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1A1B1D;
+    img {
+      margin-right: 26px;
+    }
+  }
+  &__day {
+    margin-right: 18px; 
+    font-weight: $medium;
+    font-size: 12px;
+    line-height: 11px;
+    color: $dark-color;
+    &.no-active {
+      color: #000000;
+      opacity: 0.3;
+    }
+  }
+  &__hour {
+    width: 280px;
+    &-list {
+      margin-bottom: 8px;
+    }
+    &-item {
+      font-family: 'Raleway';
+      font-weight: $medium;
+      font-size: 12px;
+      line-height: 14px; 
+      color: #828286;      
+      &.active {
+        color: $dark-color;
+      }
+    }
+    &-line {
+      width: 100%;
+      height: 10px;
+      background: #DCDCDE;
+      position: relative;
+      &.access {
+        position: absolute;
+        height: 100%;        
+        top: 0;
+        background: #3FAB5D;
+      }
+    }
+  }
+}

@@ -22,19 +22,6 @@
     margin-left: 10px;
   }
 }
-.intro__btn-guest {
-  position: absolute;
-  z-index: 1;
-  width: 250px;
-  padding: 15px 15px;
-  bottom: 0;
-  right: 0;
-  background-color: $dark-color;
-  bottom: 30px;
-  img {
-    margin-left: 10px;
-  }
-}
 .about-main__btn {
   width: 245px;  
   font-size: 16px;
@@ -66,6 +53,7 @@
   padding: 13px 22px 13px 16px;
   display: flex;
   width: 182px;
+  height: 48px;
   background-color: $red-color;
   color: $main-color;
   text-transform: uppercase;
@@ -126,8 +114,12 @@
   }
 }
 .socials-change__card-guest {
-    display: block;
-    margin-bottom: 20px;
+  width: 60px; 
+  height: 48px;
+  margin-bottom: 8px;
+  background-color: $dark-color;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px 0px 0px 4px;
 }
 .socials-change__btn-change {
   width: 60px;
@@ -164,6 +156,21 @@
 		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.75);
 	}
 }
+.gallery-page-tab__item-btn {
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+	border-radius: 4px;	
+	padding: 14px 16px;
+	background-color: $dark-color;	
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.05em;
+	color: $main-color;
+	transition: box-shadow .2s linear;
+	&:hover {
+		opacity: 1;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.75);
+	}
+}
 .graph-modal__btn {
   &-guest {
     width: 378px;
@@ -175,5 +182,75 @@
   &-append {
     padding: 11px 24px;
   }
-  
+}
+.news-article__services-btn {
+  padding: 5px 15px;
+  width: 105px;
+  background: #C41230;
+  border-radius: 2px;
+  font-weight: $semibold;
+  font-size: 14px;
+  line-height: 20px;
+  color: $main-color;
+}
+.card__btn {
+  width: 217px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $main-color;
+  padding: 8px 12px 8px 12px;
+  img {
+    margin-left: 10px;
+  }
+}
+.modal-booking__btn {
+  width: 132px;
+  font-size: 16px;
+  height: 48px;
+  text-transform: uppercase;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  img {
+    margin-left: 10px;
+  }
+}
+.modal-payment__btn {
+  color: #EBEBEE;
+  font-family: $font-family-second;
+  font-weight: $bold;
+  background-color: transparent;
+  box-shadow: none;
+  padding-left: 0;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  img {
+    margin-right: 10px;
+  }
+}
+.modal-prepayment__btn {
+  width: 160px;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;  
+  letter-spacing: 0.05em;
+  padding: 11px 12px 11px 12px;
+  img {
+    margin-right: 10px;
+  }
+}
+.modal-booking_main-btn {
+  width: 270px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-right: 15px;
+  img {
+    margin-right: 10px;
+  }
 }

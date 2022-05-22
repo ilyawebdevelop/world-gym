@@ -15,23 +15,19 @@
 <header class="header" id="header">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-3">
-        <a class="logo" href="index.html">
-          <img src="img/header/logo.svg" alt="logo">
-        </a>
-      </div>
-      <div class="col-lg-4">
-        <div class="header__contacts d-flex">
-          <div class="header__city d-flex align-items-center">
-            <a href="#">Иркутск</a>
-            <button><img src="img/arrow/arrow-down.svg" alt="arrow"></button>
-          </div>
-          <a class="header__tel" href="tel:+73952525425">+7 (3952) 525-425</a>
-        </div>
-      </div>
       <div class="col-lg-5">
+        <div class="header__left-wrapper d-flex justify-content-between align-items-center">
+          <a class="logo" href="index.html">
+            <img src="img/header/logo.svg" alt="logo">
+          </a>
+          <div class="header__contacts d-flex">         
+            <a class="header__tel" href="tel:+73952525425">+7 (3952) 525-425</a>
+          </div>
+        </div>       
+      </div>     
+      <div class="col-lg-7">
         <nav class="header__nav">
-          <ul class="header__nav-list">
+          <ul class="header__nav-list justify-content-end">
             <li class="header__nav-item">
               <a href="about.html">О клубе</a>
             </li>
@@ -42,12 +38,15 @@
               <a href="team.html">Команда</a>
             </li>
             <li class="header__nav-item">
+              
               <a href="timetable.html">Расписание</a>
             </li>
-            <li class="header__nav-item d-flex align-items-center last">
-              <a href="more.html">Ещё</a>
-              <button><img src="img/arrow/arrow-down-bold.svg" alt="arrow"></button>
+            <li class="header__nav-item">
+              <a href="news.html">Новости и акции</a>
             </li>
+            <li class="header__nav-item">
+              <a href="gallery.html">Галерея</a>
+            </li>          
           </ul>
         </nav>
       </div>
@@ -459,12 +458,12 @@
 </footer>
 
 		<!-- socials-change -->
-<div class="socials-change">
-  <button class="socials-change__card-guest">
+<div class="socials-change"> 
+  <button class="btn-reset socials-change__card-guest d-flex justify-content-center align-items-center" data-graph-path="modal-card-change">
     <img src="img/socials/card-guest.svg" alt="btn-icon">
   </button>
-  <button class="socials-change__btn-change">
-    <img src="img/intro/card-change-icon.svg" alt="btn-icon">
+  <button class="btn-reset socials-change__btn-change" data-graph-path="modal-booking">
+    <img src="img/socials/card-change-icon.svg" alt="btn-icon">
   </button>
   <ul class="socials-change__list">
     <li class="socials-change__item">
