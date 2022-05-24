@@ -7,6 +7,7 @@
 <body>
 	<div class="wrapper">
 		@@include('html/header.html',{})
+	
 		<main class="main first">
 			@@include('html/intro.html',{})
 			@@include('html/about-main.html',{})
@@ -19,66 +20,17 @@
 			@@include('html/gallery.html',{})
 			@@include('html/contacts-main.html',{})
 			@@include('html/map.html',{})
+			
 		</main>
 		@@include('html/footer.html',{})
-		@@include('html/socials-change.html',{})
 		@@include('html/modal.html',{})
+		@@include('html/socials-change.html',{})
 
 	</div>
 
 	<script src="js/app.min.js"></script>
 
-	<script>
-		// Modal Cards Select Styles
-		let selectSingleSecond = document.querySelector('.__select-second');
-		let selectSingleSecond_title = selectSingleSecond.querySelector('.__select__title-second');
-		let selectSingleSecond_labels = selectSingleSecond.querySelectorAll('.__select__label');
-
-		console.log(selectSingleSecond_title);
-		// Toggle menu
-		selectSingleSecond_title.addEventListener('click', () => {
-			console.log('TSAD');
-			if ('active' === selectSingleSecond.getAttribute('data-state')) {
-				selectSingleSecond.setAttribute('data-state', '');
-			} else {
-				selectSingleSecond.setAttribute('data-state', 'active');
-			}
-		});
-
-		// Close when click to option
-		for (let i = 0; i < selectSingleSecond_labels.length; i++) {
-			selectSingleSecond_labels[i].addEventListener('click', (evt) => {
-				selectSingleSecond_title.textContent = evt.target.textContent;
-				selectSingleSecond.setAttribute('data-state', '');
-			});
-		}
-
-	</script>
-	<script>
-		// Modal Cards Select Styles
-		let selectSingle = document.querySelector('.__select');
-		let selectSingle_title = selectSingle.querySelector('.__select__title');
-		let selectSingle_labels = selectSingle.querySelectorAll('.__select__label');
-
-		console.log(selectSingle_title);
-		// Toggle menu
-		selectSingle_title.addEventListener('click', () => {
-			console.log('TSAD');
-			if ('active' === selectSingle.getAttribute('data-state')) {
-				selectSingle.setAttribute('data-state', '');
-			} else {
-				selectSingle.setAttribute('data-state', 'active');
-			}
-		});
-
-		// Close when click to option
-		for (let i = 0; i < selectSingle_labels.length; i++) {
-			selectSingle_labels[i].addEventListener('click', (evt) => {
-				selectSingle_title.textContent = evt.target.textContent;
-				selectSingle.setAttribute('data-state', '');
-			});
-		}
-	</script>
+	
 
 </body>
 

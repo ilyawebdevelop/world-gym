@@ -1,16 +1,33 @@
 // team
 .team-main {
   background: #252528;
+  overflow: hidden;
   &__title {
     color: $main-color;
   }
   &__slider {
-    margin-bottom: 50px;
+    margin-bottom: 50px;   
+    @media (max-width: 767px) {
+      overflow: visible;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 575px){
+      padding-right: 65px;
+    }
   }
   &__slide {   
     &-top {
       min-height: 370px;
       position: relative;
+      @media (max-width: 575px){
+        min-height: 595px;
+      }
+      @media (max-width: 500px){
+        min-height: 450px;
+      }
+      @media (max-width: 400px){
+        min-height: 370px;
+      }
     }
     &-bottom {
       margin-top: 10px;
@@ -38,11 +55,17 @@
         object-fit: cover;
         &:nth-child(2) {
           height: 44px;
+          @media (max-width: 575px){
+            height: 78px;
+          }
         }
+      }
+      @media (max-width: 575px){
+        height: 76px;
       }
     }
   }
-  .pagination {    
+  .pagination_team {    
     bottom: 0;   
     width: 100%;
     justify-content: center;
@@ -61,6 +84,11 @@
       width: 10px;
       height: 10px;
     }
+    @media (max-width: 991px){
+      justify-content: flex-start;
+      margin-bottom: 30px;
+      height: 15px;
+    }
   }
 }
 .navigation-arrow {
@@ -68,6 +96,9 @@
   transition: opacity .2s linear;
   &:hover {
     opacity: .9;
+  }
+  @media (max-width: 991px){
+    display: none;
   }
 }
 .team {

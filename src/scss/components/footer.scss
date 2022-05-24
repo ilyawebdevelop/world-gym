@@ -2,21 +2,38 @@
 .footer {
   
   position: relative;
+  &__logo {
+    @media (max-width: 1199px){
+      width: 150px;
+    }
+    @media (max-width: 991px){
+      margin-bottom: 30px;
+    }
+  }
   &__top {
     background: #1A1B1D;
     padding-top: 78px;
     padding-bottom: 45px;
     height: 200px;
+    @media (max-width: 991px){
+      height: auto;
+    }
   }
   &__adress {   
     font-size: 16px;
     line-height: 24px;
+    @media (max-width: 991px){
+      margin-bottom: 30px;
+    }
   }
   &__tel {
     font-family: $font-family-second; 
     font-weight: $bold;
     font-size: 24px;
     line-height: 24px;
+    @media (max-width: 991px){
+      margin-bottom: 50px;
+    }
   }
   &__bottom {
     background: $dark-color;
@@ -37,8 +54,16 @@
   font-size: 14px;
   line-height: 24px;
   color: $main-color;
+  @media (max-width: 991px){
+    margin-bottom: 30px;
+  }
 }
 .politics {
+  &__list {
+    @media (max-width: 991px){
+      margin-bottom: 30px;
+    }
+  }
   &__item {
     position: relative;
     padding: 5px 0;

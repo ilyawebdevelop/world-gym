@@ -15,17 +15,23 @@
 <header class="header" id="header">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-5">
+      <div class="col-lg-4 col-xl-5">
         <div class="header__left-wrapper d-flex justify-content-between align-items-center">
           <a class="logo" href="index.html">
             <img src="img/header/logo.svg" alt="logo">
           </a>
-          <div class="header__contacts d-flex">         
+          <div class="header__contacts d-none d-lg-flex">         
             <a class="header__tel" href="tel:+73952525425">+7 (3952) 525-425</a>
+          </div>
+          <!-- Hamburger Menu -->
+          <div class="hamburger d-flex d-lg-none" id="toggle">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
           </div>
         </div>       
       </div>     
-      <div class="col-lg-7">
+      <div class="col-lg-8 col-xl-7">
         <nav class="header__nav">
           <ul class="header__nav-list justify-content-end">
             <li class="header__nav-item">
@@ -37,17 +43,49 @@
             <li class="header__nav-item">
               <a href="team.html">Команда</a>
             </li>
-            <li class="header__nav-item">
-              
+            <li class="header__nav-item">              
               <a href="timetable.html">Расписание</a>
             </li>
             <li class="header__nav-item">
               <a href="news.html">Новости и акции</a>
             </li>
-            <li class="header__nav-item">
+            <li class="header__nav-item mr-0">
               <a href="gallery.html">Галерея</a>
-            </li>          
+            </li>   
+            <li class="header__nav-item d-lg-none d-block">
+              <a href="gallery.html">Контакты</a>
+            </li>         
           </ul>
+          <div class="header__contacts d-flex justify-content-center d-lg-none">         
+            <a class="header__tel" href="tel:+73952525425">+7 (3952) 525-425</a>
+          </div>
+          <button class="d-flex d-lg-none btn-reset header__nav-open-change btn" data-graph-path="modal-booking">
+            Выбрать карту
+            <img src="img/header/Card-mob-change.svg" alt="btn-icon">
+          </button>
+          <button class="d-flex d-lg-none btn-reset header__nav-open-guest btn" data-graph-path="content-card">
+            Гостевой визит
+            <img src="img/header/Card-mob-guest.svg" alt="btn-icon">
+          </button>  
+          <div class="socials d-block d-lg-none">
+						<ul class="socials__list justify-content-center">
+							<li class="socials__item">
+								<a href="#">
+									<img src="img/socials/ok.svg" alt="socials-icon">
+								</a>
+							</li>
+							<li class="socials__item">
+								<a href="#">
+									<img src="img/socials/vk.svg" alt="socials-icon">
+								</a>
+							</li>
+							<li class="socials__item">
+								<a href="#">
+									<img src="img/socials/teleg.svg" alt="socials-icon">
+								</a>
+							</li>
+						</ul>
+					</div>        
         </nav>
       </div>
     </div>
@@ -884,7 +922,7 @@
 							<div class="form-control w-100">
 								<textarea id="contacts-form__textarea" placeholder="Задайте свой вопрос"></textarea>							
 							</div>
-							<div class="contacts-form__bottom d-flex justify-content-between align-items-center">
+							<div class="contacts-form__bottom d-flex justify-content-between align-items-start align-items-xl-center">
 								<button class="contacts-form__btn btn" type="submit">
 									<img src="img/arrow/arrow-check.svg" alt="btn-icon">
 									Отправить
@@ -930,7 +968,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3">
-					<a href="index.html">
+					<a class="footer__logo" href="index.html">
 						<img src="img/header/logo.svg" alt="logo">
 					</a>
 				</div>
@@ -940,12 +978,12 @@
             Микрорайон Радужный, 4
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-4">
 					<a class="footer__tel" href="tel:+73952525425">+7 (3952) 52-54-25</a>
 				</div>
-				<div class="col-lg-3 justify-content-end">
+				<div class="col-lg-2 justify-content-end">
 					<div class="socials">
-						<ul class="socials__list justify-content-end">
+						<ul class="socials__list justify-content-start justify-content-lg-end">
 							<li class="socials__item">
 								<a href="#">
 									<img src="img/socials/ok.svg" alt="socials-icon">
@@ -969,7 +1007,7 @@
 	</div><!-- /footer__top -->
 	<div class="footer__bottom">
 		<div class="container">
-			<div class="row align-items-center">
+			<div class="row align-items-start align-items-xl-center">
 				<div class="col-lg-3">
 					<div class="copyright">
 						© Все права защищены, 2022
@@ -977,7 +1015,7 @@
 				</div>	
 				<div class="col-lg-6">
 					<div class="politics">
-						<ul class="politics__list d-flex justify-content-center">
+						<ul class="politics__list d-block d-lg-flex justify-content-center">
 							<li class="politics__item">
 								<a href="#">Правила</a>
 							</li>
@@ -991,7 +1029,7 @@
 					</div>
 				</div>	
 				<div class="col-lg-3">
-					<div class="develop d-flex justify-content-end">
+					<div class="develop d-flex justify-content-start justify-content-lg-end">
 						<img src="img/footer/footer-icon.svg" alt="develop-icon">
 						<div class="develop__website">
 							Разработка сайта - <a href="вангер.рф">Вангер.рф</a>
@@ -1007,9 +1045,11 @@
 		<!-- socials-change -->
 <div class="socials-change"> 
   <button class="btn-reset socials-change__card-guest d-flex justify-content-center align-items-center" data-graph-path="modal-card-change">
-    <img src="img/socials/card-guest.svg" alt="btn-icon">
+    <span>Гостевой визит</span>
+    <img src="img/socials/card-guest.svg" alt="btn-icon">    
   </button>
   <button class="btn-reset socials-change__btn-change" data-graph-path="modal-booking">
+    <span>Выбрать карту</span>
     <img src="img/socials/card-change-icon.svg" alt="btn-icon">
   </button>
   <ul class="socials-change__list">
@@ -1054,6 +1094,10 @@
             <span class="graph-modal__annotation-title">Плавательный бассейн</span>
             <span class="graph-modal__annotation-name">Бабаев Сергей</span>
           </div>
+          <button class="graph-modal__btn-guest btn">
+            Записаться на гостевой визит
+            <img src="img/socials/card-guest.svg" alt="btn-icon">      
+          </button>
         </div>
         <div class="graph-modal__right">
           <div class="graph-modal__time">
@@ -1061,15 +1105,22 @@
             <div class="graph-modal__minute">45 мин</div>
             <div class="graph-modal__day">сегодня, завтра, в субботу</div>
           </div>
+          <div class="graph-modal__btns">
+            <div class="graph-modal__right-title">
+              Скачать приложение:
+            </div>
+            <a class="btn graph-app first" href="#">
+              <img src="img/modal/appstore.svg" alt="icon">
+              AppStore
+            </a>
+            <a class="btn graph-app" href="#">
+              <img src="img/modal/googleplay.svg" alt="icon">
+              GooglePlay
+            </a>
+          </div>
         </div>
       </div>
-      <div class="graph-modal__btns">
-        <button class="graph-modal__btn-guest btn">
-          Записаться на гостевой визит
-          <img src="img/intro/guest-icon.svg" alt="btn-icon">
-        </button>
-        <a href="#" class="graph-modal__btn-append btn">Приложение</a>
-      </div>
+     
     </div>
   </div>
 

@@ -8,14 +8,23 @@ import Swiper, { Navigation, Pagination, Autoplay, Mousewheel, Thumbs } from 'sw
 Swiper.use([Navigation, Pagination, Autoplay, Mousewheel, Thumbs]);
 
 // Инициализация слайдера intro__slider
-const intoMainSlider = document.querySelector('.intro__slider');
-let mySwiperIntroMain = new Swiper(intoMainSlider, {
+const introMainSlider = document.querySelector('.intro__slider');
+let mySwiperIntroMain = new Swiper(introMainSlider, {
 	slidesPerView: 1,
 	spaceBetween: 0,
 	loop: true,
 	navigation: {
 		nextEl: '.intro__navigation-next',
 		prevEl: '.intro__navigation-prev',
+	},
+	breakpoints: {  
+		0: {
+			pagination: {
+				el: '.intro__pagination',
+				clickable: true,
+				type: 'bullets',
+			},			
+		},  
 	}
 });
 
@@ -50,7 +59,7 @@ let mySwiperTeamMain = new Swiper(teamSliderMain, {
 	slidesPerView: 4,
 	spaceBetween: 30,
 	pagination: {
-		el: '.pagination',
+		el: '.pagination_team',
 		clickable: true,
 		type: 'bullets',
 	},
@@ -59,6 +68,25 @@ let mySwiperTeamMain = new Swiper(teamSliderMain, {
 		nextEl: '.navigation__arrow-next',
 		prevEl: '.navigation__arrow-prev',
 	},
+	breakpoints: {  
+		0: {
+			slidesPerView: 1,
+			loop: false,
+			spaceBetween: 10,
+		},  
+		576: {
+			slidesPerView: 2,
+			loop: false,
+			spaceBetween: 30,
+		}, 
+		767: {
+			slidesPerView: 3,
+			loop: true,
+		},
+		991: {
+			slidesPerView: 4,
+		}
+	}
 });
 
 // Инициализация слайдера gallery
@@ -114,6 +142,111 @@ let mySwiperNews = new Swiper(newsSlider, {
 		prevEl: '.navigation__arrow-prev',
 	},
 });
+
+// Инициализация слайдера news-article-about
+const newsSliderAbout = document.querySelector('.about-news__slider');
+let mySwiperNewsAbout = new Swiper(newsSliderAbout, {
+	slidesPerView: 5,
+	spaceBetween: 19,
+	pagination: {
+		el: '.pagination',
+		clickable: true,
+		type: 'bullets',
+	},
+	navigation: {
+		nextEl: '.about-main__navigation-next',
+		prevEl: '.about-main__navigation-prev',
+	},
+});
+
+// Инициализация слайдера main-advantages
+const newsSliderAdvantages = document.querySelector('.about-main__card-swiper');
+
+// Создаем медиа условие, проверяющее viewports на ширину менее 768 пикселей.
+const mediaQuery = window.matchMedia('(max-width: 767px)')
+if (mediaQuery.matches) {
+  let mySwiperAdvantages = new Swiper(newsSliderAdvantages, {
+		slidesPerView: 1,
+		spaceBetween: 19,
+		pagination: {
+			el: '.pagination',
+			clickable: true,
+			type: 'bullets',
+		},
+		navigation: {
+			nextEl: '.about-main__navigation-next',
+			prevEl: '.about-main__navigation-prev',
+		},
+	});
+}
+// Инициализация слайдера services-main
+const newsSliderServicesMain = document.querySelector('.services-main__slider');
+
+// Создаем медиа условие, проверяющее viewports на ширину менее 768 пикселей.
+if (mediaQuery.matches) {
+  let mySwiperServicesMain = new Swiper(newsSliderServicesMain, {
+		slidesPerView: 1,
+		spaceBetween: 15,		
+		pagination: {
+			el: '.pagination',
+			clickable: true,
+			type: 'bullets',
+		},
+		navigation: {
+			nextEl: '.about-main__navigation-next',
+			prevEl: '.about-main__navigation-prev',
+		},
+		breakpoints: {  
+			0: {
+				spaceBetween: 10,		
+			},  
+			576: {
+				spaceBetween: 15,		
+			}, 
+		}
+	});
+}
+
+// Инициализация слайдера soon-slider-main
+const soonSliderMain = document.querySelector('.soon__slider');
+
+// Создаем медиа условие, проверяющее viewports на ширину менее 768 пикселей.
+if (mediaQuery.matches) {
+  let mySwiperSoonMain = new Swiper(soonSliderMain, {
+		slidesPerView: 1,
+		spaceBetween: 15,
+		loop: false,
+		breakpoints: {  
+			0: {
+				spaceBetween: 10,		
+			},  
+			576: {
+				spaceBetween: 15,		
+			}, 
+		}
+	});
+}
+
+// Инициализация слайдера news-main
+const newsSliderMain = document.querySelector('.news-card__slider');
+
+// Создаем медиа условие, проверяющее viewports на ширину менее 768 пикселей.
+if (mediaQuery.matches) {
+  let mySwiperNewsMain = new Swiper(newsSliderMain, {
+		slidesPerView: 1,
+		spaceBetween: 15,
+		loop: false,
+		breakpoints: {  
+			0: {
+				spaceBetween: 10,		
+			},  
+			576: {
+				spaceBetween: 15,		
+			}, 
+		}
+	});
+}
+
 
 
 // Sticky header
@@ -249,6 +382,66 @@ lightGallery(document.getElementById('lightgallery'), {
 	animateThumb: false,
 	showThumbByDefault: false
 });
+
+let socialsBtns = document.querySelectorAll('.socials-change button');
+
+// Отступ социалок при открытии модалки
+// socialsBtns.forEach(el => {
+// 	el.addEventListener('click', (e) => {
+// 		let socialsBlock = document.querySelector('.socials-change');
+// 		socialsBlock.classList.toggle('active');
+// 	});
+
+// });
+// let modalWindow = document.querySelector('.graph-modal');
+
+// modalWindow.addEventListener('click', () => {
+// 	let socialsBlock = document.querySelector('.socials-change');
+// 	socialsBlock.classList.toggle('active');
+// });
+
+// Burger
+const btnMenu = document.querySelector('#toggle');
+const menu = document.querySelector('.header__nav');
+const bodyEl = document.querySelector('body');
+let navItemAll = document.querySelectorAll('.header__nav-item');
+
+
+const toggleMenu = function () {
+	menu.classList.toggle('open');
+}
+const toggleBurger = function () {
+	btnMenu.classList.toggle('active');
+}
+const toggleMenuLine = function () {
+	menuLine1.classList.toggle('active');
+	menuLine2.classList.toggle('active');
+	menuLine3.classList.toggle('active');
+}
+const bodyOverflow = function () {
+	bodyEl.classList.toggle('hidden');
+}
+btnMenu.addEventListener('click', function (e) {
+	e.stopPropagation();
+	toggleMenu();
+	toggleBurger();
+	bodyOverflow();
+	toggleMenuLine();
+});
+navItemAll.forEach((el) => {
+	el.addEventListener("click", function () {
+		if (menu.classList.contains("open")) {
+			toggleMenu();
+			toggleBurger();
+			bodyOverflow();
+		}
+	});
+})
+
+const menuLine1 = document.querySelector('.top-bun');
+const menuLine2 = document.querySelector('.meat');
+const menuLine3 = document.querySelector('.bottom-bun');
+
 
 
 

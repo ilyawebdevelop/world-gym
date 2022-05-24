@@ -15,17 +15,23 @@
 <header class="header" id="header">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-5">
+      <div class="col-lg-4 col-xl-5">
         <div class="header__left-wrapper d-flex justify-content-between align-items-center">
           <a class="logo" href="index.html">
             <img src="img/header/logo.svg" alt="logo">
           </a>
-          <div class="header__contacts d-flex">         
+          <div class="header__contacts d-none d-lg-flex">         
             <a class="header__tel" href="tel:+73952525425">+7 (3952) 525-425</a>
+          </div>
+          <!-- Hamburger Menu -->
+          <div class="hamburger d-flex d-lg-none" id="toggle">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
           </div>
         </div>       
       </div>     
-      <div class="col-lg-7">
+      <div class="col-lg-8 col-xl-7">
         <nav class="header__nav">
           <ul class="header__nav-list justify-content-end">
             <li class="header__nav-item">
@@ -37,22 +43,55 @@
             <li class="header__nav-item">
               <a href="team.html">Команда</a>
             </li>
-            <li class="header__nav-item">
-              
+            <li class="header__nav-item">              
               <a href="timetable.html">Расписание</a>
             </li>
             <li class="header__nav-item">
               <a href="news.html">Новости и акции</a>
             </li>
-            <li class="header__nav-item">
+            <li class="header__nav-item mr-0">
               <a href="gallery.html">Галерея</a>
-            </li>          
+            </li>   
+            <li class="header__nav-item d-lg-none d-block">
+              <a href="gallery.html">Контакты</a>
+            </li>         
           </ul>
+          <div class="header__contacts d-flex justify-content-center d-lg-none">         
+            <a class="header__tel" href="tel:+73952525425">+7 (3952) 525-425</a>
+          </div>
+          <button class="d-flex d-lg-none btn-reset header__nav-open-change btn" data-graph-path="modal-booking">
+            Выбрать карту
+            <img src="img/header/Card-mob-change.svg" alt="btn-icon">
+          </button>
+          <button class="d-flex d-lg-none btn-reset header__nav-open-guest btn" data-graph-path="content-card">
+            Гостевой визит
+            <img src="img/header/Card-mob-guest.svg" alt="btn-icon">
+          </button>  
+          <div class="socials d-block d-lg-none">
+						<ul class="socials__list justify-content-center">
+							<li class="socials__item">
+								<a href="#">
+									<img src="img/socials/ok.svg" alt="socials-icon">
+								</a>
+							</li>
+							<li class="socials__item">
+								<a href="#">
+									<img src="img/socials/vk.svg" alt="socials-icon">
+								</a>
+							</li>
+							<li class="socials__item">
+								<a href="#">
+									<img src="img/socials/teleg.svg" alt="socials-icon">
+								</a>
+							</li>
+						</ul>
+					</div>        
         </nav>
       </div>
     </div>
   </div>
 </header>
+	
 		<main class="main first">
 			<!-- intro -->
 <section class="intro" id="intro">
@@ -64,7 +103,7 @@
 						<div class="swiper-wrapper">
 							<div class="swiper-slide intro__slide">
 								<div class="row">
-									<div class="col-lg-5">
+									<div class="col-lg-5 order-2 order-sm-1">
 										<div class="intro__offer">
 											<h1 class="intro__title">
 												большой заголовок
@@ -78,10 +117,10 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-lg-7">
+									<div class="col-lg-7 order-1 order-sm-2">
 										<div class="intro__image">
 											<img src="img/intro/woman.png" alt="intro-image">										
-											<form class="intro__form" action="#">
+											<form class="d-none d-sm-block intro__form" action="#">
 												<h3 class="intro__form-title">
 													Запишитесь<br> на <span>гостевой визит</span> 
 												</h3>
@@ -98,20 +137,121 @@
 													<img src="img/intro/intro-main-rect.svg" alt="form-icon">
 												</div>
 											</form>
-										</div>
+										</div>								
 									</div>
 								</div>
-							</div>
+							</div><!-- /intro__slide -->
+							<div class="swiper-slide intro__slide">
+								<div class="row">
+									<div class="col-lg-5 order-2 order-sm-1">
+										<div class="intro__offer">
+											<h1 class="intro__title">
+												большой заголовок
+											</h1>
+											<div class="intro__descr">
+												Запишись на первую тренировку ПРЯМО СЕЙЧАС! Оцени лично профессионализм команды и комфортные условия для тренировок и отдыха!
+											</div>
+											<a class="intro__link d-flex" href="service.html">
+												Подробнее
+												<img src="img/arrow/arrow-right-red.svg" alt="btn-icon">
+											</a>
+										</div>
+									</div>
+									<div class="col-lg-7 order-1 order-sm-2">
+										<div class="intro__image">
+											<img src="img/intro/woman.png" alt="intro-image">										
+											<form class="d-none d-sm-block intro__form" action="#">
+												<h3 class="intro__form-title">
+													Запишитесь<br> на <span>гостевой визит</span> 
+												</h3>
+												<input type="text" placeholder="Ваше имя">
+												<input type="tel" placeholder="Ваш телефон">
+												<button class="btn submit" type="submit">
+													<img src="img/arrow/arrow-check.svg" alt="check-icon">
+													записаться
+												</button>
+												<div class="agreement">
+													Нажимая «Записаться» я даю согласие на <span>хранение и обработку персональных данных.</span> 
+												</div>
+												<div class="intro__form-rect">
+													<img src="img/intro/intro-main-rect.svg" alt="form-icon">
+												</div>
+											</form>
+										</div>								
+									</div>
+								</div>
+							</div><!-- /intro__slide -->
+							<div class="swiper-slide intro__slide">
+								<div class="row">
+									<div class="col-lg-5 order-2 order-sm-1">
+										<div class="intro__offer">
+											<h1 class="intro__title">
+												большой заголовок
+											</h1>
+											<div class="intro__descr">
+												Запишись на первую тренировку ПРЯМО СЕЙЧАС! Оцени лично профессионализм команды и комфортные условия для тренировок и отдыха!
+											</div>
+											<a class="intro__link d-flex" href="service.html">
+												Подробнее
+												<img src="img/arrow/arrow-right-red.svg" alt="btn-icon">
+											</a>
+										</div>
+									</div>
+									<div class="col-lg-7 order-1 order-sm-2">
+										<div class="intro__image">
+											<img src="img/intro/woman.png" alt="intro-image">										
+											<form class="d-none d-sm-block intro__form" action="#">
+												<h3 class="intro__form-title">
+													Запишитесь<br> на <span>гостевой визит</span> 
+												</h3>
+												<input type="text" placeholder="Ваше имя">
+												<input type="tel" placeholder="Ваш телефон">
+												<button class="btn submit" type="submit">
+													<img src="img/arrow/arrow-check.svg" alt="check-icon">
+													записаться
+												</button>
+												<div class="agreement">
+													Нажимая «Записаться» я даю согласие на <span>хранение и обработку персональных данных.</span> 
+												</div>
+												<div class="intro__form-rect">
+													<img src="img/intro/intro-main-rect.svg" alt="form-icon">
+												</div>
+											</form>
+										</div>								
+									</div>
+								</div>
+							</div><!-- /intro__slide -->
 						</div>
 						<div class="intro__navigation">
 							<button class="intro__navigation-prev intro-arrow"><img src="img/arrow/arrow-left-white.svg" alt="arrow"></button>
 							<button class="intro__navigation-next intro-arrow"><img src="img/arrow/arrow-right-white.svg" alt="arrow"></button>
-						</div>					
+						</div>	
+						<div class="intro__pagination d-flex align-items-center"></div>				
 					</div>
 				</div>
 			</div>
 		</div><!-- /container -->
 	</div><!-- /intro-bg -->
+	<!-- <div class="container">
+		<form class="d-block d-sm-none intro__form" action="#">
+			<h3 class="intro__form-title">
+				Запишитесь<br> на <span>гостевой визит</span> 
+			</h3>
+			<input type="text" placeholder="Ваше имя">
+			<input type="tel" placeholder="Ваш телефон">
+			<button class="btn submit" type="submit">
+				<img src="img/arrow/arrow-check.svg" alt="check-icon">
+				записаться
+			</button>
+			<div class="agreement">
+				Нажимая «Записаться» я даю согласие на <span>хранение и обработку персональных данных.</span> 
+			</div>
+			<div class="intro__form-rect">
+				<img src="img/intro/intro-main-rect.svg" alt="form-icon">
+			</div>
+		</form>
+	</div> -->
+
 </section>
 
 			<!-- about-main -->
@@ -204,91 +344,81 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-3">
-				<div class="about-main__card">
-					<div class="about-main__card-img">
-						<img src="img/about/about-icon1.svg" alt="about-card-icon">
-					</div>
-					<h3 class="about-main__card-title text-center">Тренажёрный зал</h3>
-					<div class="about-main__card-descr text-center">
-						Тренажерный зал с профессиональным оборудованием
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="about-main__card">
-					<div class="about-main__card-img">
-						<img src="img/about/about-icon2.svg" alt="about-card-icon">
-					</div>
-					<h3 class="about-main__card-title text-center">Зал единоборств</h3>
-					<div class="about-main__card-descr text-center">
-						Зал для функционального тренинга и зал единоборств
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="about-main__card">
-					<div class="about-main__card-img">
-						<img src="img/about/about-icon3.svg" alt="about-card-icon">
-					</div>
-					<h3 class="about-main__card-title text-center">групповые залы</h3>
-					<div class="about-main__card-descr text-center">
-						Шесть залов групповых программ, две кардиостудии и сайкл-класс
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="about-main__card">
-					<div class="about-main__card-img">
-						<img src="img/about/about-icon4.svg" alt="about-card-icon">
-					</div>
-					<h3 class="about-main__card-title text-center">йога</h3>
-					<div class="about-main__card-descr text-center">
-						Студия йоги
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="about-main__card">
-					<div class="about-main__card-img">
-						<img src="img/about/about-icon5.svg" alt="about-card-icon">
-					</div>
-					<h3 class="about-main__card-title text-center">Бассейн</h3>
-					<div class="about-main__card-descr text-center">
-						Плавательный бассейн длиной 25м + 2 аквагорки, аквафитнес, гидромассаж
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="about-main__card">
-					<div class="about-main__card-img">
-						<img src="img/about/about-icon6.svg" alt="about-card-icon">
-					</div>
-					<h3 class="about-main__card-title text-center">Парковка</h3>
-					<div class="about-main__card-descr text-center">
-						Бесплатная парковка на 120 автомобилей для членов клуба
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="about-main__card">
-					<div class="about-main__card-img">
-						<img src="img/about/about-icon7.svg" alt="about-card-icon">
-					</div>
-					<h3 class="about-main__card-title text-center">большой зал</h3>
-					<div class="about-main__card-descr text-center">
-						Зал настольного тенниса и большой универсальный зал
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="about-main__card">
-					<div class="about-main__card-img">
-						<img src="img/about/about-icon8.svg" alt="about-card-icon">
-					</div>
-					<h3 class="about-main__card-title text-center">сауна</h3>
-					<div class="about-main__card-descr text-center">
-						Финские сауны в каждой раздевалке
+			<div class="col">
+				<div class="swiper about-main__card-swiper">
+					<div class="swiper-wrapper grid-wrapper">
+						<div class="about-main__card-slide about-main__card swiper-slide">
+							<div class="about-main__card-img">
+								<img src="img/about/about-icon1.svg" alt="about-card-icon">
+							</div>
+							<h3 class="about-main__card-title text-center">Тренажёрный зал</h3>
+							<div class="about-main__card-descr text-center">
+								Тренажерный зал с профессиональным оборудованием
+							</div>
+						</div>
+						<div class="about-main__card-slide about-main__card swiper-slide">
+							<div class="about-main__card-img">
+								<img src="img/about/about-icon2.svg" alt="about-card-icon">
+							</div>
+							<h3 class="about-main__card-title text-center">Зал единоборств</h3>
+							<div class="about-main__card-descr text-center">
+								Зал для функционального тренинга и&nbsp;зал единоборств
+							</div>
+						</div>
+						<div class="about-main__card-slide about-main__card swiper-slide">
+							<div class="about-main__card-img">
+								<img src="img/about/about-icon3.svg" alt="about-card-icon">
+							</div>
+							<h3 class="about-main__card-title text-center">групповые залы</h3>
+							<div class="about-main__card-descr text-center">
+								Шесть залов групповых программ, две кардиостудии и&nbsp;сайкл-класс
+							</div>
+						</div>
+						<div class="about-main__card-slide about-main__card swiper-slide">
+							<div class="about-main__card-img">
+								<img src="img/about/about-icon4.svg" alt="about-card-icon">
+							</div>
+							<h3 class="about-main__card-title text-center">йога</h3>
+							<div class="about-main__card-descr text-center">
+								Студия йоги
+							</div>
+						</div>
+						<div class="about-main__card-slide about-main__card swiper-slide">
+							<div class="about-main__card-img">
+								<img src="img/about/about-icon5.svg" alt="about-card-icon">
+							</div>
+							<h3 class="about-main__card-title text-center">Бассейн</h3>
+							<div class="about-main__card-descr text-center">
+								Плавательный бассейн длиной 25м + 2&nbsp;аквагорки, аквафитнес, гидромассаж
+							</div>
+						</div>
+						<div class="about-main__card-slide about-main__card swiper-slide">
+							<div class="about-main__card-img">
+								<img src="img/about/about-icon6.svg" alt="about-card-icon">
+							</div>
+							<h3 class="about-main__card-title text-center">Парковка</h3>
+							<div class="about-main__card-descr text-center">
+								Бесплатная парковка на&nbsp;120 автомобилей для членов клуба
+							</div>
+						</div>
+						<div class="about-main__card-slide about-main__card swiper-slide">
+							<div class="about-main__card-img">
+								<img src="img/about/about-icon7.svg" alt="about-card-icon">
+							</div>
+							<h3 class="about-main__card-title text-center">большой зал</h3>
+							<div class="about-main__card-descr text-center">
+								Зал настольного тенниса и&nbsp;большой универсальный зал
+							</div>
+						</div>
+						<div class="about-main__card-slide about-main__card swiper-slide">
+							<div class="about-main__card-img">
+								<img src="img/about/about-icon8.svg" alt="about-card-icon">
+							</div>
+							<h3 class="about-main__card-title text-center">сауна</h3>
+							<div class="about-main__card-descr text-center">
+								Финские сауны в каждой раздевалке
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -326,113 +456,123 @@
 <section class="services-main" id="services-main">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6">
+			<div class="col">
 				<h2 class="services-main__title section-title">
 					Услуги
 				</h2>
 			</div>
-			<div class="col-lg-6">
-				<a class="services-main__btn btn" href="services.html">
+			<div class="col">
+				<a class="services-main__btn btn d-none d-md-flex" href="services.html">
 					<img src="img/about/about-btn-icon.svg" alt="btn-icon">
 					Все услуги
 				</a>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-3">
-				<a class="services-main__link" href="service.html">
-					<div class="services-main__card d-flex flex-column justify-content-end"
-					style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.04%, #000000 100%), url('img/services/services-img1.png') no-repeat center center / cover;">
-					<div class="services-main__card-bottom d-flex flex-column justify-content-end"
-						style="background: url('img/services/rectangle-gray.svg') no-repeat center center / cover; height: 152px;">
-						<h3 class="services-main__card-title">
-							Персональный тренинг
-						</h3>
-					</div>
-					<div class="services-main__card-overlay">
-						<div class="services-main__card-offer_hover">
-							<h3 class="services-main__card-title">
-								Персональный тренинг
-							</h3>
-							<div class="services-main__card-text_hover">
-								Соблюдение определённых ограничений в рационе вовсе не означает, что вы должны исключить из ежедневного
-								меню все ваши любимые продукты и отдать предпочтение невкусной, но полезной пище.
+			<div class="col">
+				<div class="services-main__slider swiper">
+					<div class="swiper-wrapper grid-wrapper">
+						<a class="services-main__link swiper-slide" href="service.html">
+							<div class="services-main__card d-flex flex-column justify-content-end"
+								style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.04%, #000000 100%), url('img/services/services-img1.png') no-repeat center center / cover;">
+								<div class="services-main__card-bottom d-flex flex-column justify-content-end"
+									style="background: url('img/services/rectangle-gray.svg') no-repeat center center / cover; height: 152px;">
+									<h3 class="services-main__card-title">
+										Персональный тренинг
+									</h3>
+								</div>
+								<div class="services-main__card-overlay">
+									<div class="services-main__card-offer_hover">
+										<h3 class="services-main__card-title">
+											Персональный тренинг
+										</h3>
+										<div class="services-main__card-text_hover">
+											Соблюдение определённых ограничений в рационе вовсе не означает, что вы должны исключить из
+											ежедневного
+											меню все ваши любимые продукты и отдать предпочтение невкусной, но полезной пище.
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-				</a>
+						</a><!-- /swiper-slide -->
+						<a class="services-main__link swiper-slide" href="service.html">
+							<div class="services-main__card d-flex flex-column justify-content-end"
+								style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.04%, #000000 100%), url('img/services/services-img2.png') no-repeat center center / cover;">
+								<div class="services-main__card-bottom d-flex flex-column justify-content-end"
+									style="background: url('img/services/rectangle-red.svg') no-repeat center center / cover; height: 187px;">
+									<h3 class="services-main__card-title">
+										Зал функционального тренинга
+									</h3>
+								</div>
+								<div class="services-main__card-overlay">
+									<div class="services-main__card-offer_hover">
+										<h3 class="services-main__card-title">
+											Зал функционального тренинга
+										</h3>
+										<div class="services-main__card-text_hover">
+											Соблюдение определённых ограничений в рационе вовсе не означает, что вы должны исключить из
+											ежедневного
+											меню все ваши любимые продукты и отдать предпочтение невкусной, но полезной пище.
+										</div>
+									</div>
+								</div>
+							</div>
+						</a><!-- /swiper-slide -->
+						<a class="services-main__link swiper-slide" href="service.html">
+							<div class="services-main__card d-flex flex-column justify-content-end"
+								style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.04%, #000000 100%), url('img/services/services-img3.png') no-repeat center center / cover;">
+								<div class="services-main__card-bottom d-flex flex-column justify-content-end"
+									style="background: url('img/services/rectangle-red-left.svg') no-repeat center center / cover; height: 180px;">
+									<h3 class="services-main__card-title">
+										Тренажёрный зал
+									</h3>
+								</div>
+								<div class="services-main__card-overlay">
+									<div class="services-main__card-offer_hover">
+										<h3 class="services-main__card-title">
+											Тренажёрный зал
+										</h3>
+										<div class="services-main__card-text_hover">
+											Соблюдение определённых ограничений в рационе вовсе не означает, что вы должны исключить из
+											ежедневного
+											меню все ваши любимые продукты и отдать предпочтение невкусной, но полезной пище.
+										</div>
+									</div>
+								</div>
+							</div>
+						</a><!-- /swiper-slide -->
+						<a class="services-main__link swiper-slide" href="service.html">
+							<div class="services-main__card d-flex flex-column justify-content-end"
+								style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.04%, #000000 100%), url('img/services/services-img4.png') no-repeat center center / cover;">
+								<div class="services-main__card-bottom d-flex flex-column justify-content-end"
+									style="background: url('img/services/rectangle-gray.svg') no-repeat center center / cover; height: 150px;">
+									<h3 class="services-main__card-title">
+										Бассейн
+									</h3>
+								</div>
+								<div class="services-main__card-overlay">
+									<div class="services-main__card-offer_hover">
+										<h3 class="services-main__card-title">
+											Бассейн
+										</h3>
+										<div class="services-main__card-text_hover">
+											Соблюдение определённых ограничений в рационе вовсе не означает, что вы должны исключить из
+											ежедневного
+											меню все ваши любимые продукты и отдать предпочтение невкусной, но полезной пище.
+										</div>
+									</div>
+								</div>
+							</div>
+						</a><!-- /swiper-slide -->
+					</div><!-- /swiper-wrapper -->				
+				</div><!-- /swiper-slider -->
 			</div>
-			<div class="col-lg-3">
-				<a class="services-main__link" href="service.html">
-					<div class="services-main__card d-flex flex-column justify-content-end"
-					style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.04%, #000000 100%), url('img/services/services-img2.png') no-repeat center center / cover;">
-					<div class="services-main__card-bottom d-flex flex-column justify-content-end"
-						style="background: url('img/services/rectangle-red.svg') no-repeat center center / cover; height: 187px;">
-						<h3 class="services-main__card-title">
-							Зал функционального тренинга
-						</h3>
-					</div>
-					<div class="services-main__card-overlay">
-						<div class="services-main__card-offer_hover">
-							<h3 class="services-main__card-title">
-								Зал функционального тренинга
-							</h3>
-							<div class="services-main__card-text_hover">
-								Соблюдение определённых ограничений в рационе вовсе не означает, что вы должны исключить из ежедневного
-								меню все ваши любимые продукты и отдать предпочтение невкусной, но полезной пище.
-							</div>
-						</div>
-					</div>
-				</div>
-				</a>	
-			</div>
-			<div class="col-lg-3">
-				<a class="services-main__link" href="service.html">
-					<div class="services-main__card d-flex flex-column justify-content-end"
-					style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.04%, #000000 100%), url('img/services/services-img3.png') no-repeat center center / cover;">
-					<div class="services-main__card-bottom d-flex flex-column justify-content-end"
-						style="background: url('img/services/rectangle-red-left.svg') no-repeat center center / cover; height: 180px;">
-						<h3 class="services-main__card-title">
-							Тренажёрный зал
-						</h3>
-					</div>
-					<div class="services-main__card-overlay">
-						<div class="services-main__card-offer_hover">
-							<h3 class="services-main__card-title">
-								Тренажёрный зал
-							</h3>
-							<div class="services-main__card-text_hover">
-								Соблюдение определённых ограничений в рационе вовсе не означает, что вы должны исключить из ежедневного
-								меню все ваши любимые продукты и отдать предпочтение невкусной, но полезной пище.
-							</div>
-						</div>
-					</div>
-				</div>
-				</a>		
-			</div>
-			<div class="col-lg-3">
-				<a class="services-main__link" href="service.html">
-					<div class="services-main__card d-flex flex-column justify-content-end"
-					style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.04%, #000000 100%), url('img/services/services-img4.png') no-repeat center center / cover;">
-					<div class="services-main__card-bottom d-flex flex-column justify-content-end"
-						style="background: url('img/services/rectangle-gray.svg') no-repeat center center / cover; height: 150px;">
-						<h3 class="services-main__card-title">
-							Бассейн
-						</h3>
-					</div>
-					<div class="services-main__card-overlay">
-						<div class="services-main__card-offer_hover">
-							<h3 class="services-main__card-title">
-								Бассейн
-							</h3>
-							<div class="services-main__card-text_hover">
-								Соблюдение определённых ограничений в рационе вовсе не означает, что вы должны исключить из ежедневного
-								меню все ваши любимые продукты и отдать предпочтение невкусной, но полезной пище.
-							</div>
-						</div>
-					</div>
-				</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<a class="services-main__btn btn d-flex d-md-none" href="services.html">
+					<img src="img/about/about-btn-icon.svg" alt="btn-icon">
+					Все услуги
 				</a>
 			</div>
 		</div>
@@ -468,7 +608,7 @@
 									</div>
 								</div>								
 							</div>
-							<div class="booking-form__bottom d-flex justify-content-between align-items-center">
+							<div class="booking-form__bottom d-flex justify-content-between align-items-start align-items-sm-center">
 								<button class="btn submit" type="submit">
 									<img src="img/arrow/arrow-check.svg" alt="check-icon">
 									записаться
@@ -480,7 +620,7 @@
 						</form>
 					</div>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 booking-main__image-wrapper">
 					<div class="booking-main__image">
 						<img src="img/booking/woman1.png" alt="booking-image">
 					</div>
@@ -495,16 +635,16 @@
 	<div class="soon__bg">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-6 d-flex d-md-block justify-content-between align-items-center soon__title-wrapper">
 					<h2 class="soon__title">
 						Ближайшие тренировки
 					</h2>
-					<div class="soon__date d-flex align-items-center">
+					<div class="soon__date d-flex align-items-end align-items-md-center">
 						<div class="soon__date-day">Вторник</div>
 						<div class="soon__date-date">15 февраля</div>
 					</div>
 				</div>
-				<div class="col-lg-6 justify-content-end">
+				<div class="col-lg-6 justify-content-end d-none d-lg-block">
 					<a class="soon__btn btn" href="timetable.html">
 						<img src="img/about/about-btn-icon.svg" alt="btn-icon">
 						Расписание всех занятий
@@ -512,108 +652,125 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-3">
-					<a class="soon__card-link" href="service.html">
-						<div class="soon__card">
-							<div class="soon__card-time">07:00 - 08:00</div>
-							<div class="soon__card-title">
-								Самостоятельная тренировка в тренажерном зале
-							</div>
-							<div class="soon__card-subtitle">Тренажерный зал</div>
-							<div class="soon__card-name">Бабаев Сергей</div>
-							<div class="soon__card-length">45 мин</div>
+				<div class="col">
+
+					<div class="soon__slider swiper">
+						<div class="swiper-wrapper">
+							<a class="soon__card-link swiper-slide" href="service.html">
+								<div class="soon__card">
+									<div class="soon__card-time">07:00 - 08:00</div>
+									<div class="soon__card-title">
+										Самостоятельная тренировка в тренажерном зале
+									</div>
+									<div class="soon__card-subtitle">Тренажерный зал</div>
+									<div class="soon__card-name">Бабаев Сергей</div>
+									<div class="soon__card-length">45 мин</div>
+								</div>
+							</a>
+			
+					
+							<a class="soon__card-link swiper-slide" href="service.html">
+								<div class="soon__card">
+									<div class="soon__card-time">07:00 - 08:00</div>
+									<div class="soon__card-title">
+										Самостоятельная тренировка в тренажерном зале
+									</div>
+									<div class="soon__card-subtitle">Тренажерный зал</div>
+									<div class="soon__card-name">Бабаев Сергей</div>
+									<div class="soon__card-length">45 мин</div>
+								</div>
+							</a>
+					
+					
+							<a class="soon__card-link swiper-slide" href="service.html">
+								<div class="soon__card">
+									<div class="soon__card-time">07:00 - 08:00</div>
+									<div class="soon__card-title">
+										Функциональная тренировка
+									</div>
+									<div class="soon__card-subtitle">Зал Функционального Треннинга</div>
+									<div class="soon__card-name">Ковальчук Ирина</div>
+									<div class="soon__card-length">60 мин</div>
+								</div>
+							</a>
+					
+					
+							<a class="soon__card-link swiper-slide" href="service.html">
+								<div class="soon__card">
+									<div class="soon__card-time">07:00 - 08:00</div>
+									<div class="soon__card-title">
+										Функциональная тренировка
+									</div>
+									<div class="soon__card-subtitle">Зал Функционального Треннинга</div>
+									<div class="soon__card-name">Ковальчук Ирина</div>
+									<div class="soon__card-length">60 мин</div>
+								</div>
+					
+					
+							<a class="soon__card-link swiper-slide" href="service.html">
+								<div class="soon__card">
+									<div class="soon__card-time">07:00 - 08:00</div>
+									<div class="soon__card-title">
+										Самостоятельная тренировка в тренажерном зале
+									</div>
+									<div class="soon__card-subtitle">Тренажерный зал</div>
+									<div class="soon__card-name">Бабаев Сергей</div>
+									<div class="soon__card-length">45 мин</div>
+								</div>
+							</a>
+				
+					
+							<a class="soon__card-link swiper-slide" href="service.html">
+								<div class="soon__card">
+									<div class="soon__card-time">07:00 - 08:00</div>
+									<div class="soon__card-title">
+										Функциональная тренировка
+									</div>
+									<div class="soon__card-subtitle">Зал Функционального Треннинга</div>
+									<div class="soon__card-name">Ковальчук Ирина</div>
+									<div class="soon__card-length">60 мин</div>
+								</div>
+							</a>
+					
+						
+							<a class="soon__card-link swiper-slide" href="service.html">
+								<div class="soon__card">
+									<div class="soon__card-time">07:00 - 08:00</div>
+									<div class="soon__card-title">
+										Функциональная тренировка
+									</div>
+									<div class="soon__card-subtitle">Зал Функционального Треннинга</div>
+									<div class="soon__card-name">Ковальчук Ирина</div>
+									<div class="soon__card-length">60 мин</div>
+								</div>
+							</a>
+				
+					
+							<a class="soon__card-link swiper-slide" href="service.html">
+								<div class="soon__card">
+									<div class="soon__card-time">07:00 - 08:00</div>
+									<div class="soon__card-title">
+										Самостоятельная тренировка в тренажерном зале
+									</div>
+									<div class="soon__card-subtitle">Тренажерный зал</div>
+									<div class="soon__card-name">Бабаев Сергей</div>
+									<div class="soon__card-length">45 мин</div>
+								</div>
+							</a>
 						</div>
-					</a>
+
+					
+					</div>
 				</div>
-				<div class="col-lg-3">
-					<a class="soon__card-link" href="service.html">
-						<div class="soon__card">
-							<div class="soon__card-time">07:00 - 08:00</div>
-							<div class="soon__card-title">
-								Самостоятельная тренировка в тренажерном зале
-							</div>
-							<div class="soon__card-subtitle">Тренажерный зал</div>
-							<div class="soon__card-name">Бабаев Сергей</div>
-							<div class="soon__card-length">45 мин</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3">
-					<a class="soon__card-link" href="service.html">
-						<div class="soon__card">
-							<div class="soon__card-time">07:00 - 08:00</div>
-							<div class="soon__card-title">
-								Функциональная тренировка
-							</div>
-							<div class="soon__card-subtitle">Зал Функционального Треннинга</div>
-							<div class="soon__card-name">Ковальчук Ирина</div>
-							<div class="soon__card-length">60 мин</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3">
-					<a class="soon__card-link" href="service.html">
-						<div class="soon__card">
-							<div class="soon__card-time">07:00 - 08:00</div>
-							<div class="soon__card-title">
-								Функциональная тренировка
-							</div>
-							<div class="soon__card-subtitle">Зал Функционального Треннинга</div>
-							<div class="soon__card-name">Ковальчук Ирина</div>
-							<div class="soon__card-length">60 мин</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3">
-					<a class="soon__card-link" href="service.html">
-						<div class="soon__card">
-							<div class="soon__card-time">07:00 - 08:00</div>
-							<div class="soon__card-title">
-								Самостоятельная тренировка в тренажерном зале
-							</div>
-							<div class="soon__card-subtitle">Тренажерный зал</div>
-							<div class="soon__card-name">Бабаев Сергей</div>
-							<div class="soon__card-length">45 мин</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3">
-					<a class="soon__card-link" href="service.html">
-						<div class="soon__card">
-							<div class="soon__card-time">07:00 - 08:00</div>
-							<div class="soon__card-title">
-								Функциональная тренировка
-							</div>
-							<div class="soon__card-subtitle">Зал Функционального Треннинга</div>
-							<div class="soon__card-name">Ковальчук Ирина</div>
-							<div class="soon__card-length">60 мин</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3">
-					<a class="soon__card-link" href="service.html">
-						<div class="soon__card">
-							<div class="soon__card-time">07:00 - 08:00</div>
-							<div class="soon__card-title">
-								Функциональная тренировка
-							</div>
-							<div class="soon__card-subtitle">Зал Функционального Треннинга</div>
-							<div class="soon__card-name">Ковальчук Ирина</div>
-							<div class="soon__card-length">60 мин</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-lg-3">
-					<a class="soon__card-link" href="service.html">
-						<div class="soon__card">
-							<div class="soon__card-time">07:00 - 08:00</div>
-							<div class="soon__card-title">
-								Самостоятельная тренировка в тренажерном зале
-							</div>
-							<div class="soon__card-subtitle">Тренажерный зал</div>
-							<div class="soon__card-name">Бабаев Сергей</div>
-							<div class="soon__card-length">45 мин</div>
-						</div>
+			
+				
+			
+			</div>
+			<div class="row">
+				<div class="col d-block d-lg-none">
+					<a class="soon__btn btn" href="timetable.html">
+						<img src="img/about/about-btn-icon.svg" alt="btn-icon">
+						Расписание всех занятий
 					</a>
 				</div>
 			</div>
@@ -629,7 +786,7 @@
 					Наша команда
 				</h2>				
 			</div>
-			<div class="col-lg-6 justify-content-end">
+			<div class="col-lg-6 justify-content-end d-none d-lg-block">
 				<a class="team-main__btn btn" href="team.html">
 					<img src="img/about/about-btn-icon.svg" alt="btn-icon">
 					Все тренеры
@@ -721,11 +878,19 @@
 				<button class="navigation__arrow-prev navigation-arrow"><img src="img/arrow/arrow-left-white.svg" alt="arrow"></button>
 			</div>
 			<div class="col-lg-10">
-				<div class="pagination"></div>
+				<div class="pagination_team"></div>
 			</div>
 			<div class="col-lg-1 text-end">
 				<button class="navigation__arrow-next navigation-arrow"><img src="img/arrow/arrow-right-white.svg" alt="arrow"></button>
 			</div>	
+		</div>
+		<div class="row">
+			<div class="col d-block d-lg-none">
+				<a class="team-main__btn btn" href="team.html">
+					<img src="img/about/about-btn-icon.svg" alt="btn-icon">
+					Все тренеры
+				</a>	
+			</div>
 		</div>
 	</div><!-- /container -->
 </section>
@@ -739,7 +904,7 @@
 					Новости <span>и</span> акции
 				</h2>				
 			</div>
-			<div class="col-lg-6 justify-content-end">
+			<div class="col-lg-6 justify-content-end d-none d-lg-block">
 				<a class="news-main__btn btn" href="news.html">
 					<img src="img/about/about-btn-icon.svg" alt="btn-icon">
 					Все новости и акции
@@ -747,58 +912,73 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-6">
-				<div class="news-card">
-					<a href="#">
-						<div class="news-card__top" style="background: url('img/news/news-img1.png') no-repeat center top / cover;">
-							<div class="news-card__top-title num">
-								<span>-20%</span>
-								Счастливый понедельник
+			<div class="col">
+				<div class="news-card__slider swiper">
+					<div class="swiper-wrapper">
+						<div class="news-card swiper-slide">
+							<a href="#">
+								<div class="news-card__top" style="background: url('img/news/news-img1.png') no-repeat center top / cover;">
+									<div class="news-card__top-title num">
+										<span>-20%</span>
+										Счастливый понедельник
+									</div>
+								</div>
+							</a>				
+							<div class="news-card__bottom">
+								<div class="news-card__date">
+									15 февраля
+								</div>
+								<h3 class="news-card__bottom-title">
+									<span>Скидка</span>
+									на гостевой визит <br> по понедельникам в дневное время
+								</h3>
+								<p>
+									Соблюдение определённых ограничений в рационе вовсе не означает, что вы должны исключить из ежедневного меню все ваши любимые продукты и отдать предпочтение невкусной, но полезной пище.
+								</p>
+								<a href="services.html">Все услуги</a>
 							</div>
-						</div>
-					</a>				
-					<div class="news-card__bottom">
-						<div class="news-card__date">
-							15 февраля
-						</div>
-						<h3 class="news-card__bottom-title">
-							<span>Скидка</span>
-							на гостевой визит <br> по понедельникам в дневное время
-						</h3>
-						<p>
-							Соблюдение определённых ограничений в рационе вовсе не означает, что вы должны исключить из ежедневного меню все ваши любимые продукты и отдать предпочтение невкусной, но полезной пище.
-						</p>
-						<a href="services.html">Все услуги</a>
-					</div>
-				</div><!-- /news-card -->				
-			</div>
-			<div class="col-lg-6">
-				<div class="news-card">
-					<a href="instructor.html">
-						<div class="news-card__top" style="background: url('img/news/news-img2.png') no-repeat center -120px / cover;">
-							<div class="news-card__top-title name">
-								<span>Леонид</span>
-								Твой персональный
-								<div class="text-end">тренер</div>
+						</div><!-- /news-card -->				
+			
+			
+						<div class="news-card swiper-slide">
+							<a href="instructor.html">
+								<div class="news-card__top" style="background: url('img/news/news-img2.png') no-repeat center -120px / cover;">
+									<div class="news-card__top-title name">
+										<span>Леонид</span>
+										Твой персональный
+										<div class="text-end">тренер</div>
+									</div>
+								</div>
+							</a>				
+							<div class="news-card__bottom">
+								<div class="news-card__date">
+									2 января
+								</div>
+								<h3 class="news-card__bottom-title">
+									<span>Важная новость:</span>
+									Красивый загорелый инсруктор Леонид
+								</h3>
+								<p>
+									Соблюдение определённых ограничений в рационе вовсе не означает, что вы должны исключить из ежедневного меню.
+								</p>
+								<a href="#">Персональный тренинг</a>
 							</div>
-						</div>
-					</a>				
-					<div class="news-card__bottom">
-						<div class="news-card__date">
-							2 января
-						</div>
-						<h3 class="news-card__bottom-title">
-							<span>Важная новость:</span>
-							Красивый загорелый инсруктор Леонид
-						</h3>
-						<p>
-							Соблюдение определённых ограничений в рационе вовсе не означает, что вы должны исключить из ежедневного меню.
-						</p>
-						<a href="#">Персональный тренинг</a>
+						</div><!-- /news-card -->		
 					</div>
-				</div><!-- /news-card -->				
+				</div>
 			</div>
+		
+			
+	
 		</div>		
+		<div class="row">
+			<div class="col d-block d-lg-none">
+				<a class="news-main__btn btn" href="news.html">
+					<img src="img/about/about-btn-icon.svg" alt="btn-icon">
+					Все новости и акции
+				</a>
+			</div>
+		</div>
 	</div><!-- /container -->
 </section>
 
@@ -889,7 +1069,7 @@
 							<div class="form-control w-100">
 								<textarea id="contacts-form__textarea" placeholder="Задайте свой вопрос"></textarea>							
 							</div>
-							<div class="contacts-form__bottom d-flex justify-content-between align-items-center">
+							<div class="contacts-form__bottom d-flex justify-content-between align-items-start align-items-xl-center">
 								<button class="contacts-form__btn btn" type="submit">
 									<img src="img/arrow/arrow-check.svg" alt="btn-icon">
 									Отправить
@@ -928,6 +1108,7 @@
 	</div>
 </section>
 
+			
 		</main>
 		<!-- footer -->
 <footer class="footer" id="footer">
@@ -935,7 +1116,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3">
-					<a href="index.html">
+					<a class="footer__logo" href="index.html">
 						<img src="img/header/logo.svg" alt="logo">
 					</a>
 				</div>
@@ -945,12 +1126,12 @@
             Микрорайон Радужный, 4
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-4">
 					<a class="footer__tel" href="tel:+73952525425">+7 (3952) 52-54-25</a>
 				</div>
-				<div class="col-lg-3 justify-content-end">
+				<div class="col-lg-2 justify-content-end">
 					<div class="socials">
-						<ul class="socials__list justify-content-end">
+						<ul class="socials__list justify-content-start justify-content-lg-end">
 							<li class="socials__item">
 								<a href="#">
 									<img src="img/socials/ok.svg" alt="socials-icon">
@@ -974,7 +1155,7 @@
 	</div><!-- /footer__top -->
 	<div class="footer__bottom">
 		<div class="container">
-			<div class="row align-items-center">
+			<div class="row align-items-start align-items-xl-center">
 				<div class="col-lg-3">
 					<div class="copyright">
 						© Все права защищены, 2022
@@ -982,7 +1163,7 @@
 				</div>	
 				<div class="col-lg-6">
 					<div class="politics">
-						<ul class="politics__list d-flex justify-content-center">
+						<ul class="politics__list d-block d-lg-flex justify-content-center">
 							<li class="politics__item">
 								<a href="#">Правила</a>
 							</li>
@@ -996,7 +1177,7 @@
 					</div>
 				</div>	
 				<div class="col-lg-3">
-					<div class="develop d-flex justify-content-end">
+					<div class="develop d-flex justify-content-start justify-content-lg-end">
 						<img src="img/footer/footer-icon.svg" alt="develop-icon">
 						<div class="develop__website">
 							Разработка сайта - <a href="вангер.рф">Вангер.рф</a>
@@ -1009,32 +1190,6 @@
 	<div class="footer__rect"><img src="img/footer/footer-rect.svg" alt="footer-abstract-image"></div>
 </footer>
 
-		<!-- socials-change -->
-<div class="socials-change"> 
-  <button class="btn-reset socials-change__card-guest d-flex justify-content-center align-items-center" data-graph-path="modal-card-change">
-    <img src="img/socials/card-guest.svg" alt="btn-icon">
-  </button>
-  <button class="btn-reset socials-change__btn-change" data-graph-path="modal-booking">
-    <img src="img/socials/card-change-icon.svg" alt="btn-icon">
-  </button>
-  <ul class="socials-change__list">
-    <li class="socials-change__item">
-      <a href="#">
-        <img src="img/socials/ok.svg" alt="socials-icon">
-      </a>
-    </li>
-    <li class="socials-change__item">
-      <a href="#">
-        <img src="img/socials/vk.svg" alt="socials-icon">
-      </a>
-    </li>
-    <li class="socials-change__item">
-      <a href="#">
-        <img src="img/socials/teleg.svg" alt="socials-icon">
-      </a>
-    </li>
-  </ul>
-</div>
 		<!-- modal -->
 
 <div class="graph-modal modal-content-card">
@@ -1059,6 +1214,10 @@
             <span class="graph-modal__annotation-title">Плавательный бассейн</span>
             <span class="graph-modal__annotation-name">Бабаев Сергей</span>
           </div>
+          <button class="graph-modal__btn-guest btn">
+            Записаться на гостевой визит
+            <img src="img/socials/card-guest.svg" alt="btn-icon">      
+          </button>
         </div>
         <div class="graph-modal__right">
           <div class="graph-modal__time">
@@ -1066,15 +1225,22 @@
             <div class="graph-modal__minute">45 мин</div>
             <div class="graph-modal__day">сегодня, завтра, в субботу</div>
           </div>
+          <div class="graph-modal__btns">
+            <div class="graph-modal__right-title">
+              Скачать приложение:
+            </div>
+            <a class="btn graph-app first" href="#">
+              <img src="img/modal/appstore.svg" alt="icon">
+              AppStore
+            </a>
+            <a class="btn graph-app" href="#">
+              <img src="img/modal/googleplay.svg" alt="icon">
+              GooglePlay
+            </a>
+          </div>
         </div>
       </div>
-      <div class="graph-modal__btns">
-        <button class="graph-modal__btn-guest btn">
-          Записаться на гостевой визит
-          <img src="img/intro/guest-icon.svg" alt="btn-icon">
-        </button>
-        <a href="#" class="graph-modal__btn-append btn">Приложение</a>
-      </div>
+     
     </div>
   </div>
 
@@ -1279,62 +1445,40 @@
 
 
 </div>
+		<!-- socials-change -->
+<div class="socials-change"> 
+  <button class="btn-reset socials-change__card-guest d-flex justify-content-center align-items-center" data-graph-path="modal-card-change">
+    <span>Гостевой визит</span>
+    <img src="img/socials/card-guest.svg" alt="btn-icon">    
+  </button>
+  <button class="btn-reset socials-change__btn-change" data-graph-path="modal-booking">
+    <span>Выбрать карту</span>
+    <img src="img/socials/card-change-icon.svg" alt="btn-icon">
+  </button>
+  <ul class="socials-change__list">
+    <li class="socials-change__item">
+      <a href="#">
+        <img src="img/socials/ok.svg" alt="socials-icon">
+      </a>
+    </li>
+    <li class="socials-change__item">
+      <a href="#">
+        <img src="img/socials/vk.svg" alt="socials-icon">
+      </a>
+    </li>
+    <li class="socials-change__item">
+      <a href="#">
+        <img src="img/socials/teleg.svg" alt="socials-icon">
+      </a>
+    </li>
+  </ul>
+</div>
 
 	</div>
 
 	<script src="js/app.min.js"></script>
 
-	<script>
-		// Modal Cards Select Styles
-		let selectSingleSecond = document.querySelector('.__select-second');
-		let selectSingleSecond_title = selectSingleSecond.querySelector('.__select__title-second');
-		let selectSingleSecond_labels = selectSingleSecond.querySelectorAll('.__select__label');
-
-		console.log(selectSingleSecond_title);
-		// Toggle menu
-		selectSingleSecond_title.addEventListener('click', () => {
-			console.log('TSAD');
-			if ('active' === selectSingleSecond.getAttribute('data-state')) {
-				selectSingleSecond.setAttribute('data-state', '');
-			} else {
-				selectSingleSecond.setAttribute('data-state', 'active');
-			}
-		});
-
-		// Close when click to option
-		for (let i = 0; i < selectSingleSecond_labels.length; i++) {
-			selectSingleSecond_labels[i].addEventListener('click', (evt) => {
-				selectSingleSecond_title.textContent = evt.target.textContent;
-				selectSingleSecond.setAttribute('data-state', '');
-			});
-		}
-
-	</script>
-	<script>
-		// Modal Cards Select Styles
-		let selectSingle = document.querySelector('.__select');
-		let selectSingle_title = selectSingle.querySelector('.__select__title');
-		let selectSingle_labels = selectSingle.querySelectorAll('.__select__label');
-
-		console.log(selectSingle_title);
-		// Toggle menu
-		selectSingle_title.addEventListener('click', () => {
-			console.log('TSAD');
-			if ('active' === selectSingle.getAttribute('data-state')) {
-				selectSingle.setAttribute('data-state', '');
-			} else {
-				selectSingle.setAttribute('data-state', 'active');
-			}
-		});
-
-		// Close when click to option
-		for (let i = 0; i < selectSingle_labels.length; i++) {
-			selectSingle_labels[i].addEventListener('click', (evt) => {
-				selectSingle_title.textContent = evt.target.textContent;
-				selectSingle.setAttribute('data-state', '');
-			});
-		}
-	</script>
+	
 
 </body>
 

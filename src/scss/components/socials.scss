@@ -36,3 +36,63 @@
     }
   }
 }
+.socials-change__btn-change {
+  &:hover {
+    content: '123';
+  }
+}
+.socials-change__card-guest {
+  transition: width .3s linear;
+  span {
+    
+    font-size: 0;
+    // transition: width .2s linear, font-size .5s linear .5s;
+    transition-property: all;
+    transition-timing-function: ease-in;
+    transition-duration: .3s;
+    transition-delay: 0s 5s;
+  }
+  &:hover {
+    width: 220px;
+
+    span {
+      transition-delay: .5s;     
+      font-size: 18px;
+      font-family: $font-family-second;
+      font-weight: $bold;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      color: #EBEBEE;
+      margin-right: 10px;
+    }
+  }
+}
+
+.socials-change__btn-change {
+  transition: width .3s linear;
+  span {
+    
+    font-size: 0;
+    // transition: width .2s linear, font-size .5s linear .5s;
+    transition-property: all;
+    transition-timing-function: ease-in;
+    transition-duration: .3s;
+    transition-delay: 0s 5s;
+  }
+  &:hover {
+    width: 220px;
+
+    span {
+      transition-delay: .5s;     
+      font-size: 18px;
+      font-family: $font-family-second;
+      font-weight: $bold;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      color: #EBEBEE;
+      margin-right: 10px;
+    }
+  }
+}

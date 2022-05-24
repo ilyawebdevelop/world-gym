@@ -1,5 +1,6 @@
 // news
 .news-main {
+  overflow: hidden;
   padding-bottom: 90px;
   background: $dark-color;
   &__title {
@@ -8,6 +9,9 @@
       text-transform: lowercase;
       color: $main-color;
     }
+  }
+  @media (max-width: 991px){
+    padding-bottom: 45px;
   }
 }
 .news-card {
@@ -29,6 +33,10 @@
         line-height: 78px;
         text-transform: uppercase;
         color: #F5333F;
+        @media (max-width: 575px){
+          font-size: 36px;
+          line-height: 44px;          
+        }
       }
       &.name {
         span {
@@ -37,18 +45,30 @@
         }       
       }
     }   
+    @media (max-width: 575px){
+      height: 190px;
+      padding: 4px 32px;
+    }
   } 
   &__bottom {
     padding: 0 60px 0 45px;
     &-title {
       margin-top: 24px;
       margin-bottom: 16px;
+      @media (max-width: 575px){
+        font-size: 18px;
+        line-height: 28px;        
+      }
     }
     p {
       font-weight: 400;
       font-size: 15px;
       line-height: 22px;
       margin-bottom: 24px;
+      @media (max-width: 767px){
+        font-size: 13px;
+        line-height: 20px;        
+      }
     }
     a {
       font-weight: $medium;
@@ -59,11 +79,24 @@
         opacity: 1;
       }
     }
+    @media (max-width: 1199px){
+      padding: 0 40px 0 30px;
+    }
+    @media (max-width: 575px){
+      padding: 0;
+    }
   }
   &__date {
     font-family: $font-family-second;    
+    font-weight: $regular;
     font-size: 13px;
     line-height: 20px;
+  }
+  @media (max-width: 991px){
+    margin-bottom: 50px;
+  }
+  @media (max-width: 767px){
+    margin-bottom: 30px;
   }
 }
 .news {
@@ -95,6 +128,7 @@
 }
 
 .news-article {
+  padding-top: 15px;
   background: #EBEBEE;
   padding-top: 0;
   &__title {
@@ -121,6 +155,7 @@
 		margin-bottom: 30px;
 		border-radius: 8px;
 		height: 446px;
+    position: relative;
 		img {
 			border-radius: 8px;
 			width: 100%;
@@ -139,4 +174,135 @@
 		line-height: 30px;
 		margin-bottom: 25px;
 	}
+  .news-card__top-title {
+    position: absolute;
+    top: 43px;
+    left: 74px;
+    z-index: 1;
+  }
+  .news-card-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    opacity: .4;    
+  }
+}
+
+.about-news {
+  padding-bottom: 90px;
+  &__video {
+    height: 240px;
+    .play-icon {
+      top: 40%;
+    }
+  }
+  .about-news__card-wrapper {
+    margin-top: 75px;
+  }
+  .about-main__card-title {
+    color: #EBEBEE;
+  }
+  .about-main__card-descr {
+    max-width: 288px;
+  }
+  .about-main__btn {
+    margin: 15px auto 0;
+  }
+  .about-main__navigation-next {
+    right: 0;
+  }
+  .about-main__navigation-prev {
+    left: 0;
+  }
+  .about-news-slide-img {    
+    width: 108px;
+    height: 108px;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+  .about-news__slider {
+    width: 616px;
+  }
+  .swiper-inner {
+    position: relative;
+  } 
+}
+.news-article__form {
+  margin-left: auto;
+  padding: 30px;
+  width: 325px;
+  background: #1A1B1D;
+  border-radius: 8px;
+  &-img {
+    margin-bottom: 15px;
+  }
+  &-title {
+    font-family: $font-family-second;
+    font-weight: $bold;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #EBEBEE;
+    max-width: 250px;
+    margin-bottom: 15px;
+  }
+  &-descr {   
+    font-size: 15px;
+    line-height: 22px;
+    color: #EBEBEE;   
+    margin-bottom: 15px; 
+  }
+  &-btn {
+    font-family: $font-family-second;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase; 
+    color: $main-color;    
+    margin-bottom: 15px;
+    width: 240px;
+  }
+  .agreement {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.05em;
+    color: #EBEBEE;    
+  }
+}
+
+
+.news-card__slider {
+  overflow: visible;
+  .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0px 30px;
+    .swiper-slide {
+      grid-column: 6 span;
+      @media (max-width: 991px){
+        grid-column: 12 span;     
+      }
+    }    
+    @media (max-width: 767px){
+      gap: 0;
+      display: flex;
+    }
+  }
+  @media (max-width: 575px){
+    padding: 0 70px 0 0;
+  }
+  @media (max-width: 400px) {
+    padding: 0 50px 0 0;
+  }
 }

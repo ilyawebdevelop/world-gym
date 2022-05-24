@@ -5,7 +5,19 @@
     max-width: 378px;
   }
   &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding-left: 20px;
+    &-title {
+      font-family: $font-family-second;     
+      font-weight: $bold;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+      color: $dark-color;     
+      margin-bottom: 6px; 
+    }
   }
   &__content {
     &-wrapper {
@@ -46,6 +58,7 @@
     margin-bottom: 20px;
   }
   &__annotation {
+    margin-bottom: 20px;
     &-title {
       display: block;
       font-weight: $semibold;
@@ -64,7 +77,9 @@
   &__btns {
     margin-top: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+   
   }	
   &__time {
     padding-left: 32px;
@@ -123,8 +138,6 @@
 		}
 	}
 }
-
-
 
 .modal-booking, .modal-payment {
   background: #1A1B1D;
