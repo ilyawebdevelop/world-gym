@@ -307,6 +307,9 @@
   &__offer {
     padding-bottom: 23px;
     height: 220px;
+    @media (max-width: 767px){
+      padding-bottom: 50px;
+    }
   }
   h2 {    
     position: relative;
@@ -321,20 +324,45 @@
       top: 50%;
       transform: translateY(-48%);
     }
+    @media (max-width: 991px){
+      font-size: 28px;
+      line-height: 36px;      
+    }
+  }
+  @media (max-width: 767px){
+    position: relative;
   }
 }
 .intro-team {
+  overflow: hidden;
 	background: #1A1B1D;
 	padding-top: 60px;
+  &__container {
+    @media (max-width: 991px){
+      position: relative;
+    }
+  }
 	&__bg {    
     background: url('@img/intro/intro-team-abstract.svg') no-repeat center center / cover;
   } 
 	&__img {
 		width: 376px;
+    @media (max-width: 991px){
+      margin: 0 auto;
+    }
+    @media (max-width: 575px){
+      width: 300px;
+    }
 	}
   &__offer {
     padding-bottom: 23px;
     height: 220px;
+    @media (max-width: 991px){
+      position: absolute;
+    }
+    @media (max-width: 767px){
+      padding-bottom: 60px;
+    }  
   }
   h2 {    
     position: relative;
@@ -344,17 +372,29 @@
     color: $main-color;
     text-transform: inherit;   
   }
+  @media (max-width: 767px){
+    position: relative;
+  }
 }
 
 .intro-instructor {  
+  overflow: hidden;
   background: #1A1B1D;
   padding-top: 60px;
+  &__container {
+    @media (max-width: 991px){
+      position: relative;
+    }
+  }
   &__bg {    
     background: url('@img/intro/intro-service-abstract.svg') no-repeat center center / cover;
   } 
   &__offer {
     padding-bottom: 23px;
     height: 199px;
+    @media (max-width: 767px){
+      padding-bottom: 50px;
+    }
   }
   h2 {    
     position: relative;
@@ -374,17 +414,35 @@
 			font-size: 18px;
 			line-height: 26px;		
 			color: #E9E9E9;
+      @media (max-width: 991px){
+        display: none;
+      }
 		}
+    @media (max-width: 991px){
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+  @media (max-width: 767px){
+    position: relative;
   }
 }
 
 .intro-timetable {
 	background: #1A1B1D;
 	padding-top: 0;
+  &__container {
+    @media (max-width: 991px){
+      position: relative;
+    }
+  }
 	&__bg {    
     background: url('@img/intro/intro-timetable-abstract.svg') no-repeat center center / cover;
 		&-img {
 			background: url('@img/intro/intro-timetable-img.png') no-repeat 60% bottom/1021px;
+      @media (max-width: 575px){
+        background: url('@img/intro/intro-timetable-img.png') no-repeat 60% bottom/720px;
+      }
 		}
   } 
 	&__img {
@@ -393,6 +451,9 @@
   &__offer {
     padding-bottom: 23px;
     height: 420px;
+    @media (max-width: 767px){
+      padding-bottom: 50px;
+    }
   }
   h2 {    
     position: relative;
@@ -402,11 +463,19 @@
     color: $main-color;
     text-transform: inherit;   
   }
+  @media (max-width: 767px){
+    position: relative;
+  }
 }
 
 .intro-news {
 	background: #1A1B1D;
 	padding-top: 0;
+  &__container {
+    @media (max-width: 991px){
+      position: relative;
+    }
+  }
 	&__bg {    
     background: url('@img/intro/intro-news-abstract.svg') no-repeat center center / cover;
 		&-img {
@@ -439,6 +508,13 @@
   &__offer {
     padding-bottom: 24px;
     height: 220px;
+    @media (max-width: 991px){
+      height: 330px;
+      padding-bottom: 50px;
+    }
+    @media (max-width: 767px){
+      padding-bottom: 50px;
+    }
   }
   h2 {    
     position: relative;
@@ -453,6 +529,13 @@
       top: 50%;
       transform: translateY(-48%);
     } 
+    @media (max-width: 991px){
+      font-size: 28px;
+      line-height: 36px;    
+    }   
+  }
+  @media (max-width: 767px){
+    position: relative;
   }
 }
 

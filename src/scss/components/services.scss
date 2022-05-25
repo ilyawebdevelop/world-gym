@@ -84,12 +84,26 @@
 .service {
   padding-top: 0;
   background: url('@img/services/service-slider-abstract.svg') no-repeat right -38% / 56%;
+  &__container {
+    display: flex;
+    flex-direction: column-reverse;
+    @media (max-width: 991px){
+      padding-top: 30px;
+    }
+    @media (max-width: 767px){
+      padding-top: 0;
+    }
+  }
   &__descr {
     font-weight: 400;
     font-size: 24px;
     line-height: 40px;
     margin-bottom: 30px;
     color: $dark-color;
+    @media (max-width: 991px){
+      font-size: 21px;
+      line-height: 32px;      
+    }
   }
   p {
     font-weight: 400;
@@ -97,6 +111,10 @@
     line-height: 26px;
     margin-bottom: 25px;
     color: $dark-color;
+    @media (max-width: 991px){
+      font-size: 16px;
+      line-height: 24px;      
+    }
   }
 }
 
@@ -105,6 +123,17 @@
 }
 .service__slider-lg-slide {
   height: 305px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @media (max-width: 991px){
+    height: 400px;
+  }
+  @media (max-width: 767px){
+    height: 305px;    
+  }
 }
 .service__slider-sm {
   position: relative;
@@ -135,6 +164,9 @@
   &:hover {
     opacity: .8;
   }
+  @media (max-width: 991px){
+    display: none;
+  }
 }
 .service__navigation-next { 
   z-index: 1;
@@ -148,9 +180,15 @@
   &:hover {
     opacity: .8;
   }
+  @media (max-width: 991px){
+    display: none;
+  }
 }
 .service-slider-sm-wrapper{
   position: relative;
+  @media (max-width: 991px){
+    margin-bottom: 30px;
+  }
 }
 
 .services-main__slider {

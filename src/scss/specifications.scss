@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 72px;
   line-height: 80px;   
-  color: $main-color;
+  color: $main-color; 
   @media (max-width: 991px){
     font-size: 36px;
     line-height: 48px;
@@ -112,6 +112,30 @@ h3 {
 }
 .socials-change.active {
   right: 17px;
+}
+.arrow-back {
+  display: inline-block;
+  @media (max-width: 1300px){
+    display: none;
+  }
+}
+.arrow-wrapper-sm {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #EBEBEE;  
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  a {
+    margin-right: 12px;
+    img {
+      width: 20px;
+    }
+  }
+  @media (min-width: 1301px) {
+    display: none;
+  }
 }
 
 

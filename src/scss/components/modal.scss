@@ -79,7 +79,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
+    @media (max-width: 665px){
+      margin-top: 0;
+    }
   }	
   &__time {
     padding-left: 32px;
@@ -132,11 +134,98 @@
 		padding: 30px;
 		border-radius: 30px;	
     border-radius: 0;
-		@media (max-width: 991px){
-			width: 330px;
-			padding: 40px 20px 20px;
-		}
+    @media (max-width: 665px){
+      width: 360px;
+      padding: 20px;
+    }	
+    @media (max-width: 379px){
+      width: 331px;
+    }
 	}
+  .graph-modal__content-wrapper {
+    @media (max-width: 665px){
+      flex-direction: column;
+    }
+  }
+  .graph-modal__close {
+    width: 13px;
+    height: 13px;
+  }
+  .graph-modal__text {
+    @media (max-width: 665px){
+      font-size: 16px;
+      line-height: 24px;  
+      margin-bottom: 15px;
+    }      
+  }
+  .graph-modal__time_lg {
+    @media (max-width: 665px){
+      display: none;
+    }
+  }
+  .graph-modal__time_sm {
+    display: none;
+    @media (max-width: 665px){
+      display: flex;      
+    }
+  }
+  .graph-modal__time-left {
+    @media (max-width: 665px){
+      margin-right: 15px;
+    }
+  }
+  .graph-modal__day {
+    @media (max-width: 665px){
+      height: fit-content;
+      position: relative;
+      top: 7px;
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 0.05em;      
+    }
+  }
+  .graph-modal__age {
+    @media (max-width: 665px){
+      margin-bottom: 15px;
+    }
+  }
+  .graph-modal__minute {
+    @media (max-width: 665px){
+      margin-bottom: 0;
+    }
+  }
+  .graph-modal__right {
+    @media (max-width: 665px){
+      padding-left: 0;
+    }
+  }
+  .graph-modal__annotation {
+    @media (max-width: 665px){
+      margin-bottom: 15px;
+    }
+  }
+  .graph-modal-wrapper {
+    @media (max-width: 665px){
+      display: flex;
+    }
+  }
+  .graph-modal__time {
+    @media (max-width: 665px){
+      margin-bottom: 15px;
+    }
+  }
+  .graph-modal__img {    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @media (max-width: 665px){
+      width: 100%;
+      height: 170px;
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .modal-booking, .modal-payment {

@@ -14,6 +14,7 @@
     padding-bottom: 45px;
   }
 }
+
 .news-card {
   &__top {
     padding: 25px 43px;
@@ -65,7 +66,7 @@
       font-size: 15px;
       line-height: 22px;
       margin-bottom: 24px;
-      @media (max-width: 767px){
+      @media (max-width: 991px){
         font-size: 13px;
         line-height: 20px;        
       }
@@ -105,6 +106,11 @@
   .news-card {
     margin-bottom: 45px;
   }
+  .news-card__top {
+    @media (max-width: 991px){
+      background-position: center top!important;
+    }
+  }
   .pagination {    
     bottom: 0;   
     width: 100%;
@@ -117,6 +123,9 @@
       transition: all .2s linear;
       &:not(:last-child) {
         margin-right: 48px;
+        @media (max-width: 991px){
+          margin-right: 11px;
+        }
       }    
     }
     .swiper-pagination-bullet-active {
@@ -124,6 +133,16 @@
       width: 10px;
       height: 10px;
     }
+  }
+  .navigation__arrow-next {
+    display: block;   
+    margin-left: auto;  
+  }
+  .navigation__arrow-prev {
+    display: block;
+  }
+  @media (max-width: 991px){
+    padding-top: 20px;
   }
 }
 
@@ -143,6 +162,9 @@
     display: flex;
     align-items: center;
 		margin-bottom: 30px;
+    @media (max-width: 991px){
+      margin-bottom: 25px;
+    }
   }
   &__services-date {
     font-weight: $semibold;
@@ -161,18 +183,37 @@
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+      @media (max-width: 767px){
+        border-radius: 0;
+      }
 		}
+    @media (max-width: 991px){
+      margin-bottom: 15px;
+    }
+    @media (max-width: 767px){
+      border-radius: 0;
+    }
+    @media (max-width: 575px){
+      height: 250px;
+    }
 	}
 	&__descr {
 		font-size: 24px;
 		line-height: 40px;
 		margin-bottom: 30px;
 		color: $dark-color;
+    @media (max-width: 991px){
+      font-size: 21px;
+      line-height: 32px;      
+    }
 	}
 	p {
 		color: $dark-color;
 		line-height: 30px;
 		margin-bottom: 25px;
+    @media (max-width: 991px){     
+      line-height: 24px;      
+    }
 	}
   .news-card__top-title {
     position: absolute;
@@ -189,8 +230,26 @@
     background-color: #000;
     opacity: .4;    
   }
+  .news-article__inner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  @media (max-width: 991px){   
+    padding-bottom: 15px;
+  }
 }
-
+.booking-cards {
+  background: #1A1B1D;
+}
+.news-article-main {
+  
+  #about-main {
+    display: none;
+    @media (max-width: 991px){
+      display: block;
+    }
+  }
+}
 .about-news {
   padding-bottom: 90px;
   &__video {

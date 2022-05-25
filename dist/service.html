@@ -99,9 +99,16 @@
 			<div class="row">
 				<div class="col">
 					<div class="intro-service__offer d-flex flex-column justify-content-end">
+						<div class="arrow-wrapper-sm">							
+							<a class="arrow-back-sm" href="services.html">
+								<img src="img/arrow/arrow-left-white.svg" alt="arrow">
+							</a>
+							Услуги
+						</div>
+					
 						<h2>
 							Тренажёрный зал
-							<a href="services.html" style="display: inline-block;">
+							<a class="arrow-back" href="services.html">
 								<img src="img/arrow/arrow-left-white.svg" alt="arrow">
 							</a>
 						</h2>
@@ -110,6 +117,9 @@
 			</div>
 		</div><!-- /container -->
 	</div><!-- /intro-service__bg -->
+	<div class="intro-services__mobile-rect">
+		<img src="img/intro/intro-rect-red.svg" alt="rect-image">
+	</div>
 </div>
 
 
@@ -127,10 +137,10 @@
   </div>
 </section>
 
-	<div class="container">
+	<div class="container container-full service__container">
 		<div class="row">
 			<div class="col-lg-10">
-				<div class="service__descr">
+				<div class="service__descr container-short">
 					С целью снизить число людей с ожирением рестораны быстрого питания и сети супермаркетов вводят новые, более
 					полезные опции (например, салаты, сэндвичи с цельнозерновым хлебом или напитки без сахара), а также
 					предоставляют информацию о пищевой ценности продуктов в меню или на упаковке.
@@ -138,20 +148,22 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-6">
-				<p>
-					Вторично разогретая пища, особенно если после её приготовления прошло уже несколько часов, практически не
-					содержит ни витаминов, ни других полезных веществ. На поведение потребителей могут повлиять не только вкусовые
-					предпочтения, но и немедленные желания получить определенную еду.
-				</p>
-				<p>
-					Практически все из нас знают, что есть полезная и вредная еда, мы делим все продукты на плохие и хорошие, и
-					это действительно так, потому что не все они полезны для человеческого организма, и есть много таких, которые
-					вредны, а иногда и опасны. Ни для кого не будет открытием, что овощи и фрукты принесут организму колоссальную
-					пользу, так как являются вкусной и полезной едой, насыщенной витаминами и массой других полезных веществ.
-				</p>
+			<div class="col-lg-6 order-2 order-lg-1">
+				<div class="container-short">
+					<p>
+						Вторично разогретая пища, особенно если после её приготовления прошло уже несколько часов, практически не
+						содержит ни витаминов, ни других полезных веществ. На поведение потребителей могут повлиять не только вкусовые
+						предпочтения, но и немедленные желания получить определенную еду.
+					</p>
+					<p>
+						Практически все из нас знают, что есть полезная и вредная еда, мы делим все продукты на плохие и хорошие, и
+						это действительно так, потому что не все они полезны для человеческого организма, и есть много таких, которые
+						вредны, а иногда и опасны. Ни для кого не будет открытием, что овощи и фрукты принесут организму колоссальную
+						пользу, так как являются вкусной и полезной едой, насыщенной витаминами и массой других полезных веществ.
+					</p>
+				</div>			
 			</div>
-			<div class="offset-lg-1 col-lg-5">
+			<div class="offset-lg-1 col-lg-5 order-1 order-lg-2">
 				<div class="swiper service__slider-lg">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide service__slider-lg-slide">
@@ -708,6 +720,13 @@
           <div class="graph-modal__img">
             <img src="img/modal/modal-img.png" alt="modal-image">
           </div>
+          <div class="graph-modal__time graph-modal__time_sm">
+            <div class="graph-modal__time-left">
+              <div class="graph-modal__hour">07:00</div>
+              <div class="graph-modal__minute">45 мин</div>
+            </div>           
+            <div class="graph-modal__day">сегодня, завтра, в субботу</div>
+          </div>
           <p class="graph-modal__text">
             Свободное самостоятельное плавание в бассейне для детей в присутствии родителей. Родители могут
             забронировать место на своё имя. Необходима предварительная запись.
@@ -717,12 +736,12 @@
             <span class="graph-modal__annotation-name">Бабаев Сергей</span>
           </div>
           <button class="graph-modal__btn-guest btn">
-            Записаться на гостевой визит
-            <img src="img/socials/card-guest.svg" alt="btn-icon">      
+            <img src="img/modal/people-exit.svg" alt="btn-icon">      
+            Записаться на гостевой визит            
           </button>
         </div>
         <div class="graph-modal__right">
-          <div class="graph-modal__time">
+          <div class="graph-modal__time graph-modal__time_lg">
             <div class="graph-modal__hour">07:00</div>
             <div class="graph-modal__minute">45 мин</div>
             <div class="graph-modal__day">сегодня, завтра, в субботу</div>
@@ -731,14 +750,17 @@
             <div class="graph-modal__right-title">
               Скачать приложение:
             </div>
-            <a class="btn graph-app first" href="#">
-              <img src="img/modal/appstore.svg" alt="icon">
-              AppStore
-            </a>
-            <a class="btn graph-app" href="#">
-              <img src="img/modal/googleplay.svg" alt="icon">
-              GooglePlay
-            </a>
+            <div class="graph-modal-wrapper">
+              <a class="btn graph-app first" href="#">
+                <img src="img/modal/appstore.svg" alt="icon">
+                AppStore
+              </a>
+              <a class="btn graph-app" href="#">
+                <img src="img/modal/googleplay.svg" alt="icon">
+                GooglePlay
+              </a>
+            </div>
+           
           </div>
         </div>
       </div>

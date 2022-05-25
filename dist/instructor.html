@@ -95,14 +95,20 @@
 			<!-- intro-instructor -->
 <div class="intro-instructor">
 	<div class="intro-instructor__bg">
-		<div class="container">		
+		<div class="container intro-instructor__container">		
 			<div class="row">
 				<div class="col">
 					<div class="intro-instructor__offer d-flex flex-column justify-content-end">
+						<div class="arrow-wrapper-sm">							
+							<a class="arrow-back-sm" href="team.html">
+								<img src="img/arrow/arrow-left-white.svg" alt="arrow">
+							</a>
+							Команда
+						</div>
 						<h2>
 							Пётр Бадмаев
 							<span>Инструктор тренажёрного зала</span>
-							<a href="team.html" style="display: inline-block;">
+							<a class="arrow-back" href="team.html">
 								<img src="img/arrow/arrow-left-white.svg" alt="arrow">
 							</a>
 						</h2>
@@ -111,6 +117,9 @@
 			</div>
 		</div><!-- /container -->
 	</div><!-- /intro-instructor__bg -->
+	<div class="intro-services__mobile-rect">
+		<img src="img/intro/intro-rect-red.svg" alt="rect-image">
+	</div>
 </div>
 
 
@@ -128,17 +137,17 @@
   </div>
 </section>
 
-	<div class="container">
+	<div class="container container-full">
 		<div class="row">
 			<div class="col-lg-4">
-				<div class="team-main__slide">
+				<div class="team-main__slide instructor-main-slide">
 					<div class="team-main__slide-top" style="background: #000 url('img/team/team1.png') no-repeat center 30px / 73%;">
 						<div class="team-main__slide-rect">
 							<img src="img/team/team-rect-red.svg" alt="team-slide-rect">
 							<img src="img/team/team-rect.svg" alt="team-slide-rect">
 						</div>
 					</div>
-					<div class="team-main__slide-bottom">
+					<div class="team-main__slide-bottom container-short">
 						<h3 class="team-main__slide-title">Пётр Бадмаев</h3>
 						<div class="team-main__slide-subtitle">Инструктор тренажёрного зала</div>
 						<div class="price">
@@ -154,7 +163,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="instructor__another">
+				<div class="instructor__another d-none d-lg-block">
 					<div class="instructor__another-title">
 						Другие инструкторы:
 					</div>
@@ -227,7 +236,7 @@
 				</div>
 			</div>
 			<div class="col-lg-8">
-				<div class="instructor-about d-flex justify-content-between">
+				<div class="instructor-about d-flex justify-content-between container-short">
 					<div class="instructor-about__title">
 						Образование:
 					</div>
@@ -254,8 +263,11 @@
 							Участница Международной Фитнес-конвенции Rimini Wellness Италия 2019 г.
 						</li>
 					</ul>
+					<div class="instructor-about__load-more">
+						Показать еще...
+					</div>
 				</div>
-				<div class="instructor-about d-flex justify-content-between">
+				<div class="instructor-about d-flex justify-content-between container-short">
 					<div class="instructor-about__title">
 						Навыки и достижения:
 					</div>
@@ -282,8 +294,11 @@
 							Участница Международной Фитнес-конвенции Rimini Wellness Италия 2019 г.
 						</li>
 					</ul>
+					<div class="instructor-about__load-more">
+						Показать еще...
+					</div>
 				</div>
-				<div class="instructor-about d-flex justify-content-between">
+				<div class="instructor-about d-flex justify-content-between container-short">
 					<div class="instructor-about__title">
 						Опыт работы в фитнес-индустрии:
 					</div>
@@ -308,7 +323,7 @@
 							<input id="instructor-form__mail" type="email" placeholder="Email">							
 						</div>
 					</div>
-					<div class="contacts-form__bottom d-flex justify-content-between align-items-center">
+					<div class="contacts-form__bottom d-flex justify-content-between align-items-start align-items-xl-center">
 						<button class="contacts-form__btn btn" type="submit">
 							<img src="img/arrow/arrow-check.svg" alt="btn-icon">
 							Записаться
@@ -318,6 +333,77 @@
 						</div>
 					</div>
 				</form>
+				<div class="instructor__another d-block d-lg-none container-short">
+					<div class="instructor__another-title">
+						Другие инструкторы:
+					</div>
+					<div class="row">
+						<div class="col-6">
+							<a href="instructor.html">
+								<div class="team-main__slide">
+									<div class="team-main__slide-top" style="background: #000 url('img/team/team1.png') no-repeat center 30px / cover;">
+										<div class="team-main__slide-rect">
+											<img src="img/team/team-rect-red.svg" alt="team-slide-rect">
+											<img src="img/team/team-rect.svg" alt="team-slide-rect">
+										</div>
+									</div>
+									<div class="team-main__slide-bottom">
+										<h3 class="team-main__slide-title">Пётр Бадмаев</h3>
+										<div class="team-main__slide-subtitle">Инструктор тренажёрного зала</div>
+									</div>
+								</div>
+							</a>	
+						</div>
+						<div class="col-6">
+							<a href="instructor.html">
+								<div class="team-main__slide">
+									<div class="team-main__slide-top" style="background: #000 url('img/team/team2.png') no-repeat center 30px / cover;">
+										<div class="team-main__slide-rect">
+											<img src="img/team/team-rect-red.svg" alt="team-slide-rect">
+											<img src="img/team/team-rect.svg" alt="team-slide-rect">
+										</div>
+									</div>
+									<div class="team-main__slide-bottom">
+										<h3 class="team-main__slide-title">Алёна Бадмаева</h3>
+										<div class="team-main__slide-subtitle">Инструктор тренажёрного зала</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-6">
+							<a href="instructor.html">
+								<div class="team-main__slide">
+									<div class="team-main__slide-top" style="background: #000 url('img/team/team1.png') no-repeat center 30px / cover;">
+										<div class="team-main__slide-rect">
+											<img src="img/team/team-rect-red.svg" alt="team-slide-rect">
+											<img src="img/team/team-rect.svg" alt="team-slide-rect">
+										</div>
+									</div>
+									<div class="team-main__slide-bottom">
+										<h3 class="team-main__slide-title">Пётр Бадмаев</h3>
+										<div class="team-main__slide-subtitle">Инструктор тренажёрного зала</div>
+									</div>
+								</div>
+							</a>	
+						</div>
+						<div class="col-6">
+							<a href="instructor.html">
+								<div class="team-main__slide">
+									<div class="team-main__slide-top" style="background: #000 url('img/team/team2.png') no-repeat center 30px / cover;">
+										<div class="team-main__slide-rect">
+											<img src="img/team/team-rect-red.svg" alt="team-slide-rect">
+											<img src="img/team/team-rect.svg" alt="team-slide-rect">
+										</div>
+									</div>
+									<div class="team-main__slide-bottom">
+										<h3 class="team-main__slide-title">Алёна Бадмаева</h3>
+										<div class="team-main__slide-subtitle">Инструктор тренажёрного зала</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div><!-- /container -->
@@ -479,6 +565,13 @@
           <div class="graph-modal__img">
             <img src="img/modal/modal-img.png" alt="modal-image">
           </div>
+          <div class="graph-modal__time graph-modal__time_sm">
+            <div class="graph-modal__time-left">
+              <div class="graph-modal__hour">07:00</div>
+              <div class="graph-modal__minute">45 мин</div>
+            </div>           
+            <div class="graph-modal__day">сегодня, завтра, в субботу</div>
+          </div>
           <p class="graph-modal__text">
             Свободное самостоятельное плавание в бассейне для детей в присутствии родителей. Родители могут
             забронировать место на своё имя. Необходима предварительная запись.
@@ -488,12 +581,12 @@
             <span class="graph-modal__annotation-name">Бабаев Сергей</span>
           </div>
           <button class="graph-modal__btn-guest btn">
-            Записаться на гостевой визит
-            <img src="img/socials/card-guest.svg" alt="btn-icon">      
+            <img src="img/modal/people-exit.svg" alt="btn-icon">      
+            Записаться на гостевой визит            
           </button>
         </div>
         <div class="graph-modal__right">
-          <div class="graph-modal__time">
+          <div class="graph-modal__time graph-modal__time_lg">
             <div class="graph-modal__hour">07:00</div>
             <div class="graph-modal__minute">45 мин</div>
             <div class="graph-modal__day">сегодня, завтра, в субботу</div>
@@ -502,14 +595,17 @@
             <div class="graph-modal__right-title">
               Скачать приложение:
             </div>
-            <a class="btn graph-app first" href="#">
-              <img src="img/modal/appstore.svg" alt="icon">
-              AppStore
-            </a>
-            <a class="btn graph-app" href="#">
-              <img src="img/modal/googleplay.svg" alt="icon">
-              GooglePlay
-            </a>
+            <div class="graph-modal-wrapper">
+              <a class="btn graph-app first" href="#">
+                <img src="img/modal/appstore.svg" alt="icon">
+                AppStore
+              </a>
+              <a class="btn graph-app" href="#">
+                <img src="img/modal/googleplay.svg" alt="icon">
+                GooglePlay
+              </a>
+            </div>
+           
           </div>
         </div>
       </div>
