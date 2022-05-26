@@ -26,7 +26,7 @@
     position: relative;
   }
   &__offer {
-    padding-top: 80px;
+    padding-top: 100px;
     @media (max-width: 991px){
       padding-top: 28px;
     }
@@ -58,6 +58,10 @@
   }
   &__image {
     position: relative;
+    @media (max-width: 575px){
+      top: 47px;
+      z-index: -1;      
+    }
   }
   &__link {   
     font-family: $font-family-second;
@@ -554,14 +558,12 @@
   &__offer {
     padding-bottom: 24px;
     height: 420px;
+    @media (max-width: 767px){
+      padding-bottom: 50px;
+    }
   }
-  h2 {    
+  @media (max-width: 767px){
     position: relative;
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: 0.02em;
-    color: $main-color;
-    text-transform: inherit;   
   }
 }
 
@@ -572,6 +574,9 @@
     background: url('@img/intro/intro-cards-abstract.svg') no-repeat center center / cover;
 		&-img {
 			background: url('@img/intro/intro-cards-img.svg') no-repeat center bottom/450px;
+      @media (max-width: 767px){
+        background: url('@img/intro/intro-cards-img.svg') no-repeat center center/350px;        
+      }
 		}
   } 
 	&__img {
@@ -579,14 +584,18 @@
 	}
   &__offer {
     padding-bottom: 23px;
-    height: 420px;
+    height: 420px;   
+    span {
+      display: none;
+      @media (max-width: 767px){
+        display: block;
+      }
+    }
+    @media (max-width: 767px){
+      padding-bottom: 50px;
+    }
   }
-  h2 {    
+  @media (max-width: 767px){
     position: relative;
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: 0.02em;
-    color: $main-color;
-    text-transform: inherit;   
   }
 }

@@ -124,6 +124,9 @@
 	.team-main__slide {
 		margin-bottom: 45px;
 	}
+  @media (max-width: 991px){
+    padding-top: 10px;
+  }
 }
 .gallery-list {
   width: 100%;
@@ -136,7 +139,19 @@
       border-radius: 8px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25));
       overflow: hidden;
+      @media (max-width: 767px){
+        border-radius: 0;
+      }
     }
+    @media (max-width: 991px){
+      grid-column: 6 span;
+    }
+    @media (max-width: 575px){
+      grid-column: 12 span;
+    }
+  }
+  @media (max-width: 767px){
+    gap: 10px;
   }
 }
 

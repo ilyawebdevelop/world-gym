@@ -480,7 +480,7 @@
 				</div>
 				<div class="col-lg-6">				
 						<div class="contacts__img">
-							<img src="img/contacts/man.png" alt="contacts-image">
+							<img src="img/contacts/contacts-woman.png" alt="contacts-image">
 							<div class="contacts__logo">
 								<img src="img/contacts/logo-black.svg" alt="logo">
 							</div>
@@ -590,7 +590,7 @@
 <div class="socials-change"> 
   <button class="btn-reset socials-change__card-guest d-flex justify-content-center align-items-center" data-graph-path="modal-card-change">
     <span>Гостевой визит</span>
-    <img src="img/socials/card-guest.svg" alt="btn-icon">    
+    <img src="img/socials/guest-btn-fixed.svg" alt="btn-icon">    
   </button>
   <button class="btn-reset socials-change__btn-change" data-graph-path="modal-booking">
     <span>Выбрать карту</span>
@@ -669,12 +669,10 @@
                 <img src="img/modal/googleplay.svg" alt="icon">
                 GooglePlay
               </a>
-            </div>
-           
+            </div>           
           </div>
         </div>
-      </div>
-     
+      </div>     
     </div>
   </div>
 
@@ -684,7 +682,7 @@
       <div class="modal-booking__title-wrapper d-flex justify-content-between">
         <div class="modal-booking__left">
           <h2 class="graph-modal__title">Бронирование <span>Клубной карты</span></h2>
-          <div class="graph-modal__step">Шаг 1/3</div>
+          <div class="graph-modal__step">Шаг 1/2</div>         
         </div>
         <div class="modal-booking__right">
           <div class="modal-booking__img">
@@ -693,9 +691,9 @@
         </div>
       </div>
       <p class="modal-booking__descr">
-        Краткое описание преимуществ приобретения карт и абонементов в зале, а также возможности рассрочки и тд
+        Выберите карту и способ оплаты
       </p>
-      <div class="modal-booking__bottom d-flex justify-content-between">
+      <div class="modal-booking__bottom">
         <div class="__select" data-state="">
           <div class="__select__title" data-default="Option 0">Выбрать карту</div>
           <div class="__select__content">
@@ -710,79 +708,48 @@
             <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
             <label for="singleSelect4" class="__select__label">Weekend Silver</label>
           </div>
-        </div>
-        <button class="btn-reset btn modal-booking__btn" data-graph-path="modal-pay">
-          Далее
-          <img src="img/arrow/arrow-right-modal.svg" alt="btn-icon">
-        </button>
-      </div>
-    </div>
-  </div>
+        </div> 
 
-  <div class="graph-modal__container modal-payment" role="dialog" aria-modal="true" data-graph-target="modal-pay">
-    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
-    <div class="graph-modal__content">
-      <div class="modal-booking__title-wrapper d-flex justify-content-between">
-        <div class="modal-booking__left">
-          <h2 class="graph-modal__title">Выбрать способ <span>оплаты</span></h2>
-          <div class="graph-modal__subtitle">
-            карта «GOLD»
-          </div>
-          <div class="graph-modal__step">Шаг 2/3</div>
-        </div>
-        <div class="modal-booking__right">
-          <div class="modal-booking__img">
-            <img src="img/cards/cards.svg" alt="cards-image">
-          </div>
-        </div>
-      </div>
-      <p class="modal-booking__descr">
-        Краткое описание преимуществ приобретения карт и абонементов в зале, а также возможности рассрочки и тд
-      </p>
-      <ul class="modal-payment__list">
-        <li class="modal-payment__item">
-          <div class="modal-payment__item-title">
-            Полная оплата
-          </div>
-          <div class="modal-payment__item-descr">
-            Краткое описание тарифа
-          </div>
-          <div class="modal-payment__item-price">
-            44 900 р.
-          </div>
-        </li>
-        <li class="modal-payment__item">
-          <div class="modal-payment__item-title">
-            Оплата в рассрочку
-          </div>
-          <div class="modal-payment__item-descr">
-            Рассрочка платежа на три месяца
-          </div>
-          <div class="modal-payment__item-price">
-            14 990 р./месяц
-          </div>
-        </li>
-        <li class="modal-payment__item active">
-          <div class="modal-payment__item-title">
-            Предоплата
-          </div>
-          <div class="modal-payment__item-descr">
-            Забронировать карту на три дня
-          </div>
-          <div class="modal-payment__item-price">
-            1 000 р.
-          </div>
-        </li>
-      </ul>
-      <div class="modal-booking__bottom d-flex justify-content-between align-items-center">
-      <button class="btn-reset modal-payment__btn btn" data-graph-path="modal-booking">
-        <img src="img/arrow/arrow-left-modal.svg" alt="btn-icon">
-        Вернуться
-      </button>
+        <ul class="modal-payment__list">
+          <li class="modal-payment__item">
+            <div class="modal-payment__item-title">
+              Полная оплата
+            </div>
+            <div class="modal-payment__item-descr">
+              Краткое описание тарифа
+            </div>
+            <div class="modal-payment__item-price">
+              44 900 р.
+            </div>
+          </li>
+          <li class="modal-payment__item">
+            <div class="modal-payment__item-title">
+              Оплата в рассрочку
+            </div>
+            <div class="modal-payment__item-descr">
+              Рассрочка платежа на три месяца
+            </div>
+            <div class="modal-payment__item-price">
+              14 990 р./месяц
+            </div>
+          </li>
+          <li class="modal-payment__item active">
+            <div class="modal-payment__item-title">
+              Предоплата
+            </div>
+            <div class="modal-payment__item-descr">
+              Забронировать карту на три дня
+            </div>
+            <div class="modal-payment__item-price">
+              1 000 р.
+            </div>
+          </li>
+        </ul>
+                
         <button class="btn-reset btn modal-booking__btn" data-graph-path="modal-prepayment">
           Далее
           <img src="img/arrow/arrow-right-modal.svg" alt="btn-icon">
-        </button>
+        </button>    
       </div>
     </div>
   </div>
@@ -796,7 +763,7 @@
           <div class="graph-modal__subtitle">
             карта «GOLD»
           </div>
-          <div class="graph-modal__step">Шаг 3/3</div>
+          <div class="graph-modal__step">Шаг 2/2</div>
         </div>
         <div class="modal-booking__right">
           <div class="modal-booking__img">
@@ -805,7 +772,7 @@
         </div>
       </div>
       <p class="modal-booking__descr">
-        Краткое описание преимуществ приобретения карт и абонементов в зале, а также возможности рассрочки и тд
+        Введите ваши данные, мы привяжем их к выбранной карте (вы можете получить её в клубе).
       </p>
       <form action="#" class="modal-prepayment__form">
         <div class="input-wrapper">
@@ -813,15 +780,16 @@
           <input type="tel" placeholder="Ваш телефон">
           <input type="email" placeholder="Email">
         </div>      
-        <div class="agreement text-end">
-          Нажимая «Оплатить» я даю согласие на <span>хранение и обработку персональных данных.</span> 
-        </div>
+       
       </form>
       <div class="modal-booking__bottom d-flex justify-content-between align-items-center">
-      <button class="btn-reset modal-payment__btn btn" data-graph-path="modal-pay">
+      <button class="btn-reset modal-payment__btn btn" data-graph-path="modal-booking">
         <img src="img/arrow/arrow-left-modal.svg" alt="btn-icon">
         Вернуться
       </button>
+      <div class="agreement">
+        Нажимая «Оплатить» я даю согласие на <span>хранение и обработку персональных данных.</span> 
+      </div>
         <button class="modal-prepayment__btn btn">
           <img src="img/arrow/arrow-check.svg" alt="btn-icon">
          Оплатить         

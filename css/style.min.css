@@ -13740,8 +13740,12 @@ h3 span {
   color: #fff;
   padding: 8px 12px 8px 12px;
 }
-.card__btn img {
-  margin-left: 10px;
+@media (max-width: 991px) {
+  .card__btn {
+    font-size: 14px;
+    line-height: 20px;
+    width: fit-content;
+  }
 }
 
 .modal-booking__btn {
@@ -13752,6 +13756,7 @@ h3 span {
   line-height: 20px;
   letter-spacing: 0.05em;
   color: #FFFFFF;
+  margin-left: auto;
 }
 .modal-booking__btn img {
   margin-left: 10px;
@@ -13945,6 +13950,74 @@ h3 span {
 @media (max-width: 575px) {
   .booking-cards__btn-guest {
     width: 100%;
+  }
+}
+
+.intro-gallery__btn {
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+}
+.intro-gallery__btn img:nth-child(1n) {
+  margin-right: 10px;
+}
+.intro-gallery__btn img:nth-child(2n) {
+  margin-left: 10px;
+  transition: transform 0.2s linear;
+}
+@media (max-width: 991px) {
+  .intro-gallery__btn .intro-gallery-icon {
+    width: 23px;
+  }
+}
+.intro-gallery__btn ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  text-align: start;
+  width: 250px;
+  left: 100%;
+  bottom: 0;
+  padding: 30px 32px;
+  background: #000000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+.intro-gallery__btn ul li {
+  font-family: "CenturyGothic";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.intro-gallery__btn ul li:not(:last-child) {
+  margin-bottom: 23px;
+}
+@media (max-width: 500px) {
+  .intro-gallery__btn ul {
+    left: 0;
+    bottom: 100%;
+  }
+}
+.intro-gallery__btn:hover {
+  opacity: 1;
+}
+.intro-gallery__btn:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+.intro-gallery__btn:hover img:nth-child(2n) {
+  transform: rotate(180deg);
+}
+@media (max-width: 991px) {
+  .intro-gallery__btn {
+    margin-left: unset;
+    margin-right: auto;
+    font-size: 14px;
+    line-height: 17px;
+    width: fit-content;
+    height: 36px;
   }
 }
 
@@ -14446,7 +14519,7 @@ h3 span {
   position: relative;
 }
 .intro__offer {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 @media (max-width: 991px) {
   .intro__offer {
@@ -14488,6 +14561,12 @@ h3 span {
 }
 .intro__image {
   position: relative;
+}
+@media (max-width: 575px) {
+  .intro__image {
+    top: 47px;
+    z-index: -1;
+  }
 }
 .intro__link {
   font-family: "CenturyGothic";
@@ -15071,13 +15150,15 @@ h3 span {
   padding-bottom: 24px;
   height: 420px;
 }
-.intro-gallery h2 {
-  position: relative;
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: 0.02em;
-  color: #fff;
-  text-transform: inherit;
+@media (max-width: 767px) {
+  .intro-gallery__offer {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .intro-gallery {
+    position: relative;
+  }
 }
 
 .intro-cards {
@@ -15090,6 +15171,11 @@ h3 span {
 .intro-cards__bg-img {
   background: url("../img/intro/intro-cards-img.svg") no-repeat center bottom/450px;
 }
+@media (max-width: 767px) {
+  .intro-cards__bg-img {
+    background: url("../img/intro/intro-cards-img.svg") no-repeat center center/350px;
+  }
+}
 .intro-cards__img {
   width: 1070px;
 }
@@ -15097,13 +15183,23 @@ h3 span {
   padding-bottom: 23px;
   height: 420px;
 }
-.intro-cards h2 {
-  position: relative;
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: 0.02em;
-  color: #fff;
-  text-transform: inherit;
+.intro-cards__offer span {
+  display: none;
+}
+@media (max-width: 767px) {
+  .intro-cards__offer span {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .intro-cards__offer {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .intro-cards {
+    position: relative;
+  }
 }
 
 .about-main {
@@ -15360,6 +15456,22 @@ h3 span {
   padding: 60px 0;
   border-bottom: 1px solid #DCDCDE;
 }
+@media (max-width: 991px) {
+  .cards__wrapper {
+    padding-top: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .cards__wrapper {
+    padding-top: 0;
+    border-bottom: none;
+  }
+}
+@media (max-width: 767px) {
+  .cards__title {
+    display: none;
+  }
+}
 .cards__content-title {
   margin-bottom: 40px;
   color: #000;
@@ -15384,6 +15496,16 @@ h3 span {
   filter: grayscale(100%);
   opacity: 0.3;
 }
+@media (max-width: 767px) {
+  .cards__content-item {
+    grid-column: 4 span;
+  }
+}
+@media (max-width: 575px) {
+  .cards__content-item {
+    grid-column: 6 span;
+  }
+}
 .cards__content-name {
   font-family: "Montserrat";
   font-weight: 600;
@@ -15399,6 +15521,16 @@ h3 span {
   line-height: 22px;
   text-align: center;
   color: #000;
+}
+@media (max-width: 991px) {
+  .cards {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .cards {
+    padding-top: 15px;
+  }
 }
 
 .card {
@@ -15446,9 +15578,32 @@ h3 span {
   color: #000;
   background-color: #fff;
 }
+@media (max-width: 1199px) {
+  .card {
+    width: 375px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .card {
+    width: 330px;
+    height: 210px;
+    padding: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .card {
+    width: 100%;
+  }
+}
 
 .card-time {
   margin-top: 30px;
+}
+@media (max-width: 991px) {
+  .card-time__wrapper {
+    margin-bottom: 40px;
+  }
 }
 .card-time__line {
   margin-bottom: 20px;
@@ -15503,6 +15658,17 @@ h3 span {
   height: 100%;
   top: 0;
   background: #3FAB5D;
+}
+@media (max-width: 1199px) {
+  .card-time {
+    margin-left: 20px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 991px) {
+  .card-time {
+    margin-left: 0;
+  }
 }
 
 .services-main {
@@ -16834,6 +17000,11 @@ h3 span {
 .gallery-page .team-main__slide {
   margin-bottom: 45px;
 }
+@media (max-width: 991px) {
+  .gallery-page {
+    padding-top: 10px;
+  }
+}
 
 .gallery-list {
   width: 100%;
@@ -16848,6 +17019,26 @@ h3 span {
   border-radius: 8px;
   filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25));
   overflow: hidden;
+}
+@media (max-width: 767px) {
+  .gallery-list a .gallery-page__img {
+    border-radius: 0;
+  }
+}
+@media (max-width: 991px) {
+  .gallery-list a {
+    grid-column: 6 span;
+  }
+}
+@media (max-width: 575px) {
+  .gallery-list a {
+    grid-column: 12 span;
+  }
+}
+@media (max-width: 767px) {
+  .gallery-list {
+    gap: 10px;
+  }
 }
 
 .contacts-main {
@@ -16918,6 +17109,9 @@ h3 span {
     right: 0;
     width: 118px;
   }
+}
+.contacts__img img {
+  margin: 0 auto;
 }
 @media (max-width: 991px) {
   .contacts__img {
@@ -18155,7 +18349,7 @@ h3 span {
 .modal-booking, .modal-payment {
   background: #1A1B1D;
   border-radius: 8px;
-  padding: 30px 30px 45px;
+  padding: 30px;
   width: 900px;
 }
 .modal-booking__right, .modal-payment__right {
@@ -18189,6 +18383,7 @@ h3 span {
 }
 
 .modal-payment__list {
+  margin-top: 30px;
   margin-bottom: 30px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -18249,6 +18444,9 @@ h3 span {
 .modal-payment .graph-modal__close {
   right: 35px;
   top: 35px;
+}
+.modal-payment .agreement {
+  max-width: 100%;
 }
 
 .modal-prepayment__form {

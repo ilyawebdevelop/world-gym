@@ -36,7 +36,7 @@
     bottom: 0;
     position: absolute;
     width: 568px;
-    height: 635px; 
+    height: 635px;     
     .contacts__logo {
       position: absolute;
       right: 0;
@@ -50,6 +50,9 @@
         right: 0;
         width: 118px;        
       }
+    }
+    img {
+      margin: 0 auto;
     }
     @media (max-width: 991px){
       position: relative;

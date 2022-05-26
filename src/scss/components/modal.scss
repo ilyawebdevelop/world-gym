@@ -1,5 +1,4 @@
 // modal
-// modal
 .graph-modal {
   &__left {
     max-width: 378px;
@@ -231,7 +230,7 @@
 .modal-booking, .modal-payment {
   background: #1A1B1D;
   border-radius: 8px;
-  padding: 30px 30px 45px;
+  padding: 30px;
   width: 900px;
   &__right {
     padding-right: 75px;
@@ -265,6 +264,7 @@
 }
 .modal-payment {
   &__list {
+    margin-top: 30px;
     margin-bottom: 30px;   
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -325,6 +325,9 @@
   .graph-modal__close {
     right: 35px;
     top: 35px;
+  }
+  .agreement {
+    max-width: 100%;
   }
 }
 .modal-prepayment {
