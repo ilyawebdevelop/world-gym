@@ -204,9 +204,11 @@
 			line-height: 19px;
 		}
 	}
-	&__cards {
+	&__cards {	
 		.row {
-			flex-direction: column;
+			@media (max-width: 991px){
+				flex-direction: column;
+			}			
 		}
 		.col {
 			@media (max-width: 991px){
@@ -224,6 +226,12 @@
     margin-bottom: 20px;
     padding: 20px 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+		&-right {
+			@media (max-width: 991px){
+				border-bottom: 1px solid #828286;
+				padding-bottom: 17px;
+			}
+		}
     &-time {
       font-family: $font-family-second;
       font-weight: $bold;

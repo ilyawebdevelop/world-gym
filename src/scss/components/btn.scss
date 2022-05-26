@@ -453,6 +453,9 @@
       bottom: 100%;      
     }
   }
+  &:hover {
+    opacity: 1;
+  }
   &:hover ul {
     visibility: visible;
     opacity: 1;
@@ -467,6 +470,9 @@
     line-height: 17px;   
     width: fit-content;
     height: 36px;
+  }
+  @media (max-width: 575px){
+    z-index: 2;
   }
 }
 .booking-cards__btn-booking {

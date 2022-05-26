@@ -13905,6 +13905,9 @@ h3 span {
     bottom: 100%;
   }
 }
+.intro-team__btn:hover {
+  opacity: 1;
+}
 .intro-team__btn:hover ul {
   visibility: visible;
   opacity: 1;
@@ -13920,6 +13923,11 @@ h3 span {
     line-height: 17px;
     width: fit-content;
     height: 36px;
+  }
+}
+@media (max-width: 575px) {
+  .intro-team__btn {
+    z-index: 2;
   }
 }
 
@@ -14197,6 +14205,11 @@ h3 span {
 .socials-change__item:not(:last-child) {
   margin-bottom: 12px;
 }
+@media (max-width: 575px) {
+  .socials-change {
+    right: 13px;
+  }
+}
 
 .socials-change__btn-change:hover {
   content: "123";
@@ -14226,6 +14239,11 @@ h3 span {
   color: #EBEBEE;
   margin-right: 10px;
 }
+@media (max-width: 575px) {
+  .socials-change__card-guest {
+    display: none;
+  }
+}
 
 .socials-change__btn-change {
   transition: width 0.3s linear;
@@ -14250,6 +14268,11 @@ h3 span {
   letter-spacing: 0.03em;
   color: #EBEBEE;
   margin-right: 10px;
+}
+@media (max-width: 575px) {
+  .socials-change__btn-change {
+    display: none;
+  }
 }
 
 .breadcrumps {
@@ -14735,6 +14758,7 @@ h3 span {
 .intro-about {
   background: #1A1B1D;
   padding-bottom: 0;
+  padding-top: 86px;
 }
 @media (max-width: 991px) {
   .intro-about__container {
@@ -14745,9 +14769,10 @@ h3 span {
   background: url("../img/intro/intro-about-abstract.svg") no-repeat center center/cover;
 }
 .intro-about__img {
-  width: 359px;
-  height: 360px;
   overflow: hidden;
+  display: flex;
+  height: auto;
+  width: 370px;
 }
 .intro-about__offer {
   padding-bottom: 23px;
@@ -14791,7 +14816,7 @@ h3 span {
 }
 
 .intro-services {
-  padding-top: 60px;
+  padding-top: 80px;
   background: #1A1B1D;
 }
 @media (max-width: 991px) {
@@ -14804,12 +14829,13 @@ h3 span {
 }
 .intro-services__img {
   width: 650px;
-  height: 360px;
   overflow: hidden;
+  display: flex;
+  height: auto;
 }
 @media (max-width: 575px) {
   .intro-services__img {
-    width: 461px;
+    width: 490px;
   }
 }
 .intro-services__offer {
@@ -14850,6 +14876,7 @@ h3 span {
   .intro-services {
     overflow: hidden;
     position: relative;
+    padding-top: 60px;
   }
 }
 
@@ -14898,7 +14925,7 @@ h3 span {
 .intro-team {
   overflow: hidden;
   background: #1A1B1D;
-  padding-top: 60px;
+  padding-top: 80px;
 }
 @media (max-width: 991px) {
   .intro-team__container {
@@ -14909,7 +14936,13 @@ h3 span {
   background: url("../img/intro/intro-team-abstract.svg") no-repeat center center/cover;
 }
 .intro-team__img {
-  width: 376px;
+  width: 600px;
+  z-index: 1;
+}
+@media (max-width: 575px) {
+  .intro-team__img img {
+    margin-left: auto;
+  }
 }
 @media (max-width: 991px) {
   .intro-team__img {
@@ -14918,7 +14951,12 @@ h3 span {
 }
 @media (max-width: 575px) {
   .intro-team__img {
-    width: 300px;
+    margin-right: unset;
+    position: relative;
+    height: 100%;
+    top: 0;
+    right: -20px;
+    width: 100%;
   }
 }
 .intro-team__offer {
@@ -14935,13 +14973,8 @@ h3 span {
     padding-bottom: 60px;
   }
 }
-.intro-team h2 {
-  position: relative;
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: 0.02em;
-  color: #fff;
-  text-transform: inherit;
+.intro-team h1 {
+  z-index: 2;
 }
 @media (max-width: 767px) {
   .intro-team {
@@ -15021,12 +15054,7 @@ h3 span {
   background: url("../img/intro/intro-timetable-abstract.svg") no-repeat center center/cover;
 }
 .intro-timetable__bg-img {
-  background: url("../img/intro/intro-timetable-img.png") no-repeat 60% bottom/1021px;
-}
-@media (max-width: 575px) {
-  .intro-timetable__bg-img {
-    background: url("../img/intro/intro-timetable-img.png") no-repeat 60% bottom/720px;
-  }
+  background: url("../img/intro/intro-timetable-woman.png") no-repeat 73% bottom/300px;
 }
 .intro-timetable__img {
   width: 1070px;
@@ -15056,7 +15084,7 @@ h3 span {
 
 .intro-news {
   background: #1A1B1D;
-  padding-top: 0;
+  padding-top: 40px;
 }
 @media (max-width: 991px) {
   .intro-news__container {
@@ -15067,7 +15095,12 @@ h3 span {
   background: url("../img/intro/intro-news-abstract.svg") no-repeat center center/cover;
 }
 .intro-news__bg-img {
-  background: url("../img/intro/intro-news.png") no-repeat 55% top/800px;
+  background: url("../img/intro/intro-news-woman.png") no-repeat 80% bottom/700px;
+}
+@media (max-width: 575px) {
+  .intro-news__bg-img {
+    background: url("../img/intro/intro-news-woman.png") no-repeat center bottom/700px;
+  }
 }
 .intro-news__img {
   width: 1070px;
@@ -15076,6 +15109,11 @@ h3 span {
   padding-bottom: 42px;
   height: 420px;
 }
+@media (max-width: 767px) {
+  .intro-news__offer {
+    padding-bottom: 50px;
+  }
+}
 .intro-news h2 {
   position: relative;
   font-size: 40px;
@@ -15083,6 +15121,12 @@ h3 span {
   letter-spacing: 0.02em;
   color: #fff;
   text-transform: inherit;
+}
+@media (max-width: 767px) {
+  .intro-news {
+    position: relative;
+    padding-top: 15px;
+  }
 }
 
 .intro-news-article {
@@ -15141,7 +15185,7 @@ h3 span {
   background: url("../img/intro/intro-gallery-abstract.svg") no-repeat center center/cover;
 }
 .intro-gallery__bg-img {
-  background: url("../img/intro/intro-gallery.png") no-repeat 50% top/627px;
+  background: url("../img/intro/intro-gallery-man.png") no-repeat 66% top/627px;
 }
 .intro-gallery__img {
   width: 1070px;
@@ -17982,8 +18026,10 @@ h3 span {
     line-height: 19px;
   }
 }
-.content__cards .row {
-  flex-direction: column;
+@media (max-width: 991px) {
+  .content__cards .row {
+    flex-direction: column;
+  }
 }
 @media (max-width: 991px) {
   .content__cards .col {
@@ -18002,6 +18048,12 @@ h3 span {
   margin-bottom: 20px;
   padding: 20px 20px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 991px) {
+  .content__card-right {
+    border-bottom: 1px solid #828286;
+    padding-bottom: 17px;
+  }
 }
 .content__card-time {
   font-family: "CenturyGothic";

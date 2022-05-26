@@ -35,6 +35,9 @@
       margin-bottom: 12px;
     }
   }
+  @media (max-width: 575px){
+    right: 13px;
+  }
 }
 .socials-change__btn-change {
   &:hover {
@@ -44,9 +47,7 @@
 .socials-change__card-guest {
   transition: width .3s linear;
   span {
-    
     font-size: 0;
-    // transition: width .2s linear, font-size .5s linear .5s;
     transition-property: all;
     transition-timing-function: ease-in;
     transition-duration: .3s;
@@ -66,6 +67,9 @@
       color: #EBEBEE;
       margin-right: 10px;
     }
+  }
+  @media (max-width: 575px){
+    display: none;
   }
 }
 
@@ -94,5 +98,8 @@
       color: #EBEBEE;
       margin-right: 10px;
     }
+  } 
+  @media (max-width: 575px){
+    display: none;
   }
 }
