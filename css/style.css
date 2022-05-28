@@ -17978,6 +17978,28 @@ h3 span {
 }
 .timetable__heading input::-webkit-calendar-picker-indicator {
   background: url("../img/timetable/calendar-sm.svg") no-repeat center center/20px;
+  -webkit-background: url("../img/timetable/calendar-sm.svg") no-repeat center center/20px;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+}
+.timetable__heading input::-ms-calendar-picker-indicator {
+  background: url("../img/timetable/calendar-sm.svg") no-repeat center center/20px;
+  -ms-background: url("../img/timetable/calendar-sm.svg") no-repeat center center/20px;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+}
+.timetable__heading input::-o-calendar-picker-indicator {
+  background: url("../img/timetable/calendar-sm.svg") no-repeat center center/20px;
+  -o-background: url("../img/timetable/calendar-sm.svg") no-repeat center center/20px;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+}
+.timetable__heading input::-moz-calendar-picker-indicator {
+  background: url("../img/timetable/calendar-sm.svg") no-repeat center center/20px;
+  -moz-background: url("../img/timetable/calendar-sm.svg") no-repeat center center/20px;
   cursor: pointer;
   width: 48px;
   height: 48px;
