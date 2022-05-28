@@ -13174,7 +13174,7 @@ a:hover {
 }
 
 .btn {
-  transition: opacity 0.2s linear, box-shadow 0.2s linear;
+  transition: opacity 0.2s linear, box-shadow 0.2s linear, background-color 0.2s linear;
 }
 .btn:hover {
   color: inherit;
@@ -13393,9 +13393,6 @@ h3 span {
   letter-spacing: 0.03em;
   color: #fff;
 }
-.btn:hover {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.55);
-}
 
 .intro__btn-change {
   margin-left: auto;
@@ -13420,6 +13417,10 @@ h3 span {
     width: 23px;
   }
 }
+.about-main__btn:hover {
+  background-color: #F5333F;
+  opacity: 1;
+}
 @media (max-width: 991px) {
   .about-main__btn {
     height: 36px;
@@ -13432,10 +13433,14 @@ h3 span {
 }
 
 .cards-main__btn {
-  width: 230px;
+  align-items: center;
+  width: 206px;
+  height: 48px;
+  padding: 0 0 0 12px;
+  justify-content: flex-start;
 }
 .cards-main__btn img {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 @media (max-width: 767px) {
   .cards-main__btn img {
@@ -13449,7 +13454,12 @@ h3 span {
     height: 36px;
     font-size: 14px;
     line-height: 24px;
+    padding-right: 10px;
   }
+}
+.cards-main__btn:hover {
+  background-color: #F5333F;
+  opacity: 1;
 }
 
 .services-main__btn {
@@ -13510,6 +13520,10 @@ h3 span {
     width: fit-content;
   }
 }
+.submit:hover {
+  background-color: #F5333F;
+  opacity: 1;
+}
 
 .soon__btn {
   padding-right: 16px;
@@ -13564,6 +13578,10 @@ h3 span {
     height: 36px;
   }
 }
+.team-main__btn:hover {
+  background-color: #F5333F;
+  opacity: 1;
+}
 
 .news-main__btn {
   margin-left: auto;
@@ -13590,6 +13608,10 @@ h3 span {
     height: 36px;
   }
 }
+.news-main__btn:hover {
+  background-color: #F5333F;
+  opacity: 1;
+}
 
 .gallery__btn {
   width: 282px;
@@ -13614,10 +13636,15 @@ h3 span {
     height: 36px;
   }
 }
+.gallery__btn:hover {
+  background-color: #F5333F;
+  opacity: 1;
+}
 
 .contacts-form__btn {
   background-color: #C41230;
   width: 168px;
+  height: 48px;
 }
 .contacts-form__btn img {
   margin-right: 10px;
@@ -13635,6 +13662,10 @@ h3 span {
     height: 36px;
   }
 }
+.contacts-form__btn:hover {
+  background-color: #F5333F;
+  opacity: 1;
+}
 
 .socials-change__card-guest {
   width: 60px;
@@ -13643,6 +13674,9 @@ h3 span {
   background-color: #000;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 4px 0px 0px 4px;
+}
+.socials-change__card-guest:hover {
+  opacity: 1;
 }
 
 .socials-change__btn-change {
@@ -13656,6 +13690,9 @@ h3 span {
   border-radius: 4px;
   margin-bottom: 30px;
 }
+.socials-change__btn-change:hover {
+  opacity: 1;
+}
 
 .team__btn {
   font-size: 16px;
@@ -13665,6 +13702,10 @@ h3 span {
 }
 .team__btn img {
   margin-right: 10px;
+}
+.team__btn:hover {
+  background-color: #F5333F;
+  opacity: 1;
 }
 
 .team-tab__item-btn {
@@ -13724,12 +13765,17 @@ h3 span {
 .news-article__services-btn {
   padding: 5px 15px;
   width: 105px;
-  background: #C41230;
+  background-color: #C41230;
   border-radius: 2px;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
   color: #fff;
+  transition: background-color 0.2s linear;
+}
+.news-article__services-btn:hover {
+  background-color: #F5333F;
+  opacity: 1;
 }
 
 .card__btn {
@@ -13747,6 +13793,10 @@ h3 span {
     width: fit-content;
   }
 }
+.card__btn:hover {
+  background-color: #F5333F;
+  opacity: 1;
+}
 
 .modal-booking__btn {
   width: 132px;
@@ -13760,6 +13810,10 @@ h3 span {
 }
 .modal-booking__btn img {
   margin-left: 10px;
+}
+.modal-booking__btn:hover {
+  background-color: #F5333F;
+  opacity: 1;
 }
 
 .modal-payment__btn {
@@ -13789,8 +13843,17 @@ h3 span {
 .modal-prepayment__btn img {
   margin-right: 10px;
 }
+.modal-prepayment__btn:hover {
+  background-color: #F5333F;
+  opacity: 1;
+}
 
 .modal-booking_main-btn {
+  display: inline-flex;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  align-items: center;
   width: 270px;
   height: 48px;
   font-size: 16px;
@@ -13801,6 +13864,10 @@ h3 span {
 }
 .modal-booking_main-btn img {
   margin-right: 10px;
+}
+.modal-booking_main-btn:hover {
+  background-color: #F5333F;
+  opacity: 1;
 }
 
 .graph-app {
@@ -13827,11 +13894,15 @@ h3 span {
     width: 100%;
   }
 }
+.graph-app:hover {
+  background-color: #F5333F;
+  opacity: 1;
+}
 
 .header__nav-open-change {
   width: 180px;
   height: 36px;
-  margin: 35px auto 10px;
+  margin: 30px auto 10px;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.05em;
@@ -13839,6 +13910,11 @@ h3 span {
 }
 .header__nav-open-change img {
   margin-left: 10px;
+  width: 20px;
+}
+.header__nav-open-change:hover {
+  background-color: #F5333F;
+  opacity: 1;
 }
 
 .header__nav-open-guest {
@@ -13881,6 +13957,7 @@ h3 span {
   position: absolute;
   text-align: start;
   width: 250px;
+  z-index: 2;
   left: 100%;
   bottom: 0;
   padding: 30px 32px;
@@ -14197,22 +14274,52 @@ h3 span {
   flex-direction: column;
   align-items: center;
   position: fixed;
-  z-index: 2;
+  z-index: 1;
   top: 206px;
   transform: translateY(-50%);
   right: 0;
 }
+.socials-change__item {
+  position: relative;
+  width: 24px;
+  height: 25px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: background-image 0.2s linear;
+}
+.socials-change__item:nth-child(1) {
+  background-image: url("../img/socials/ok.svg");
+}
+.socials-change__item:nth-child(1):hover {
+  background-image: url("../img/socials/ok-red.svg");
+}
+.socials-change__item:nth-child(2) {
+  background-image: url("../img/socials/vk.svg");
+}
+.socials-change__item:nth-child(2):hover {
+  background-image: url("../img/socials/vk-red.svg");
+}
+.socials-change__item:nth-child(3) {
+  background-image: url("../img/socials/teleg.svg");
+}
+.socials-change__item:nth-child(3):hover {
+  background-image: url("../img/socials/teleg-red.svg");
+}
 .socials-change__item:not(:last-child) {
   margin-bottom: 12px;
+}
+.socials-change__item a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 @media (max-width: 575px) {
   .socials-change {
     right: 13px;
   }
-}
-
-.socials-change__btn-change:hover {
-  content: "123";
 }
 
 .socials-change__card-guest {
@@ -14273,6 +14380,41 @@ h3 span {
   .socials-change__btn-change {
     display: none;
   }
+}
+
+.footer .socials__item {
+  position: relative;
+  width: 24px;
+  height: 25px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: background-image 0.2s linear;
+}
+.footer .socials__item:nth-child(1) {
+  background-image: url("../img/socials/ok.svg");
+}
+.footer .socials__item:nth-child(1):hover {
+  background-image: url("../img/socials/ok-red.svg");
+}
+.footer .socials__item:nth-child(2) {
+  background-image: url("../img/socials/vk.svg");
+}
+.footer .socials__item:nth-child(2):hover {
+  background-image: url("../img/socials/vk-red.svg");
+}
+.footer .socials__item:nth-child(3) {
+  background-image: url("../img/socials/teleg.svg");
+}
+.footer .socials__item:nth-child(3):hover {
+  background-image: url("../img/socials/teleg-red.svg");
+}
+.footer .socials__item a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .breadcrumps {
@@ -14361,7 +14503,7 @@ h3 span {
 .header__tel {
   font-family: "CenturyGothic";
   font-weight: 700;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 30px;
 }
 @media (max-width: 1199px) {
@@ -14384,7 +14526,7 @@ h3 span {
   margin-bottom: 30px;
 }
 .header__nav.open ul > li:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 .header__nav.open ul > li > a {
   font-size: 18px;
@@ -14487,6 +14629,9 @@ h3 span {
     font-size: 15px;
     line-height: 18px;
   }
+}
+.header__nav-item a:hover {
+  opacity: 1;
 }
 .header--bg {
   transition: background-color 0.3s ease-out;
@@ -14615,6 +14760,7 @@ h3 span {
 }
 .intro__link:hover {
   color: #C41230;
+  opacity: 1;
 }
 .intro__link:hover::after {
   width: 100%;
@@ -16844,6 +16990,10 @@ h3 span {
   margin-bottom: 15px;
   width: 240px;
 }
+.news-article__form-btn:hover {
+  background-color: #F5333F;
+  opacity: 1;
+}
 .news-article__form .agreement {
   font-weight: 400;
   font-size: 11px;
@@ -17762,8 +17912,10 @@ h3 span {
     margin-left: 0;
   }
 }
-.instructor-form .contacts-form__bottom {
-  flex-direction: column-reverse;
+@media (max-width: 1199px) {
+  .instructor-form .contacts-form__bottom {
+    flex-direction: column-reverse;
+  }
 }
 @media (max-width: 1199px) {
   .instructor-form {
@@ -17820,11 +17972,18 @@ h3 span {
   background-color: #252528;
   padding-bottom: 60px;
 }
+.timetable__heading input {
+  transition: background-color 0.2s linear;
+  background-color: #C41230;
+}
 .timetable__heading input::-webkit-calendar-picker-indicator {
-  background: url("../img/timetable/calendar.svg") no-repeat center center/cover;
+  background: url("../img/timetable/calendar-sm.svg") no-repeat center center/20px;
   cursor: pointer;
   width: 48px;
   height: 48px;
+}
+.timetable__heading input:hover {
+  background-color: #F5333F;
 }
 .timetable__today {
   font-family: "CenturyGothic";
@@ -17869,9 +18028,6 @@ h3 span {
   width: 48px;
   height: 48px;
   transition: opacity 0.2s linear;
-}
-.timetable__calendar:hover {
-  opacity: 0.8;
 }
 @media (max-width: 575px) {
   .timetable__calendar {
@@ -17927,12 +18083,15 @@ h3 span {
 }
 
 .dropdown {
+  padding: 20px 16px;
   position: absolute;
   z-index: 1;
-  left: 0;
-  top: 100%;
-  width: 200px;
-  background-color: #333;
+  right: 0;
+  top: 110%;
+  width: 240px;
+  background-color: #000000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
@@ -17942,6 +18101,12 @@ h3 span {
   visibility: visible;
 }
 .dropdown__link {
+  font-family: "CenturyGothic";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
   display: block;
   width: 100%;
   padding: 10px 10px;
@@ -18134,9 +18299,10 @@ h3 span {
   visibility: hidden;
   text-align: start;
   position: absolute;
-  right: 100%;
+  right: 0;
   z-index: 1;
-  bottom: 0;
+  bottom: 110%;
+  width: 250px;
   padding: 30px;
   background-color: #000;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
@@ -18153,6 +18319,19 @@ h3 span {
 .timetable__filter ul li:not(:last-child) {
   margin-bottom: 20px;
 }
+.timetable__filter ul li:hover ul {
+  display: block;
+}
+.timetable__filter ul li ul {
+  width: 100%;
+  display: none;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 0;
+}
+.timetable__filter ul li ul li {
+  font-weight: 400;
+}
 .timetable__filter:hover {
   opacity: 1;
 }
@@ -18165,6 +18344,24 @@ h3 span {
     width: 40px;
     height: 40px;
   }
+}
+
+.timetable__filter > ul > li {
+  position: relative;
+}
+.timetable__filter > ul > li::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 5px;
+  background-image: url("../img/arrow/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 0;
+  top: 8px;
+}
+.timetable__filter > ul > li:hover::after {
+  transform: rotate(180deg);
 }
 
 .graph-modal__left {
@@ -18415,10 +18612,20 @@ h3 span {
   color: #EBEBEE;
   margin-bottom: 45px;
 }
+@media (max-width: 767px) {
+  .modal-booking__descr, .modal-payment__descr {
+    line-height: 24px;
+  }
+}
 .modal-booking .graph-modal__title, .modal-payment .graph-modal__title {
   margin-bottom: 50px;
   color: #fff;
   color: #EBEBEE;
+}
+@media (max-width: 767px) {
+  .modal-booking .graph-modal__title, .modal-payment .graph-modal__title {
+    margin-bottom: 10px;
+  }
 }
 .modal-booking .graph-modal__close, .modal-payment .graph-modal__close {
   background: url("../img/modal/modal-close.svg") no-repeat center center/cover;
@@ -18432,6 +18639,44 @@ h3 span {
   line-height: 24px;
   color: #fff;
   margin-bottom: 15px;
+}
+@media (max-width: 991px) {
+  .modal-booking, .modal-payment {
+    width: 700px;
+  }
+}
+@media (max-width: 767px) {
+  .modal-booking, .modal-payment {
+    width: 360px;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal-booking__title-wrapper {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 767px) {
+  .modal-booking .modal-booking__descr {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .modal-booking .graph-modal__close {
+    right: 10px;
+    top: 10px;
+  }
+}
+.modal-booking .__select {
+  width: auto;
+}
+.modal-booking .__select__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  color: #fff;
 }
 
 .modal-payment__list {
@@ -18458,11 +18703,26 @@ h3 span {
   margin-bottom: 13px;
   color: #fff;
 }
+@media (max-width: 991px) {
+  .modal-payment__item-title {
+    min-height: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .modal-payment__item-title {
+    min-height: auto;
+  }
+}
 .modal-payment__item-descr {
   margin-bottom: 13px;
   min-height: 52px;
   line-height: 26px;
   color: #EBEBEE;
+}
+@media (max-width: 767px) {
+  .modal-payment__item-descr {
+    min-height: auto;
+  }
 }
 .modal-payment__item-price {
   font-family: "CenturyGothic";
@@ -18474,6 +18734,12 @@ h3 span {
 .modal-payment__item.active {
   border: 2px solid #F5333F;
   padding: 14px;
+}
+@media (max-width: 767px) {
+  .modal-payment__item {
+    grid-column: 12 span;
+    min-height: auto;
+  }
 }
 .modal-payment .graph-modal__title {
   margin-bottom: 20px;
@@ -18493,12 +18759,37 @@ h3 span {
 .modal-payment .modal-booking__descr {
   margin-bottom: 35px;
 }
+@media (max-width: 767px) {
+  .modal-payment .modal-booking__descr {
+    margin-bottom: 15px;
+  }
+}
 .modal-payment .graph-modal__close {
   right: 35px;
   top: 35px;
 }
+@media (max-width: 767px) {
+  .modal-payment .graph-modal__close {
+    right: 10px;
+    top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .modal-payment .modal-prepayment__form .input-wrapper input {
+    grid-column: 12 span;
+  }
+}
 .modal-payment .agreement {
   max-width: 100%;
+}
+.modal-payment .agreement span {
+  margin-left: 4px;
+}
+@media (max-width: 767px) {
+  .modal-payment .agreement {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .modal-prepayment__form {
@@ -18544,12 +18835,24 @@ h3 span {
 .modal-booking_main .modal-booking__bottom {
   margin-top: 30px;
 }
+@media (max-width: 991px) {
+  .modal-booking_main .modal-booking__bottom {
+    flex-direction: column-reverse;
+  }
+}
 .modal-booking_main .agreement {
   max-width: 100%;
   font-size: 11px;
   line-height: 13px;
   letter-spacing: 0.05em;
   color: #EBEBEE;
+}
+@media (max-width: 991px) {
+  .modal-booking_main .agreement {
+    margin-left: 0;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
 }
 
 .modal-booking_main-form {
@@ -18559,7 +18862,7 @@ h3 span {
 }
 .modal-booking_main-form input {
   padding: 13px 0;
-  grid-column: 4 span;
+  grid-column: 6 span;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.01em;
@@ -18569,7 +18872,22 @@ h3 span {
 .modal-booking_main-form input::placeholder {
   color: rgba(235, 235, 238, 0.65);
 }
+@media (max-width: 767px) {
+  .modal-booking_main-form input {
+    grid-column: 12 span;
+  }
+}
 .modal-booking_main-form .__select-second {
   grid-column: 4 span;
   width: 100%;
+}
+@media (max-width: 767px) {
+  .modal-booking_main-form .__select-second {
+    grid-column: 12 span;
+  }
+}
+@media (max-width: 767px) {
+  .modal-booking_main-form {
+    gap: 15px 0;
+  }
 }

@@ -22,29 +22,7 @@
 
 	<script src="js/app.min.js"></script>
 	<script>
-		// Modal Cards Select Styles
-		let selectSingle = document.querySelector('.__select');
-		let selectSingle_title = selectSingle.querySelector('.__select__title');
-		let selectSingle_labels = selectSingle.querySelectorAll('.__select__label');
-
-		console.log(selectSingle_title);
-		// Toggle menu
-		selectSingle_title.addEventListener('click', () => {
-			console.log('TSAD');
-			if ('active' === selectSingle.getAttribute('data-state')) {
-				selectSingle.setAttribute('data-state', '');
-			} else {
-				selectSingle.setAttribute('data-state', 'active');
-			}
-		});
-
-		// Close when click to option
-		for (let i = 0; i < selectSingle_labels.length; i++) {
-			selectSingle_labels[i].addEventListener('click', (evt) => {
-				selectSingle_title.textContent = evt.target.textContent;
-				selectSingle.setAttribute('data-state', '');
-			});
-		}
+		
 	</script>
 </body>
 

@@ -15,27 +15,27 @@
 <header class="header" id="header">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-4 col-xl-5">
+      <div class="col-lg-2">
         <div class="header__left-wrapper d-flex justify-content-between align-items-center">
           <a class="logo" href="index.html">
             <img src="img/header/logo.svg" alt="logo">
-          </a>
-          <div class="header__contacts d-none d-lg-flex">         
-            <a class="header__tel" href="tel:+73952525425">+7 (3952) 525-425</a>
-          </div>
+          </a>         
           <!-- Hamburger Menu -->
           <div class="hamburger d-flex d-lg-none" id="toggle">
             <div class="top-bun"></div>
             <div class="meat"></div>
             <div class="bottom-bun"></div>
           </div>
-        </div>       
-      </div>     
-      <div class="col-lg-8 col-xl-7">
+        </div>
+      </div>
+      <div class="col-lg-10 col-xl-8">
         <nav class="header__nav">
           <ul class="header__nav-list justify-content-end">
             <li class="header__nav-item">
               <a href="about.html">О клубе</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#">Виды карт</a>
             </li>
             <li class="header__nav-item">
               <a href="services.html">Услуги</a>
@@ -43,7 +43,7 @@
             <li class="header__nav-item">
               <a href="team.html">Команда</a>
             </li>
-            <li class="header__nav-item">              
+            <li class="header__nav-item">
               <a href="timetable.html">Расписание</a>
             </li>
             <li class="header__nav-item">
@@ -51,42 +51,47 @@
             </li>
             <li class="header__nav-item mr-0">
               <a href="gallery.html">Галерея</a>
-            </li>   
+            </li>
             <li class="header__nav-item d-lg-none d-block">
               <a href="gallery.html">Контакты</a>
-            </li>         
+            </li>
           </ul>
-          <div class="header__contacts d-flex justify-content-center d-lg-none">         
+          <div class="header__contacts d-flex justify-content-center d-lg-none">
             <a class="header__tel" href="tel:+73952525425">+7 (3952) 525-425</a>
           </div>
           <button class="d-flex d-lg-none btn-reset header__nav-open-change btn" data-graph-path="modal-booking">
             Выбрать карту
-            <img src="img/header/Card-mob-change.svg" alt="btn-icon">
+            <img src="img/socials/card-change-icon.svg" alt="btn-icon">
           </button>
-          <button class="d-flex d-lg-none btn-reset header__nav-open-guest btn" data-graph-path="content-card">
+          <button class="d-flex d-lg-none btn-reset header__nav-open-guest btn" data-graph-path="modal-card-change">
             Гостевой визит
-            <img src="img/header/Card-mob-guest.svg" alt="btn-icon">
-          </button>  
+            <img src="img/header/swim-icon.svg" alt="btn-icon">
+          </button>
           <div class="socials d-block d-lg-none">
-						<ul class="socials__list justify-content-center">
-							<li class="socials__item">
-								<a href="#">
-									<img src="img/socials/ok.svg" alt="socials-icon">
-								</a>
-							</li>
-							<li class="socials__item">
-								<a href="#">
-									<img src="img/socials/vk.svg" alt="socials-icon">
-								</a>
-							</li>
-							<li class="socials__item">
-								<a href="#">
-									<img src="img/socials/teleg.svg" alt="socials-icon">
-								</a>
-							</li>
-						</ul>
-					</div>        
+            <ul class="socials__list justify-content-center">
+              <li class="socials__item">
+                <a href="#">
+                  <img src="img/socials/ok.svg" alt="socials-icon">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#">
+                  <img src="img/socials/vk.svg" alt="socials-icon">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#">
+                  <img src="img/socials/teleg.svg" alt="socials-icon">
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
+      </div>
+      <div class="col-lg-2">
+        <div class="header__contacts d-none d-xl-flex">
+          <a class="header__tel" href="tel:+73952525425">+7 (3952) 525-425</a>
+        </div>
       </div>
     </div>
   </div>
@@ -551,17 +556,17 @@
 						<ul class="socials__list justify-content-start justify-content-lg-end">
 							<li class="socials__item">
 								<a href="#">
-									<img src="img/socials/ok.svg" alt="socials-icon">
+									<!-- <img src="img/socials/ok.svg" alt="socials-icon"> -->
 								</a>
 							</li>
 							<li class="socials__item">
 								<a href="#">
-									<img src="img/socials/vk.svg" alt="socials-icon">
+									<!-- <img src="img/socials/vk.svg" alt="socials-icon"> -->
 								</a>
 							</li>
 							<li class="socials__item">
 								<a href="#">
-									<img src="img/socials/teleg.svg" alt="socials-icon">
+									<!-- <img src="img/socials/teleg.svg" alt="socials-icon"> -->
 								</a>
 							</li>
 						</ul>
@@ -620,17 +625,17 @@
   <ul class="socials-change__list">
     <li class="socials-change__item">
       <a href="#">
-        <img src="img/socials/ok.svg" alt="socials-icon">
+      
       </a>
     </li>
     <li class="socials-change__item">
       <a href="#">
-        <img src="img/socials/vk.svg" alt="socials-icon">
+     
       </a>
     </li>
     <li class="socials-change__item">
       <a href="#">
-        <img src="img/socials/teleg.svg" alt="socials-icon">
+     
       </a>
     </li>
   </ul>
@@ -803,13 +808,16 @@
         </div>      
        
       </form>
+      <div class="agreement d-block d-md-none">
+        Нажимая «Оплатить» я даю согласие на <span> хранение и обработку персональных данных.</span> 
+      </div>
       <div class="modal-booking__bottom d-flex justify-content-between align-items-center">
       <button class="btn-reset modal-payment__btn btn" data-graph-path="modal-booking">
         <img src="img/arrow/arrow-left-modal.svg" alt="btn-icon">
         Вернуться
       </button>
-      <div class="agreement">
-        Нажимая «Оплатить» я даю согласие на <span>хранение и обработку персональных данных.</span> 
+      <div class="agreement d-none d-md-block">
+        Нажимая «Оплатить» я даю согласие на <span> хранение и обработку персональных данных.</span> 
       </div>
         <button class="modal-prepayment__btn btn">
           <img src="img/arrow/arrow-check.svg" alt="btn-icon">
@@ -836,7 +844,7 @@
         Краткое описание преимуществ приобретения карт и абонементов в зале, а также возможности рассрочки и тд
       </p>
       <form action="#" class="modal-booking_main-form">
-        <div class="__select __select-second" data-state="">
+        <!-- <div class="__select __select-second" data-state="">
           <div class="__select__title __select__title-second" data-default="Option 0">Выбрать карту</div>
           <div class="__select__content __select__content-second">
             <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
@@ -850,11 +858,11 @@
             <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
             <label for="singleSelect4" class="__select__label">Weekend Silver</label>
           </div>
-        </div>
+        </div> -->
         <input type="text" name="form-name" id="form-name" placeholder="Ваше имя">
         <input type="tel" name="form-tel" id="form-tel" placeholder="Ваш телефон">        
       </form>
-      <div class="modal-booking__bottom d-flex align-items-center">
+      <div class="modal-booking__bottom d-flex align-items-start align-items-lg-center">
         <button class="btn modal-booking_main-btn" data-graph-path="">
           <img src="img/arrow/arrow-check.svg" alt="btn-icon">
           Забронировать карту          

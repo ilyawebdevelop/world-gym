@@ -240,7 +240,9 @@
 		}
 	}
 	.contacts-form__bottom {
-		flex-direction: column-reverse;
+		@media (max-width: 1199px){
+			flex-direction: column-reverse;
+		}
 	}
 	@media (max-width: 1199px){
 		width: 100%;

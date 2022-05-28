@@ -322,7 +322,7 @@
   }
   &-btn {
     font-family: $font-family-second;
-    font-weight: 700;
+    font-weight: $bold;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.05em;
@@ -330,6 +330,10 @@
     color: $main-color;    
     margin-bottom: 15px;
     width: 240px;
+    &:hover {
+      background-color: #F5333F;
+      opacity: 1;
+    }
   }
   .agreement {
     font-weight: 400;

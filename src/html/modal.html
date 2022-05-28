@@ -166,13 +166,16 @@
         </div>      
        
       </form>
+      <div class="agreement d-block d-md-none">
+        Нажимая «Оплатить» я даю согласие на <span> хранение и обработку персональных данных.</span> 
+      </div>
       <div class="modal-booking__bottom d-flex justify-content-between align-items-center">
       <button class="btn-reset modal-payment__btn btn" data-graph-path="modal-booking">
         <img src="@img/arrow/arrow-left-modal.svg" alt="btn-icon">
         Вернуться
       </button>
-      <div class="agreement">
-        Нажимая «Оплатить» я даю согласие на <span>хранение и обработку персональных данных.</span> 
+      <div class="agreement d-none d-md-block">
+        Нажимая «Оплатить» я даю согласие на <span> хранение и обработку персональных данных.</span> 
       </div>
         <button class="modal-prepayment__btn btn">
           <img src="@img/arrow/arrow-check.svg" alt="btn-icon">
@@ -199,7 +202,7 @@
         Краткое описание преимуществ приобретения карт и абонементов в зале, а также возможности рассрочки и тд
       </p>
       <form action="#" class="modal-booking_main-form">
-        <div class="__select __select-second" data-state="">
+        <!-- <div class="__select __select-second" data-state="">
           <div class="__select__title __select__title-second" data-default="Option 0">Выбрать карту</div>
           <div class="__select__content __select__content-second">
             <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
@@ -213,11 +216,11 @@
             <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
             <label for="singleSelect4" class="__select__label">Weekend Silver</label>
           </div>
-        </div>
+        </div> -->
         <input type="text" name="form-name" id="form-name" placeholder="Ваше имя">
         <input type="tel" name="form-tel" id="form-tel" placeholder="Ваш телефон">        
       </form>
-      <div class="modal-booking__bottom d-flex align-items-center">
+      <div class="modal-booking__bottom d-flex align-items-start align-items-lg-center">
         <button class="btn modal-booking_main-btn" data-graph-path="">
           <img src="@img/arrow/arrow-check.svg" alt="btn-icon">
           Забронировать карту          

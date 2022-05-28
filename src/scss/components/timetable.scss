@@ -3,12 +3,17 @@
 	background-color: #252528;
 	padding-bottom: 60px;
 	&__heading {
-		input {
+		input {		
+			transition: background-color .2s linear;
+			background-color: #C41230;
 			&::-webkit-calendar-picker-indicator {
-				background: url('@img/timetable/calendar.svg') no-repeat center center / cover;
+				background: url('@img/timetable/calendar-sm.svg') no-repeat center center / 20px;
 				cursor: pointer;
 				width: 48px;
 				height: 48px;
+			}
+			&:hover {
+				background-color: #F5333F;						
 			}
 		}	
 	}
@@ -49,9 +54,10 @@
 		width: 48px;
 		height: 48px;
 		transition: opacity .2s linear;
-		&:hover {
-			opacity: .8;
-		}
+		// &:hover {
+		// 	background-color: #F5333F;
+		// 	opacity: 1;
+		// }
 		@media (max-width: 575px){
 			width: 40px;
 			height: 40px;
@@ -108,12 +114,15 @@
 }
 
 .dropdown {
+	padding: 20px 16px;
 	position: absolute;
 	z-index: 1;
-	left: 0;
-	top: 100%;
-	width: 200px;
-	background-color: #333;
+	right: 0;
+	top: 110%;
+	width: 240px;
+	background-color: #000000;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
@@ -122,6 +131,12 @@
 		visibility: visible;
 	}
 	&__link {
+		font-family: $font-family-second;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.05em;
+		color: #FFFFFF;		
 		display: block;
 		width: 100%;
 		padding: 10px 10px;
@@ -304,9 +319,10 @@
 		visibility: hidden;
 		text-align: start;
 		position: absolute;
-		right: 100%;
-		z-index: 1;
-		bottom: 0;
+		right: 0;
+    z-index: 1;
+    bottom: 110%;
+		width: 250px;
 		padding: 30px;
 		background-color: #000;
 		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
@@ -317,10 +333,26 @@
 			font-size: 14px;
 			line-height: 17px;
 			letter-spacing: 0.05em;
-			color: #FFFFFF;
+			color: #FFFFFF;		
 			&:not(:last-child){
 				margin-bottom: 20px;
 			}
+			&:hover {
+				ul {
+					display: block;
+				}
+			}
+			ul {
+				width: 100%;
+				display: none;
+				position: relative;
+				padding-left: 10px;
+				padding-right: 0;
+				li {
+					font-weight: $regular;
+				}
+			}
+		
 		}
 	}
 	&:hover {
@@ -333,6 +365,25 @@
 	@media (max-width: 575px){
 		width: 40px;
 		height: 40px;
+	}
+}
+.timetable__filter>ul>li {
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		width: 8px;
+		height: 5px;
+		background-image: url('@img/arrow/arrow-down.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		right: 0;
+		top: 8px;
+	}
+	&:hover {
+		&::after {
+			transform: rotate(180deg);
+		}
 	}
 }
 
