@@ -1,0 +1,153 @@
+// team
+.team-main {
+  background: #252528;
+  overflow: hidden;
+  &__title {
+    color: $main-color;
+  }
+  &__slider {
+    margin-bottom: 50px;   
+    @media (max-width: 767px) {
+      overflow: visible;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 575px){
+      padding-right: 65px;
+    }
+  }
+  &__slide {   
+    &-top {
+      min-height: 370px;
+      position: relative;
+      @media (max-width: 575px){
+        min-height: 595px;
+      }
+      @media (max-width: 500px){
+        min-height: 450px;
+      }
+      @media (max-width: 400px){
+        min-height: 370px;
+      }
+    }
+    &-bottom {
+      margin-top: 10px;
+    }
+    &-title {
+      margin-bottom: 8px;
+    }
+    &-subtitle {   
+      font-size: 15px;
+      line-height: 22px;
+      color: $main-color;
+    }
+    &-rect {
+      width: 100%;
+      height: 48px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        object-fit: cover;
+        &:nth-child(2) {
+          height: 44px;
+          @media (max-width: 575px){
+            height: 78px;
+          }
+        }
+      }
+      @media (max-width: 575px){
+        height: 76px;
+      }
+    }
+  }
+  .pagination_team {    
+    bottom: 0;   
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    .swiper-pagination-bullet {
+      width: 6px;
+      height: 6px;
+      background: #4B4748;
+      transition: all .2s linear;
+      &:not(:last-child) {
+        margin-right: 48px;
+        @media (max-width: 991px){
+          margin-right: 12px;
+        }
+      }    
+    }
+    .swiper-pagination-bullet-active {
+      background: #C41230;
+      width: 10px;
+      height: 10px;
+      @media (max-width: 991px){
+        width: 8px;
+        height: 8px;
+      }
+    }
+    @media (max-width: 991px){
+      justify-content: flex-start;
+      margin-bottom: 30px;
+      height: 15px;
+    }
+  }
+}
+.navigation-arrow {
+  opacity: .2;  
+  transition: opacity .2s linear;
+  &:hover {
+    opacity: .9;
+  }
+  @media (max-width: 991px){
+    display: none;
+  }
+}
+.team {
+	background: #252528 url('@img/team/team-abstract.svg') no-repeat center center / 100%;
+	padding-top: 0;
+	padding-bottom: 35px;
+	&-tab {
+		margin-bottom: 64px;
+		&__item {
+			&:not(:last-child) {
+				margin-right: 8px;
+			}
+		}
+	}
+  .team-main__slide-top {
+    @media (max-width: 575px){
+      min-height: 260px;
+    }
+    @media (max-width: 400px){
+      background-size: 115%!important;
+      background-position: center bottom!important;
+    }
+  }
+  .team-main__slide-rect img:nth-child(2){
+    @media (max-width: 575px){
+      height: 31px;
+    }
+  }
+  .team-main__slide-rect {
+    @media (max-width: 575px){
+      height: 31px;
+    }    
+  }
+	.team-main__slide {
+		margin-bottom: 45px;
+    @media (max-width: 575px){
+      margin-bottom: 15px;
+    }
+	}
+  @media (max-width: 991px){
+    padding-top: 15px;
+  }
+}
+
+

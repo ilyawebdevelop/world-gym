@@ -1,0 +1,36 @@
+/* Hamburger Menu */
+.hamburger {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22px;
+  height: 16px;
+  cursor: pointer;
+  position: relative;z-index: 3;
+  transition: background 0.2s linear;
+  @media (max-width: 991px) {
+    margin-left: auto;   
+  }
+  
+}
+.hamburger.active {
+  background: url('@img/close-icon.svg') no-repeat center center / cover;
+}
+.hamburger div {
+  align-self: flex-end;
+  height: 2px;
+  width: 70%;
+  background: #fff;
+}
+.hamburger .meat {
+  width: 100%;
+}
+.hamburger .bottom-bun {
+  width: 70%;
+}
+
+.top-bun.active, .meat.active, .bottom-bun.active {
+  opacity: 0;
+}
+

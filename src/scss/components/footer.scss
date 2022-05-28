@@ -1,0 +1,111 @@
+// Footer
+.footer {
+  
+  position: relative;
+  &__logo {
+    @media (max-width: 1199px){
+      width: 150px;
+    }
+    @media (max-width: 991px){
+      margin-bottom: 30px;
+    }
+  }
+  &__top {
+    background: #1A1B1D;
+    padding-top: 78px;
+    padding-bottom: 45px;
+    height: 200px;
+    @media (max-width: 991px){
+      height: auto;
+    }
+  }
+  &__adress {   
+    font-size: 16px;
+    line-height: 24px;
+    @media (max-width: 991px){
+      margin-bottom: 30px;
+    }
+  }
+  &__tel {
+    font-family: $font-family-second; 
+    font-weight: $bold;
+    font-size: 24px;
+    line-height: 24px;
+    @media (max-width: 991px){
+      margin-bottom: 50px;
+    }
+  }
+  &__bottom {
+    background: $dark-color;
+    padding: 16px 0;
+  }
+  &__rect {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 33px;
+    img {
+      width: 100%;
+    }
+  }
+}
+.copyright {
+  font-size: 14px;
+  line-height: 24px;
+  color: $main-color;
+  @media (max-width: 991px){
+    margin-bottom: 30px;
+  }
+}
+.politics {
+  &__list {
+    @media (max-width: 991px){
+      margin-bottom: 30px;
+    }
+  }
+  &__item {
+    position: relative;
+    padding: 5px 0;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    &::after {
+      transition: width 0.2s linear;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: $main-color;   
+    }   
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+    a {
+      font-weight: $semibold;
+      font-size: 14px;
+      line-height: 24px;
+      color: #FFFFFF;
+    }
+  }
+}
+.develop {
+  font-size: 14px;
+  line-height: 24px;
+  &__website {
+    margin-left: 6px;
+  }
+  a {
+    transition: color .2s linear;
+    display: inline-block;   
+    color: $main-color;
+    &:hover {
+      color: $red-color;
+      opacity: 1;
+    }
+  }
+}

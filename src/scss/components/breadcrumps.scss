@@ -1,0 +1,80 @@
+// Breadcrumps
+.breadcrumps {
+  padding-top: 30px;
+  padding-bottom: 30px;  
+  &__wrapper {
+    display: flex;
+  }
+  a {    
+    font-size: 14px;
+    line-height: 20px;  
+    color: $red-color;
+    &:last-child {       
+      font-size: 14px;
+      line-height: 20px;   
+      color: $main-color;
+      color: #1A1B1D;
+      &:hover {
+        opacity: .85;
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 14px;
+      display: flex;
+      align-items: center;
+      &::after {       
+        margin-left: 12px; 
+        content: '';
+        display: block;
+        width: 6px;
+        height: 8px;
+        background: url('@img/breadcrumps/arrow-right.svg') no-repeat center center / 100%;
+      }    
+    }
+  }
+	@media (max-width: 991px){
+		display: none;
+	} 
+}
+.team, .instructor, .timetable, .news, .gallery-page {
+	.breadcrumps {
+		padding-top: 45px;
+  	padding-bottom: 45px;  
+		a {
+			&:last-child {       
+				font-size: 14px;
+				line-height: 20px;   
+				color: #DCDCDE;
+				&:hover {
+					opacity: 1;
+				}
+			}
+			&:not(:last-child) {			
+				&::after {      
+					background: url('@img/breadcrumps/arrow-white.svg') no-repeat center center / 100%;
+				}    
+			}
+		}
+	}
+}
+// .instructor {
+// 	.breadcrumps {
+// 		padding-top: 45px;
+//   	padding-bottom: 45px;  
+// 		a {
+// 			&:last-child {       
+// 				font-size: 14px;
+// 				line-height: 20px;   
+// 				color: $main-color;
+// 				&:hover {
+// 					opacity: 1;
+// 				}
+// 			}
+// 			&:not(:last-child) {			
+// 				&::after {      
+// 					background: url('@img/breadcrumps/arrow-white.svg') no-repeat center center / 100%;
+// 				}    
+// 			}
+// 		}
+// 	}
+// }
