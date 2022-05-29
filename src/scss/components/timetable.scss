@@ -50,6 +50,9 @@
 			line-height: 36px;		
 			margin-right: 10px;	
 		}
+		@media (max-width: 575px){
+			font-size: 26px;    
+		}
 	}
 	&__tomorrow {
 		font-family: $font-family-second;
@@ -68,6 +71,9 @@
 			line-height: 36px;		
 			margin-right: 10px;	
 		}
+		@media (max-width: 575px){
+			font-size: 16px;    
+		}
 	}
 	&__calendar {
 		background-color: #C41230;		
@@ -82,7 +88,11 @@
 		transition: background-color .2s linear;
 		&:hover {
 			background-color: #F5333F;
-		}			
+		}		
+		@media (max-width: 575px){
+			width: 40px;
+			height: 40px;
+		}	
 	}
 	&__calendar-hide {
 		position: absolute;

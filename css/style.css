@@ -18845,6 +18845,11 @@ h3 span {
     margin-right: 10px;
   }
 }
+@media (max-width: 575px) {
+  .timetable__today {
+    font-size: 26px;
+  }
+}
 .timetable__tomorrow {
   font-family: "CenturyGothic";
   font-weight: 700;
@@ -18867,6 +18872,11 @@ h3 span {
     margin-right: 10px;
   }
 }
+@media (max-width: 575px) {
+  .timetable__tomorrow {
+    font-size: 16px;
+  }
+}
 .timetable__calendar {
   background-color: #C41230;
   position: relative;
@@ -18881,6 +18891,12 @@ h3 span {
 }
 .timetable__calendar:hover {
   background-color: #F5333F;
+}
+@media (max-width: 575px) {
+  .timetable__calendar {
+    width: 40px;
+    height: 40px;
+  }
 }
 .timetable__calendar-hide {
   position: absolute;
@@ -19615,6 +19631,11 @@ h3 span {
   text-transform: none;
   color: #fff;
 }
+@media (max-width: 420px) {
+  .modal-booking {
+    width: 300px;
+  }
+}
 
 .modal-payment__list {
   margin-top: 30px;
@@ -19726,6 +19747,11 @@ h3 span {
   .modal-payment .agreement {
     margin-left: 0;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 430px) {
+  .modal-payment {
+    width: 320px;
   }
 }
 

@@ -169,16 +169,7 @@ const mediaQuery = window.matchMedia('(max-width: 767px)')
 if (mediaQuery.matches) {
   let mySwiperAdvantages = new Swiper(newsSliderAdvantages, {
 		slidesPerView: 1,
-		spaceBetween: 19,
-		pagination: {
-			el: '.pagination',
-			clickable: true,
-			type: 'bullets',
-		},
-		navigation: {
-			nextEl: '.about-main__navigation-next',
-			prevEl: '.about-main__navigation-prev',
-		},
+		spaceBetween: 19,		
 	});
 }
 // Инициализация слайдера services-main
