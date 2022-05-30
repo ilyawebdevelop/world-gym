@@ -16696,6 +16696,27 @@ h3 span {
 
 .services-main {
   overflow: hidden;
+  background: linear-gradient(180deg, #E1E1E4 0%, rgba(168, 168, 170, 0.3) 100%), url("../img/services/services-abstract-bg.svg") no-repeat bottom center/100%;
+}
+.services-main__card {
+  filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.15));
+  position: relative;
+  height: 480px;
+}
+.services-main__card-bottom {
+  padding: 0 20px 30px 30px;
+  transition: opacity 0.2s linear;
+}
+@media (max-width: 1199px) {
+  .services-main__card-bottom {
+    background-position-y: 34px !important;
+  }
+}
+.services-main__card:hover .services-main__card-bottom {
+  opacity: 0;
+}
+.services-main__card:hover .services-main__card-overlay {
+  opacity: 1;
 }
 .services-main__link:hover {
   opacity: 1;
