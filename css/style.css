@@ -16699,7 +16699,6 @@ h3 span {
   background: linear-gradient(180deg, #E1E1E4 0%, rgba(168, 168, 170, 0.3) 100%), url("../img/services/services-abstract-bg.svg") no-repeat bottom center/100%;
 }
 .services-main__card {
-  filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.15));
   position: relative;
   height: 480px;
 }
@@ -16720,6 +16719,37 @@ h3 span {
 }
 .services-main__link:hover {
   opacity: 1;
+}
+
+.services-main__card-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  padding: 0 20px 30px 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+.services-main__card-overlay h3 {
+  margin-bottom: 8px;
+}
+.services-main__card-overlay .services-main__card-text_hover {
+  font-size: 14px;
+  line-height: 20px;
+}
+@media (max-width: 767px) {
+  .services-main__card-overlay .services-main__card-text_hover {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+.services-main__card-overlay .services-main__card-offer_hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
 }
 
 .services {
