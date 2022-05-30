@@ -15577,6 +15577,7 @@ h3 span {
   }
 }
 .intro__link {
+  transition: color 0.2s linear;
   font-family: "CenturyGothic";
   font-weight: 700;
   font-size: 20px;
@@ -15588,22 +15589,9 @@ h3 span {
   position: relative;
   width: fit-content;
 }
-.intro__link::after {
-  transition: width 0.2s linear;
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background-color: #C41230;
-}
 .intro__link:hover {
-  color: #C41230;
+  color: #F5333F;
   opacity: 1;
-}
-.intro__link:hover::after {
-  width: 100%;
 }
 .intro__link img {
   margin-left: 10px;
@@ -16708,7 +16696,6 @@ h3 span {
 
 .services-main {
   overflow: hidden;
-  background: linear-gradient(180deg, #E1E1E4 0%, rgba(168, 168, 170, 0.3) 100%), url("../img/services/services-abstract-bg.svg") no-repeat bottom center/100%;
 }
 .services-main__card {
   filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.15));
@@ -18451,24 +18438,15 @@ h3 span {
 .politics__item:not(:last-child) {
   margin-right: 30px;
 }
-.politics__item::after {
-  transition: width 0.2s linear;
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background-color: #fff;
-}
-.politics__item:hover::after {
-  width: 100%;
-}
 .politics__item a {
+  transition: color 0.2s linear;
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
   color: #FFFFFF;
+}
+.politics__item a:hover {
+  color: #F5333F;
 }
 
 .develop {
