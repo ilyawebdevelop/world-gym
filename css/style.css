@@ -18,7 +18,7 @@ html {
 }
 
 .graph-modal {
-  --transition-time:0.2s;
+  --transition-time:0.3s;
   position: fixed;
   left: 0;
   top: 0;
@@ -366,7 +366,7 @@ html {
 .swiper-pagination {
   position: absolute;
   text-align: center;
-  transition: 0.2s opacity;
+  transition: 0.3s opacity;
   transform: translate3d(0, 0, 0);
   z-index: 10;
 }
@@ -916,16 +916,16 @@ button.swiper-pagination-bullet {
   }
 }
 .lg-outer.lg-right-end .lg-object {
-  -webkit-animation: lg-right-end 0.2s;
-  -o-animation: lg-right-end 0.2s;
-  animation: lg-right-end 0.2s;
+  -webkit-animation: lg-right-end 0.3s;
+  -o-animation: lg-right-end 0.3s;
+  animation: lg-right-end 0.3s;
   position: relative;
 }
 
 .lg-outer.lg-left-end .lg-object {
-  -webkit-animation: lg-left-end 0.2s;
-  -o-animation: lg-left-end 0.2s;
-  animation: lg-left-end 0.2s;
+  -webkit-animation: lg-left-end 0.3s;
+  -o-animation: lg-left-end 0.3s;
+  animation: lg-left-end 0.3s;
   position: relative;
 }
 
@@ -1299,17 +1299,17 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer.lg-use-transition-for-zoom .lg-item.lg-complete.lg-zoomable .lg-img-wrap {
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0, 0, 0.25, 1) 0s;
-  -moz-transition: -moz-transform 0.2s cubic-bezier(0, 0, 0.25, 1) 0s;
-  -o-transition: -o-transform 0.2s cubic-bezier(0, 0, 0.25, 1) 0s;
-  transition: transform 0.2s cubic-bezier(0, 0, 0.25, 1) 0s;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s;
+  -moz-transition: -moz-transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s;
+  -o-transition: -o-transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s;
+  transition: transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s;
 }
 
 .lg-outer.lg-use-left-for-zoom .lg-item.lg-complete.lg-zoomable .lg-img-wrap {
-  -webkit-transition: left 0.2s cubic-bezier(0, 0, 0.25, 1) 0s, top 0.2s cubic-bezier(0, 0, 0.25, 1) 0s;
-  -moz-transition: left 0.2s cubic-bezier(0, 0, 0.25, 1) 0s, top 0.2s cubic-bezier(0, 0, 0.25, 1) 0s;
-  -o-transition: left 0.2s cubic-bezier(0, 0, 0.25, 1) 0s, top 0.2s cubic-bezier(0, 0, 0.25, 1) 0s;
-  transition: left 0.2s cubic-bezier(0, 0, 0.25, 1) 0s, top 0.2s cubic-bezier(0, 0, 0.25, 1) 0s;
+  -webkit-transition: left 0.3s cubic-bezier(0, 0, 0.25, 1) 0s, top 0.3s cubic-bezier(0, 0, 0.25, 1) 0s;
+  -moz-transition: left 0.3s cubic-bezier(0, 0, 0.25, 1) 0s, top 0.3s cubic-bezier(0, 0, 0.25, 1) 0s;
+  -o-transition: left 0.3s cubic-bezier(0, 0, 0.25, 1) 0s, top 0.3s cubic-bezier(0, 0, 0.25, 1) 0s;
+  transition: left 0.3s cubic-bezier(0, 0, 0.25, 1) 0s, top 0.3s cubic-bezier(0, 0, 0.25, 1) 0s;
 }
 
 .lg-outer .lg-item.lg-complete.lg-zoomable .lg-img-wrap {
@@ -1323,10 +1323,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .lg-outer .lg-item.lg-complete.lg-zoomable .lg-image {
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.15s !important;
-  -moz-transition: -moz-transform 0.2s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.15s !important;
-  -o-transition: -o-transform 0.2s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.15s !important;
-  transition: transform 0.2s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.15s !important;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.15s !important;
+  -moz-transition: -moz-transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.15s !important;
+  -o-transition: -o-transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.15s !important;
+  transition: transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.15s !important;
   -webkit-transform-origin: 0 0;
   -moz-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
@@ -1427,9 +1427,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.7) inset;
   display: block;
   height: 12px;
-  -webkit-transition: box-shadow 0.2s ease 0s;
-  -o-transition: box-shadow 0.2s ease 0s;
-  transition: box-shadow 0.2s ease 0s;
+  -webkit-transition: box-shadow 0.3s ease 0s;
+  -o-transition: box-shadow 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s;
   width: 12px;
 }
 
@@ -1615,10 +1615,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   right: 0;
   top: 0;
   bottom: 0;
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.32, 0, 0.67, 0) 0s;
-  -moz-transition: -moz-transform 0.2s cubic-bezier(0.32, 0, 0.67, 0) 0s;
-  -o-transition: -o-transform 0.2s cubic-bezier(0.32, 0, 0.67, 0) 0s;
-  transition: transform 0.2s cubic-bezier(0.32, 0, 0.67, 0) 0s;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.32, 0, 0.67, 0) 0s;
+  -moz-transition: -moz-transform 0.3s cubic-bezier(0.32, 0, 0.67, 0) 0s;
+  -o-transition: -o-transform 0.3s cubic-bezier(0.32, 0, 0.67, 0) 0s;
+  transition: transform 0.3s cubic-bezier(0.32, 0, 0.67, 0) 0s;
 }
 
 .lg-rotate-left:after {
@@ -8137,7 +8137,7 @@ textarea.form-control-lg {
 }
 
 .modal.fade .modal-dialog {
-  transition: transform 0.2s ease-out;
+  transition: transform 0.3s ease-out;
   transform: translate(0, -50px);
 }
 
@@ -8954,7 +8954,7 @@ textarea.form-control-lg {
   background-color: #fff;
   background-clip: padding-box;
   outline: 0;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -14989,7 +14989,7 @@ h3 span {
   display: block;
   width: 10px;
   height: 2px;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out;
   background-color: #333333;
   transform: translate(-3px, -50%) rotate(45deg);
 }
@@ -15012,7 +15012,7 @@ h3 span {
   width: 325px;
   background-color: #1A1B1D;
   border: none;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out;
   opacity: 0;
   z-index: 8;
 }
@@ -15321,7 +15321,7 @@ h3 span {
   width: 100%;
   padding-top: 25px;
   background-color: transparent;
-  transition: background-color 0.2s ease-in;
+  transition: background-color 0.3s ease-in;
 }
 .header__city {
   margin-right: 20px;
@@ -15474,7 +15474,7 @@ h3 span {
   opacity: 1;
 }
 .header--bg {
-  transition: background-color 0.2s ease-out;
+  transition: background-color 0.3s ease-out;
   background: #1A1B1D;
   position: fixed;
   padding-bottom: 20px;
@@ -16874,7 +16874,7 @@ h3 span {
 
 .service__slider-sm-slide {
   height: 48px;
-  transition: border-color 0.2s linear;
+  transition: border-color 0.3s linear;
   cursor: pointer;
 }
 .service__slider-sm-slide img {
@@ -18998,7 +18998,7 @@ h3 span {
   border-radius: 4px;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 .dropdown--active {
   opacity: 1;
@@ -19057,7 +19057,7 @@ h3 span {
 .tabs__btn--active {
   background-color: #C41230;
   color: #fff;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.3s ease-in-out;
   pointer-events: none;
 }
 @media (max-width: 991px) {
@@ -19672,7 +19672,7 @@ h3 span {
   border: 1px solid #828286;
   border-radius: 10px;
   grid-column: 4 span;
-  transition: border-color 0.2s linear;
+  transition: border-color 0.5s linear;
 }
 .modal-payment__item-title {
   font-family: "CenturyGothic";
