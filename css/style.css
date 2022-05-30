@@ -17217,7 +17217,10 @@ h3 span {
   background-color: #fff;
 }
 .soon__card-link {
-  transition: box-shadow 0.2s ease-in-out, opacity 0.2s linear;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.soon__card-link:hover {
+  opacity: 1;
 }
 .soon__card-time {
   font-family: "CenturyGothic";
@@ -17233,6 +17236,7 @@ h3 span {
   line-height: 24px;
   margin-top: 16px;
   margin-bottom: 20px;
+  transition: color 0.2s linear;
 }
 .soon__card-subtitle {
   font-size: 13px;
@@ -17254,9 +17258,9 @@ h3 span {
   letter-spacing: 0.05em;
   color: #F5333F;
 }
-.soon__card:hover {
-  opacity: 0.95;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+.soon__card:hover .soon__card-title {
+  color: #C41230;
+  opacity: 1;
 }
 .soon__slider {
   overflow: visible;
@@ -17343,6 +17347,7 @@ h3 span {
 }
 .team-main__slide-title {
   margin-bottom: 8px;
+  transition: color 0.2s linear;
 }
 .team-main__slide-subtitle {
   font-size: 15px;
@@ -17468,6 +17473,9 @@ h3 span {
   .team .team-main__slide {
     margin-bottom: 15px;
   }
+}
+.team .team-main__slide:hover .team-main__slide-title {
+  color: #C41230;
 }
 @media (max-width: 991px) {
   .team {
@@ -18575,6 +18583,9 @@ h3 span {
 .instructor__another .team-main__slide {
   margin-bottom: 25px;
 }
+.instructor__another .team-main__slide:hover .team-main__slide-title {
+  color: #C41230;
+}
 .instructor__another .team-main__slide-bottom {
   padding-left: 0;
 }
@@ -18784,6 +18795,9 @@ h3 span {
   .instructor-main-slide .team-main__slide-top {
     height: 450px;
   }
+}
+.instructor-main-slide .team-main__slide-title {
+  transition: color 0.2s linear;
 }
 @media (max-width: 991px) {
   .instructor-main-slide .team-main__slide-title {
@@ -19139,6 +19153,7 @@ h3 span {
   margin-top: 16px;
   margin-bottom: 20px;
   font-size: 16px;
+  transition: 0.2s linear;
 }
 @media (max-width: 1199px) {
   .content__card-title {
@@ -19181,6 +19196,12 @@ h3 span {
 }
 .content__card-btn {
   text-align: start;
+}
+.content__card-btn:hover {
+  opacity: 1;
+}
+.content__card-btn:hover .content__card-title {
+  color: #C41230;
 }
 @media (max-width: 1199px) {
   .content__card {
