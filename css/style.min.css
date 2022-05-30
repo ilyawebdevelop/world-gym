@@ -16711,6 +16711,7 @@ h3 span {
   background: linear-gradient(180deg, #E1E1E4 0%, rgba(168, 168, 170, 0.3) 100%), url("../img/services/services-abstract-bg.svg") no-repeat bottom center/100%;
 }
 .services-main__card {
+  filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.15));
   position: relative;
   height: 480px;
 }
