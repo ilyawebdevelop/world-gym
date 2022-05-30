@@ -15083,7 +15083,7 @@ h3 span {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  transition: background-image 0.2s linear;
+  transition: background-image 0.2s ease;
 }
 .socials-change__item:nth-child(1) {
   background-image: url("../img/socials/ok.svg");
@@ -15120,10 +15120,10 @@ h3 span {
     left: 50%;
     bottom: 0;
     top: unset;
-    width: max-content;
+    width: 100%;
     transform: translate(-50%);
     flex-direction: row-reverse;
-    transition: background-color 0.3s ease-out;
+    transition: background-color 0.2s ease-out;
     background-color: #fff;
   }
 }
@@ -15135,7 +15135,7 @@ h3 span {
 }
 
 .socials-change__card-guest {
-  transition: width 0.3s linear;
+  transition: width 0.2s linear;
 }
 @media (max-width: 575px) {
   .socials-change__card-guest img {
@@ -15146,7 +15146,7 @@ h3 span {
   font-size: 0;
   transition-property: all;
   transition-timing-function: ease-in;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
   transition-delay: 0s 5s;
 }
 @media (max-width: 575px) {
@@ -15174,12 +15174,12 @@ h3 span {
 }
 @media (max-width: 575px) {
   .socials-change__card-guest {
-    width: 165px;
+    width: 100%;
   }
 }
 
 .socials-change__btn-change {
-  transition: width 0.3s linear;
+  transition: width 0.2s linear;
 }
 @media (max-width: 575px) {
   .socials-change__btn-change img {
@@ -15190,7 +15190,7 @@ h3 span {
   font-size: 0;
   transition-property: all;
   transition-timing-function: ease-in;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
   transition-delay: 0s 5s;
 }
 @media (max-width: 575px) {
@@ -15218,7 +15218,7 @@ h3 span {
 }
 @media (max-width: 575px) {
   .socials-change__btn-change {
-    width: 168px;
+    width: 100%;
   }
 }
 
@@ -18879,39 +18879,61 @@ h3 span {
 }
 .timetable__calendar {
   background-color: #C41230;
+  -webkit-background-color: #C41230;
   position: relative;
+  -webkit-position: relative;
   height: 48px;
+  -webkit-height: 48px;
   width: 48px;
   border-radius: 4px;
+  -webkit-border-radius: 4px;
   background-image: url("../img/timetable/calendar-sm.svg");
+  -webkit-background-image: url("../img/timetable/calendar-sm.svg");
   background-repeat: no-repeat;
+  -webkit-background-repeat: no-repeat;
   background-size: 22px;
+  -webkit-background-size: 22px;
   background-position: center center;
+  -webkit-background-position: center center;
   transition: background-color 0.2s linear;
+  -webkit-transition: background-color 0.2s linear;
 }
 .timetable__calendar:hover {
   background-color: #F5333F;
+  -webkit-background-color: #F5333F;
 }
 @media (max-width: 575px) {
   .timetable__calendar {
     width: 40px;
+    -webkit-width: 40px;
     height: 40px;
+    -webkit-height: 40px;
   }
 }
 .timetable__calendar-hide {
   position: absolute;
+  -webkit-position: absolute;
   left: 0;
+  -webkit-left: 0;
   top: 0;
+  -webkit-top: 0;
   opacity: 0;
+  -webkit-opacity: 0;
   height: 48px;
+  -webkit-height: 48px;
   width: 48px;
+  -webkit-width: 48px;
   transition: background-color 0.2s linear;
+  -webkit-transition: background-color 0.2s linear;
   background-color: #C41230;
+  -webkit-background-color: #C41230;
 }
 @media (max-width: 575px) {
   .timetable__calendar-hide {
     width: 40px;
+    -webkit-width: 40px;
     height: 40px;
+    -webkit-height: 40px;
   }
 }
 .timetable__calendar-hide:hover {
